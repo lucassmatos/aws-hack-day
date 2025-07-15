@@ -1,0 +1,602 @@
+[
+  {
+    "id": "hs-001",
+    "category": "host-seller",
+    "problem": "I haven't received my payout yet and the guest checked in 5 days ago. Where's my money?",
+    "solution": "I understand your concern about the delayed payout. Let's check what's happening. Standard payout timeline is: guest checks in, 24 hours processing, payment sent next business day, then 3-5 days to reach your account. Since it's been 5 days, please check: 1) Your payout method is correctly set up in the dashboard, 2) Verify your bank account details are accurate, 3) Look for any 'pending' status in your transaction history, 4) Check if this was over a weekend/holiday which can add delays. If everything looks correct, contact support with the specific booking details for payout tracking."
+  },
+  {
+    "id": "hs-002",
+    "category": "host-seller",
+    "problem": "How do I sync my Acme calendar with Airbnb to avoid double bookings?",
+    "solution": "Great question! Preventing double bookings is crucial. Here's how to sync with Airbnb: 1) In your host dashboard, go to Calendar Settings, 2) Select 'Calendar Sync' or 'Import/Export Calendar', 3) Copy your Acme calendar URL (iCal format), 4) In Airbnb, paste this URL in their import calendar section, 5) Then copy your Airbnb calendar URL and import it into Acme. This creates two-way synchronization. The calendars update every few hours automatically. We also support VRBO, Booking.com, and custom iCal feeds for complete synchronization across all platforms."
+  },
+  {
+    "id": "hs-003",
+    "category": "host-seller",
+    "problem": "A guest damaged my furniture and I need to file a claim. What's the process?",
+    "solution": "I'll guide you through the damage claim process. You have 48 hours from checkout to file, so act quickly: 1) Document all damage with detailed photos from multiple angles, 2) Get repair/replacement estimates from professionals, 3) Go to your dashboard's Resolution Center, 4) Select the booking and click 'Report Damage', 5) Upload photos and estimates, 6) Provide detailed description of the damage. Our Host Protection covers up to $1M for property damage. You'll receive a decision within 7 days. Keep all receipts and documentation. The clearer your evidence, the smoother the claims process."
+  },
+  {
+    "id": "hs-004",
+    "category": "host-seller",
+    "problem": "My listing was suspended without warning. I don't understand why. How do I get it back?",
+    "solution": "I understand how concerning a suspension is. Common reasons include policy violations, guest complaints, consistently low ratings, unresponsiveness, or safety concerns. Here's how to appeal: 1) Check your email for a violation notice detailing the specific reason, 2) Review what policy may have been violated, 3) Gather supporting documents (positive reviews, corrective actions taken), 4) Submit a detailed appeal explaining the situation and your improvement plan, 5) Wait 7-10 days for review. Be thorough in your appeal and show concrete steps you're taking to address the issue. Most suspensions can be resolved with proper corrective action."
+  },
+  {
+    "id": "hs-005",
+    "category": "host-seller",
+    "problem": "I want to become a Superhost. What exactly do I need to achieve?",
+    "solution": "Superhost status is a great goal! Here are the specific requirements: 1) Maintain a 4.8+ overall rating, 2) Achieve 90%+ response rate to guest inquiries, 3) Keep cancellation rate below 1% (rare emergencies only), 4) Complete at least 10 stays per year, 5) Zero policy violations. Benefits include: increased visibility, Superhost badge, priority support, annual travel credit, exclusive events, and an average 20% increase in bookings. Focus on quick responses, accurate listings, and great guest experiences. Your progress is tracked in the Performance tab of your dashboard."
+  },
+  {
+    "id": "hs-006",
+    "category": "host-seller",
+    "problem": "Guest left a terrible review that's full of lies. Can I get it removed?",
+    "solution": "False reviews can be removed, but there are specific criteria. Reviews can be removed if they: 1) Violate content policy (profanity, discrimination), 2) Contains provably false information, 3) Include private information, 4) Are retaliatory or discriminatory, 5) Not based on an actual stay. To dispute: gather evidence proving the falsehoods (messages, photos, timestamps), submit a review dispute through your dashboard, and provide clear documentation. Note that differences of opinion ('place was small') can't be removed, only factual inaccuracies ('no hot water' when there was). You can also post a public response to clarify for future guests."
+  },
+  {
+    "id": "hs-007",
+    "category": "host-seller",
+    "problem": "How much do you charge hosts? I'm seeing 15% taken from my payouts.",
+    "solution": "Yes, the host service fee is 15% of the booking subtotal (nightly rate + cleaning fee + additional fees). This 15% covers: platform maintenance and development, 24/7 guest and host support, secure payment processing, Host Protection insurance up to $1M, marketing to bring guests to your listing, and booking management tools. There are NO other fees - listing is free, no monthly charges, no setup costs. The 15% is only charged on successful bookings. Your payout statement shows the exact breakdown. This competitive rate includes comprehensive services and protection."
+  },
+  {
+    "id": "hs-008",
+    "category": "host-seller",
+    "problem": "I need to cancel a guest's booking due to plumbing issues. Will I be penalized?",
+    "solution": "Host cancellations have serious consequences, but legitimate emergencies are reviewed case-by-case. Standard penalties include: $50-100 fee, calendar blocked for those dates, ranking impact, and possible loss of Superhost status. However, for genuine property issues: 1) Document the plumbing problem thoroughly with photos/videos, 2) Get a plumber's report stating the property is uninhabitable, 3) Contact host support BEFORE canceling, 4) Provide all documentation for emergency exception review, 5) Help relocate the guest if possible. True emergencies making properties uninhabitable may qualify for penalty waivers. Always communicate with support first."
+  },
+  {
+    "id": "hs-009",
+    "category": "host-seller",
+    "problem": "I'm not getting any bookings. My listing has been up for 2 months. What's wrong?",
+    "solution": "Let's optimize your listing for more bookings! Common issues and solutions: 1) Photos - You need minimum 10 high-quality photos. We offer free professional photography, 2) Pricing - Check if you're competitive using our Smart Pricing tool, 3) Response time - Maintain under 1 hour response rate, 4) Availability - Ensure your calendar is updated and has available dates, 5) Description - Make it detailed and highlight unique features, 6) Reviews - New listings need patience; consider offering a small introductory discount. Also check your listing's search ranking in the Performance dashboard. Small improvements can dramatically increase visibility."
+  },
+  {
+    "id": "hs-010",
+    "category": "host-seller",
+    "problem": "When do I need to issue a 1099 tax form? I made about $8,000 this year.",
+    "solution": "For US hosts, Acme issues 1099 forms to hosts earning $600 or more in a calendar year. Since you earned $8,000, you'll automatically receive a 1099. Here's what to expect: 1) Forms are sent by January 31st, 2) Available in your host dashboard under Tax Documents, 3) Reports your gross earnings (before our fees), 4) You're responsible for reporting this income, 5) Keep records of all expenses for deductions. We recommend consulting a tax professional about deductions like utilities, maintenance, depreciation, and supplies. The dashboard has tax resources and expense tracking tools to help with your filing."
+  },
+  {
+    "id": "hs-011",
+    "category": "host-seller",
+    "problem": "Can I require a security deposit? How do I set this up?",
+    "solution": "Yes, security deposits are recommended for property protection! Here's how to set it up: 1) Go to your listing settings in the dashboard, 2) Find 'Booking Settings' or 'House Rules', 3) Enable security deposit and set amount (typically $200-500), 4) Choose hold vs. charge method, 5) Deposits are automatically held/collected at booking. The deposit is released 7-14 days after checkout if no claims filed. This protects you beyond the standard Host Protection. Be reasonable with amounts - excessive deposits discourage bookings. Clearly state deposit amount and terms in your listing."
+  },
+  {
+    "id": "hs-012",
+    "category": "host-seller",
+    "problem": "Guest wants to book for 6 months. Should I do anything differently?",
+    "solution": "Long-term bookings are great for steady income! Here's what to consider: 1) Adjust your pricing - offer monthly discounts (typically 20-30% off), 2) Create a more detailed rental agreement for extended stays, 3) Discuss utilities and who pays for usage overages, 4) Plan for maintenance access during their stay, 5) Consider monthly cleanings instead of just end-of-stay, 6) Check local laws - some areas have different rules for 30+ day rentals. Long-term guests often become great repeat customers. Message them before accepting to ensure good fit and clear expectations."
+  },
+  {
+    "id": "hs-013",
+    "category": "host-seller",
+    "problem": "I'm getting booking requests at 2 AM. Do I really have to respond within 24 hours?",
+    "solution": "Yes, the 24-hour response requirement applies regardless of when requests arrive, but you don't need to lose sleep! Here's how to manage: 1) Set up message templates for common responses, 2) Use the mobile app for quick responses from bed, 3) Enable push notifications so you don't miss requests, 4) Consider switching to Instant Book to eliminate middle-of-night decisions, 5) Pre-approve or decline in the morning - you have the full 24 hours. Maintaining a 90%+ response rate is crucial for visibility and Superhost status. Most guests understand time zones, but the 24-hour clock starts when they send the request."
+  },
+  {
+    "id": "hs-014",
+    "category": "host-seller",
+    "problem": "My property is in a different state. How do I manage check-ins remotely?",
+    "solution": "Remote hosting is completely doable with the right systems! Here's how successful remote hosts operate: 1) Install keyless entry (keypad or smart locks) for self check-in, 2) Hire a local property manager or cleaning service for turnovers, 3) Create detailed digital guidebooks with photos, 4) Set up security cameras (exterior only, disclosed), 5) Build relationships with local handymen for emergencies, 6) Use automated messaging for check-in instructions. Many hosts manage properties across states successfully. The key is reliable local support and clear communication systems. Consider starting with a co-host who can handle on-site needs."
+  },
+  {
+    "id": "hs-015",
+    "category": "host-seller",
+    "problem": "Do I have to accept emotional support animals? I have a no-pets policy.",
+    "solution": "This is an important legal distinction. Emotional support animals (ESAs) are NOT considered pets under fair housing laws in many jurisdictions. However, short-term rentals have different rules than long-term housing: 1) Service animals (not ESAs) must always be accepted regardless of pet policies, 2) You cannot charge pet fees for service animals, 3) ESAs may not have the same protections for short-term rentals, 4) Check your local and state laws as they vary, 5) You can ask if it's a service animal and what task it performs. Never ask for documentation or details about disabilities. When in doubt, consult with a local attorney familiar with short-term rental regulations."
+  },
+  {
+    "id": "hs-016",
+    "category": "host-seller",
+    "problem": "How do I price for holidays and special events? I don't want to leave money on the table.",
+    "solution": "Smart pricing during high-demand periods maximizes earnings! Here's how to optimize: 1) Use our Smart Pricing tool that automatically adjusts for demand, 2) Research local events (festivals, sports, conferences), 3) Set seasonal rates in your pricing settings, 4) Typically increase 25-100% for major holidays, 5) Watch competitor pricing during these periods, 6) Consider minimum stay requirements for peak times. Don't forget to update prices 2-3 months before major events when people book. The Market Insights tool in your dashboard shows local demand trends. Price confidently - your cabin is worth more during high-demand periods!"
+  },
+  {
+    "id": "hs-017",
+    "category": "host-seller",
+    "problem": "Guest is asking for a full refund day before check-in. Am I obligated to refund?",
+    "solution": "Your refund obligation depends on your chosen cancellation policy. You're only obligated to follow your stated policy: Flexible (full refund 24 hours before), Moderate (full refund 5 days before), Strict (50% refund 14 days before), or Super Strict (50% refund 30 days before). However, consider: 1) Offering a partial refund if you can rebook the dates, 2) Providing future stay credit instead of cash refund, 3) Being flexible for genuine emergencies builds goodwill, 4) Strict enforcement is your right but may impact reviews. Check if you can rebook the dates - if yes, a refund costs you nothing but earns guest appreciation."
+  },
+  {
+    "id": "hs-018",
+    "category": "host-seller",
+    "problem": "I want to hire a co-host to help manage. How does that work with Acme?",
+    "solution": "Co-hosting is a great solution for scaling or remote management! Here's how to set it up: 1) In your dashboard, go to Account Settings > Co-hosts, 2) Add your co-host's email address, 3) Assign their permissions (calendar, messaging, pricing, etc.), 4) They'll receive an invitation to join, 5) You can split payouts automatically by percentage. Co-hosts can handle guest communication, coordinate cleaning, manage check-ins, and update listings. You remain the primary host responsible for the listing. Many hosts pay co-hosts 10-25% of bookings for their services. Choose someone trustworthy with good communication skills."
+  },
+  {
+    "id": "hs-019",
+    "category": "host-seller",
+    "problem": "My cleaner didn't show up and new guests are arriving in 2 hours! Help!",
+    "solution": "This is an emergency requiring immediate action! Here's your rescue plan: 1) Contact backup cleaners immediately (keep a list for emergencies), 2) If you're nearby, start cleaning critical areas yourself, 3) Message guests proactively about a slight delay, offer early check-in credit, 4) Consider hiring an emergency cleaning service (even at premium cost), 5) If impossible to clean in time, offer honest options: late check-in with compensation, or full refund if they prefer to cancel. Most guests appreciate honesty and effort. Always have backup cleaners and never rely on just one service. This saves your reputation and reviews."
+  },
+  {
+    "id": "hs-020",
+    "category": "host-seller",
+    "problem": "Can I charge different rates for different seasons? Summer is much busier here.",
+    "solution": "Absolutely! Seasonal pricing is essential for maximizing revenue. Here's how to set it up: 1) In your listing, go to Pricing Settings, 2) Select 'Seasonal Pricing' or 'Custom Pricing', 3) Define your seasons (summer, winter, shoulder seasons), 4) Set base rates for each season, 5) Add special event pricing for local happenings, 6) Consider weekend premiums during peak season. Most hosts charge 30-50% more during high season. The Market Insights tool shows local demand patterns. Don't undersell during peak times - guests expect higher prices when demand is high. Review and adjust seasonally for optimization."
+  },
+  {
+    "id": "hs-021",
+    "category": "host-seller",
+    "problem": "PayPal payout failed and support says to check with PayPal. But PayPal says check with Acme!",
+    "solution": "I understand the frustration of being sent back and forth! Let's resolve this systematically: 1) First, verify your PayPal email in Acme dashboard matches exactly with your PayPal account, 2) Check if your PayPal account is verified and in good standing, 3) Look for any PayPal account limitations or holds, 4) Try removing and re-adding PayPal as your payout method, 5) Consider switching to direct deposit temporarily. If still failing, request transaction IDs from both sides - this usually reveals where the issue lies. Direct deposit (ACH) is often more reliable than PayPal for regular payouts."
+  },
+  {
+    "id": "hs-022",
+    "category": "host-seller",
+    "problem": "I accidentally approved a booking for dates when I'll be away. Can I cancel without penalty?",
+    "solution": "Unfortunately, host-initiated cancellations carry penalties regardless of the reason, including mistakes. Standard penalties apply: $50-100 fee, dates blocked, ranking impact, and Superhost status risk. Your best options: 1) Contact the guest immediately and honestly explain the mistake, 2) Offer to help them find alternative accommodation, 3) If they agree to cancel, ask THEM to initiate it, 4) Consider hiring a local co-host to manage this booking, 5) If you must cancel, contact support with documentation but expect penalties. Going forward, double-check your calendar before approving and consider using Instant Book with blocked dates."
+  },
+  {
+    "id": "hs-023",
+    "category": "host-seller",
+    "problem": "How do I know if my pricing is competitive? I'm not sure what to charge.",
+    "solution": "Getting pricing right is crucial for bookings! Here's how to price competitively: 1) Use our Smart Pricing tool - it analyzes local demand and suggests rates, 2) Search Acme as a guest for similar properties in your area, 3) Compare amenities, size, and location to similar listings, 4) Check the Market Insights tab for average rates in your area, 5) Start slightly lower when new to get initial bookings and reviews, 6) Adjust based on your booking rate - if constantly booked, raise prices. Remember to factor in seasonal changes, local events, and weekend premiums. Aim for 70-80% occupancy as a sweet spot between price and bookings."
+  },
+  {
+    "id": "hs-024",
+    "category": "host-seller",
+    "problem": "Guest broke house rules (had a party). What are my options?",
+    "solution": "House rule violations should be addressed immediately. Here are your options: 1) Document everything - photos, videos, neighbor complaints, 2) Message the guest through Acme about the violation, 3) You can ask them to leave for serious violations (must go through Acme), 4) File for damages if property was harmed, 5) Leave an honest review warning future hosts. For active situations: contact local authorities if needed for safety. Report to Acme support for documentation. You may be entitled to compensation beyond the security deposit. Future bookings: consider Instant Book settings that screen for positive reviews to avoid party guests."
+  },
+  {
+    "id": "hs-025",
+    "category": "host-seller",
+    "problem": "I want to offer Instant Book but worried about problematic guests. Can I screen them?",
+    "solution": "Yes! Instant Book has built-in guest requirements to protect you. You can enable these filters: 1) Government ID verified, 2) Positive reviews from other hosts, 3) No negative reviews, 4) Profile photo required, 5) Agreement to your house rules. To set up: go to Booking Settings > Instant Book > Guest Requirements. You can also: maintain strict house rules, set minimum age requirements, and still decline uncomfortable bookings penalty-free. Instant Book typically increases bookings by 20-40% while these requirements maintain quality guests. Most hosts find the screening sufficient for peace of mind."
+  },
+  {
+    "id": "hs-026",
+    "category": "host-seller",
+    "problem": "Tax season is coming. What expenses can I deduct as a host?",
+    "solution": "While I can't provide tax advice, here are common expenses hosts track for their tax professionals: 1) Cleaning and maintenance costs, 2) Utilities (proportional to rental use), 3) Property insurance, 4) Repairs and replacements, 5) Supplies (toiletries, linens, etc.), 6) Platform service fees, 7) Professional photography, 8) Property management software, 9) Depreciation (consult tax pro), 10) Mortgage interest (proportional). Use the expense tracking in your dashboard to categorize throughout the year. Save all receipts! Consult a tax professional familiar with short-term rentals for specific deductions and local requirements."
+  },
+  {
+    "id": "hs-027",
+    "category": "host-seller",
+    "problem": "My neighbor is complaining about my Acme guests. They're threatening to report me.",
+    "solution": "Neighbor relations are crucial for sustainable hosting. Take immediate action: 1) Listen to specific concerns (noise, parking, etc.), 2) Implement solutions - quiet hours, parking instructions, guest limits, 3) Share your contact info for direct communication during issues, 4) Consider a neighbor agreement outlining your management plan, 5) Update house rules to address their concerns. For current situation: apologize for any inconvenience, explain your corrective measures, and consider offering a goodwill gesture. Many cities require neighbor notification for short-term rentals. Proactive neighbor management prevents bigger problems and potential shutdowns."
+  },
+  {
+    "id": "hs-028",
+    "category": "host-seller",
+    "problem": "I need professional photos but can't afford a photographer. Any options?",
+    "solution": "Great news - Acme offers FREE professional photography for hosts! Here's how to get it: 1) In your dashboard, look for 'Professional Photography' or 'Photo Services', 2) Request a photographer through the platform, 3) They'll schedule within 1-2 weeks typically, 4) Prepare your property - deep clean, declutter, stage nicely, 5) Photographer captures all spaces and amenities. Professional photos can increase bookings by 40%! If free photography isn't available in your area yet, consider: borrowing a good camera, shooting during golden hour, using a tripod, and editing with free tools. Quality photos are worth the investment."
+  },
+  {
+    "id": "hs-029",
+    "category": "host-seller",
+    "problem": "Guest claims they got sick from my hot tub. Am I liable?",
+    "solution": "Health claims are serious and require careful handling. Here's your response plan: 1) Express concern for their health (without admitting fault), 2) Document your maintenance schedule and chemical logs, 3) Report to Acme support immediately, 4) Contact your insurance company if you have additional coverage, 5) Don't admit liability or offer compensation without guidance. Host Protection covers up to $1M in liability claims including legal defense. Maintain detailed logs of all maintenance, especially for pools/hot tubs. If you don't already, implement weekly professional maintenance with documentation. This protects you from future claims."
+  },
+  {
+    "id": "hs-030",
+    "category": "host-seller",
+    "problem": "How do I handle guests who want to book outside Acme to avoid fees?",
+    "solution": "NEVER accept off-platform bookings! Here's why and how to handle requests: 1) Politely decline explaining all bookings must go through Acme, 2) Remind them of benefits: secure payment, insurance protection, 24/7 support, 3) Off-platform bookings void your Host Protection coverage, 4) You lose payout guarantees and damage protection, 5) It violates terms of service risking account suspension. Respond with: 'For both our protection and security, all bookings must be processed through Acme. This ensures you're covered by guest protections and I'm covered by host protections.' Report guests who persistently ask to book offline."
+  },
+  {
+    "id": "hs-031",
+    "category": "host-seller",
+    "problem": "My property got damaged in a storm. Do I have to honor upcoming bookings?",
+    "solution": "Storm damage creating uninhabitable conditions is a valid emergency cancellation reason. Here's the process: 1) Document all storm damage thoroughly with photos/videos, 2) Get professional assessment stating property is uninhabitable, 3) Contact Acme support BEFORE canceling any bookings, 4) Provide all documentation for emergency exception review, 5) Help guests find alternative accommodation if possible. Natural disasters and truly uninhabitable conditions often qualify for penalty waivers. Be honest about repair timelines and block calendar until property is guest-ready. Your first priority is guest safety - don't host if conditions are unsafe."
+  },
+  {
+    "id": "hs-032",
+    "category": "host-seller",
+    "problem": "I want to sell my property. What happens to future bookings?",
+    "solution": "Selling requires careful handling of existing bookings. You have several options: 1) Honor all bookings until closing (ideal for reputation), 2) Transfer the Acme account to new owners if they'll continue hosting, 3) Cancel bookings with proper notice (penalties apply), 4) Negotiate with buyers to honor existing reservations, 5) Block calendar 60+ days before expected closing. If canceling: contact support about bulk cancellation due to sale, expect standard penalties unless very far in advance, and help guests find alternatives. Many buyers actually want established Acme listings - it could increase property value!"
+  },
+  {
+    "id": "hs-033",
+    "category": "host-seller",
+    "problem": "Guests smoked in my non-smoking property. The smell is terrible!",
+    "solution": "Smoking violations require immediate action for documentation and remediation: 1) Take photos of any cigarette evidence, 2) Document the smell (mention in writing, guest admissions), 3) Get professional odor removal estimate, 4) File a claim through Resolution Center within 48 hours, 5) Include all cleaning/treatment costs. Smoking odor removal often costs $200-500+. This exceeds normal cleaning and qualifies for additional charges beyond security deposit. In your review, warn other hosts about their smoking. Consider adding smoke detection alerts to catch violations during stays. Make non-smoking rules extremely clear in listings and check-in messages."
+  },
+  {
+    "id": "hs-034",
+    "category": "host-seller",
+    "problem": "I'm only getting 1-2 night bookings. How do I attract longer stays?",
+    "solution": "Attracting longer stays requires strategic adjustments: 1) Set minimum night requirements (3-4 nights often ideal), 2) Offer weekly discounts (10-15%) and monthly discounts (20-30%), 3) Highlight amenities for extended stays (full kitchen, workspace, laundry), 4) Use keywords like 'perfect for extended stays' in your description, 5) Price competitively for longer bookings, 6) Consider Sunday-Thursday minimums, allowing weekend flexibility. Longer stays mean less turnover, lower cleaning costs, and steadier income. In your settings, adjust length-of-stay discounts to incentivize the booking patterns you want. Many successful hosts focus exclusively on 5+ night stays."
+  },
+  {
+    "id": "hs-035",
+    "category": "host-seller",
+    "problem": "My listing views dropped dramatically. I used to get lots of inquiries. What happened?",
+    "solution": "Ranking drops happen for several reasons. Let's diagnose and fix: 1) Check your response rate - falling below 90% hurts visibility, 2) Review recent ratings - anything below 4.5 impacts ranking, 3) Verify calendar is updated - stale calendars get deprioritized, 4) Look for new competition that may outrank you, 5) Ensure photos and description are current. To improve: respond to all messages within 1 hour, update photos seasonally, refresh your description, consider a small price decrease temporarily, and maintain high availability. The algorithm favors active, responsive hosts. Small improvements can quickly restore visibility."
+  },
+  {
+    "id": "hs-036",
+    "category": "host-seller",
+    "problem": "Do I need a business license to host on Acme? My city is asking.",
+    "solution": "Yes, most cities require business licenses and/or short-term rental permits. Requirements vary greatly by location: 1) Check your city's website for short-term rental regulations, 2) Many cities require annual permits ($50-500 typically), 3) Some have inspection requirements, 4) Tax registration may be separate, 5) HOAs may have additional restrictions. Acme requires hosts to comply with all local laws. In your listing settings, you'll need to add permit numbers in many jurisdictions. Non-compliance risks fines and listing removal. Consider joining local host groups for guidance on your specific area's requirements."
+  },
+  {
+    "id": "hs-037",
+    "category": "host-seller",
+    "problem": "Guest is asking for a discount because they're booking for a week. Should I give it?",
+    "solution": "Weekly discounts are standard in the industry and can secure longer, more profitable bookings! Consider: 1) Typical weekly discounts range from 10-15%, 2) You save on cleaning costs with fewer turnovers, 3) Less wear and tear from check-ins/outs, 4) More stable income with longer bookings, 5) Set automatic weekly discounts in your pricing settings. You can also negotiate: offer 10% for this booking and mention it's already applied in your settings for future guests. Longer stays often lead to better reviews and repeat customers. The discount is usually worth the benefits of extended bookings."
+  },
+  {
+    "id": "hs-038",
+    "category": "host-seller",
+    "problem": "My response rate dropped to 85%. Will this hurt my bookings?",
+    "solution": "Yes, response rates below 90% significantly impact your visibility and bookings! Here's how to recover quickly: 1) Respond to ALL inquiries, even if just to decline, 2) Set up saved message templates for faster responses, 3) Use the mobile app for instant notifications, 4) Respond within 1 hour for best results (24 hours maximum), 5) Set up automatic responses for common questions. Your response rate affects search ranking dramatically. To rebuild: be hyper-responsive for the next few weeks, use templates like 'Thanks for your interest! Let me check and get back to you shortly,' then follow up with details. Quick improvement is possible with dedication."
+  },
+  {
+    "id": "hs-039",
+    "category": "host-seller",
+    "problem": "I want to add a cleaning fee but worried it'll deter bookings. What's reasonable?",
+    "solution": "Cleaning fees are standard and guests expect them! Here's how to set them appropriately: 1) Calculate actual cleaning costs (typically $75-200), 2) Research similar properties in your area, 3) Consider property size (larger = higher fee), 4) Factor in laundry and restocking time, 5) One-time fee regardless of stay length. Reasonable cleaning fees don't deter bookings if justified by property size and amenities. Be transparent - explain what cleaning includes in your description. Avoid excessive fees that make short stays uneconomical. Most guests prefer transparent cleaning fees over hidden inflated nightly rates."
+  },
+  {
+    "id": "hs-040",
+    "category": "host-seller",
+    "problem": "Occupancy taxes are confusing. Does Acme collect them or do I?",
+    "solution": "Occupancy tax handling varies by location. Here's how it works: 1) In many areas, Acme automatically collects and remits taxes for you, 2) Check your dashboard under Tax Settings to see your status, 3) If Acme collects, it's added to guest bills automatically, 4) If not automated, you're responsible for collection and remittance, 5) You may need to register with local tax authorities. Where Acme doesn't auto-collect, you must: register for a tax ID, collect taxes from guests, file returns regularly, and remit to authorities. Professional tax help is recommended for compliance. The dashboard shows which taxes apply to your listing."
+  },
+  {
+    "id": "hs-041",
+    "category": "host-seller",
+    "problem": "I have back-to-back bookings. How much time do I need between guests?",
+    "solution": "Managing back-to-back bookings requires careful planning: 1) Minimum 3-4 hours needed for thorough cleaning, 2) Set checkout at 11 AM and check-in at 3 PM, 3) Build in buffer time for delays or deep cleaning, 4) Consider blocking one night between during busy seasons, 5) Have backup cleaners for emergencies. In your settings, you can set preparation time between bookings. Professional hosts often use: same-day turnovers for maximizing revenue, but overnight gaps during peak season for quality control. Reliable cleaning crews are essential. Never compromise cleanliness for quick turnovers - reviews suffer."
+  },
+  {
+    "id": "hs-042",
+    "category": "host-seller",
+    "problem": "Guest left early and wants a partial refund. Do I have to give it?",
+    "solution": "You're NOT obligated to refund for voluntary early departures. Your cancellation policy applies to changes after booking, not mid-stay departures. However, consider: 1) Why they're leaving (property issues vs. personal reasons), 2) If you can rebook the freed nights, 3) Potential review impact of strict enforcement, 4) Building goodwill for future bookings. If property-related issues caused departure, refunds may be warranted. For personal reasons, you might offer: future stay credit instead of cash, refund only if you rebook the nights, or a small goodwill gesture. Document their reason for leaving in platform messages."
+  },
+  {
+    "id": "hs-043",
+    "category": "host-seller",
+    "problem": "How do I compete with hotels in my area? They seem to have advantages.",
+    "solution": "Vacation rentals have unique advantages over hotels! Highlight what makes you special: 1) Full kitchens save guests money on dining, 2) More space and privacy than hotel rooms, 3) Unique, local experiences and character, 4) Often better value for families/groups, 5) Personalized host recommendations, 6) Homey amenities (laundry, yard, etc.). In your listing: emphasize unique features hotels can't offer, provide local guidebooks and personal touches, offer competitive pricing for extended stays, and showcase your property's character. Many travelers specifically choose vacation rentals over hotels. Play to your strengths!"
+  },
+  {
+    "id": "hs-044",
+    "category": "host-seller",
+    "problem": "Winter is coming and bookings always drop. How do I maintain income?",
+    "solution": "Seasonal optimization helps maintain year-round income: 1) Lower prices 20-30% for off-season competitiveness, 2) Target different guests - remote workers, long-term stays, 3) Highlight winter amenities (fireplace, hot tub, ski access), 4) Offer special packages (romantic weekends, holiday gatherings), 5) Update photos to show winter beauty, 6) Consider minimum stays to reduce turnover costs. Market creatively: 'Cozy winter retreat,' 'Perfect for remote work,' 'Holiday gathering space.' Some hosts offer winter monthly rentals to locals. Diversifying your guest base helps smooth seasonal variations. Every season has its appeal!"
+  },
+  {
+    "id": "hs-045",
+    "category": "host-seller",
+    "problem": "Guest complaining about WiFi speed but it works fine for me. What do I do?",
+    "solution": "WiFi complaints require tactful handling since needs vary: 1) First, verify your actual speeds using speed test sites, 2) Ensure your listing accurately states WiFi capabilities, 3) Check if multiple devices are causing slowdowns, 4) Router placement and age significantly impact performance, 5) Consider upgrading if speeds are under 25 Mbps. For the current guest: offer router reset instructions, suggest optimal device placement, provide mobile hotspot if available, or offer small compensation if WiFi was crucial for their stay. Update your listing to specify exact speeds to prevent future mismatched expectations."
+  },
+  {
+    "id": "hs-046",
+    "category": "host-seller",
+    "problem": "I want to convert to Instant Book but scared of losing control. Convince me!",
+    "solution": "Instant Book fears are common but the benefits are compelling! Here's why to switch: 1) Average 20-40% increase in bookings, 2) Better search ranking and visibility, 3) Guest requirements filter problematic bookings, 4) You can still cancel penalty-free if uncomfortable, 5) Guests love the convenience. Safeguards include: requiring government ID, positive reviews only, profile photo mandatory, and agreement to house rules. Most hosts report BETTER guests through Instant Book because the requirements screen out problems. Start with strict requirements and loosen as you gain confidence. The booking increase usually outweighs any concerns."
+  },
+  {
+    "id": "hs-047",
+    "category": "host-seller",
+    "problem": "My account was hacked and someone changed my payout info! Help!",
+    "solution": "Account security breach requires IMMEDIATE action! Do this now: 1) Change your password immediately using a strong, unique password, 2) Check and correct your payout method in dashboard, 3) Review recent payouts for any fraudulent transfers, 4) Enable two-factor authentication in security settings, 5) Contact Acme support urgently about the breach. Support will: investigate unauthorized access, reverse any fraudulent payouts, secure your account, and help recover any losses. Going forward: use unique passwords, enable 2FA always, regularly monitor account activity, and never share login credentials. Quick action minimizes damage."
+  },
+  {
+    "id": "hs-048",
+    "category": "host-seller",
+    "problem": "I forgot to block holiday dates and now have a booking. Family is upset!",
+    "solution": "This is a difficult situation balancing family and business commitments. Your options: 1) Contact the guest honestly explaining the mistake, offer full refund plus help finding alternatives, 2) See if family can adjust plans or use alternate dates, 3) Consider hiring a co-host to manage just this booking, 4) Accept the cancellation penalties if you must prioritize family, 5) Offer the guest significant compensation to voluntarily cancel. While penalties apply for host cancellations, family emergencies matter. Going forward: block all important dates immediately, set calendar reminders for annual events, and consider using a booking buffer around holidays."
+  },
+  {
+    "id": "hs-049",
+    "category": "host-seller",
+    "problem": "Guests keep checking out late without asking. It's messing up my cleaning schedule.",
+    "solution": "Unauthorized late checkouts disrupt operations and need firm handling: 1) Add clear checkout time reminders in your check-in message, 2) Send automatic checkout reminder night before via scheduled messages, 3) Include late checkout fees in house rules ($50/hour is common), 4) Install smart locks that deactivate at checkout time, 5) Build buffer time between bookings. For current situations: document late checkouts, charge fees through Resolution Center, mention in reviews to warn other hosts. Clear communication prevents most issues: 'Checkout is 11 AM sharp to allow cleaning for next guests. Late checkout must be arranged in advance.'"
+  },
+  {
+    "id": "hs-050",
+    "category": "host-seller",
+    "problem": "Local hosts are undercutting prices drastically. How do I compete?",
+    "solution": "Competing on price alone is a losing strategy. Instead, focus on value: 1) Highlight unique amenities others don't offer, 2) Provide superior guest experience and communication, 3) Invest in professional photos that stand out, 4) Accumulate stellar reviews through great service, 5) Target specific niches (pet-friendly, romantic, family-oriented). Don't match unsustainably low prices. Instead: emphasize your property's unique value, maintain quality standards, build repeat guest base, and consider different length-of-stay strategies. Some competitors price unsustainably and won't last. Focus on being the best, not the cheapest."
+  },
+  {
+    "id": "hs-051",
+    "category": "host-seller",
+    "problem": "I'm burning out from hosting. It's more work than expected. Any advice?",
+    "solution": "Host burnout is real and addressing it preserves your business! Consider these solutions: 1) Hire a co-host to handle guest communication (20-25% typical fee), 2) Use automated messaging for routine communications, 3) Employ professional cleaning services exclusively, 4) Take periodic breaks by blocking calendar, 5) Raise prices to reduce bookings but maintain income. Streamline operations: create detailed house manuals, install self-check-in systems, build reliable vendor network, and set boundaries on guest requests. Many successful hosts transition to semi-passive management. It's okay to work less and earn slightly less for better life balance."
+  },
+  {
+    "id": "hs-052",
+    "category": "host-seller",
+    "problem": "Guest is extending their stay day by day. This is frustrating to manage!",
+    "solution": "Serial extensions disrupt planning and should be managed firmly: 1) Set a policy requiring 48-hour notice for extensions, 2) Offer weekly/monthly rates to incentivize longer initial bookings, 3) Explain that last-minute extensions may not be possible, 4) Block calendars further out if this continues, 5) Charge premium rates for day-of extensions. Communicate clearly: 'I'm happy to accommodate extensions with advance notice, but day-of requests impact other bookings. Please book your full intended stay upfront.' Consider requiring minimum extension periods (3+ nights) to reduce administrative burden. Your time and planning matter too."
+  },
+  {
+    "id": "hs-053",
+    "category": "host-seller",
+    "problem": "My property management company is doing a terrible job. Can I switch mid-season?",
+    "solution": "Yes, you can switch property managers, but plan carefully: 1) Review your management contract for termination terms, 2) Document all performance issues thoroughly, 3) Interview new managers while current one is active, 4) Ensure smooth transition of keys, supplies, vendor contacts, 5) Update your co-host settings in Acme dashboard. For the transition: notify upcoming guests of management change, transfer all property access and information, update emergency contacts, and monitor closely during switch. Many hosts find individual co-hosts more reliable than large management companies. Take control of your business success!"
+  },
+  {
+    "id": "hs-054",
+    "category": "host-seller",
+    "problem": "I want to require ID verification but worried it'll reduce bookings. Thoughts?",
+    "solution": "ID verification actually IMPROVES your hosting experience! Here's why to require it: 1) Significantly reduces problematic guests, 2) Many guests prefer hosts who verify for mutual safety, 3) Protects you legally and for insurance, 4) Shows you're a professional host, 5) Required for Instant Book anyway. In reality: serious travelers have no issue providing ID, it filters out potential party throwers, and quality over quantity for bookings. Set the requirement in your booking settings. Most experienced hosts won't accept guests WITHOUT verified ID. It's basic security that guests understand."
+  },
+  {
+    "id": "hs-055",
+    "category": "host-seller",
+    "problem": "The city just banned short-term rentals. What happens to my Acme income?",
+    "solution": "Rental bans are challenging but you have options: 1) Verify the exact regulations - some allow 30+ day rentals, 2) Check if existing bookings are grandfathered, 3) Consider transitioning to medium-term rentals (30-90 days), 4) Join local host associations fighting regulations, 5) Explore hosting in nearby permitted areas. For existing bookings: honor them if legally allowed, help guests relocate if necessary, and document everything for potential penalty waivers. Many hosts successfully pivot to monthly rentals for traveling professionals. Consider selling to investors interested in compliant rental strategies. Stay informed on regulation changes."
+  },
+  {
+    "id": "hs-056",
+    "category": "host-seller",
+    "problem": "Guest found my personal Facebook and is messaging me there. This is creepy.",
+    "solution": "Boundary violations require firm, professional response: 1) Do NOT respond on personal social media, 2) Message them on Acme platform stating all communication must stay there, 3) Block them on personal social media if needed, 4) Document this behavior in case of escalation, 5) Report to Acme support if they persist. Maintain privacy by: using a hosting-specific phone/email, limiting personal info in listings, keeping social media private, and using a business name when possible. Guest stalking behavior is unacceptable and reportable. Your privacy and safety matter."
+  },
+  {
+    "id": "hs-057",
+    "category": "host-seller",
+    "problem": "I want to start charging pet fees. Current listing says pets OK. How to transition?",
+    "solution": "You can absolutely add pet fees going forward! Here's how to transition smoothly: 1) Update your listing to include pet fees immediately, 2) Honor existing bookings without fees (they booked under old terms), 3) Set reasonable pet fees ($20-50/night or $75-150 flat fee), 4) Clearly state what the fee covers (extra cleaning), 5) Consider different fees for different pets. In your update: be specific about pet types allowed, number limits, and any restrictions. Message future guests with pets about the new fee structure. Most pet owners expect and accept reasonable fees. This helps cover additional cleaning and potential wear."
+  },
+  {
+    "id": "hs-058",
+    "category": "host-seller",
+    "problem": "My hot tub maintenance is expensive. Can I charge an extra fee for hot tub use?",
+    "solution": "Yes, optional amenity fees are acceptable when clearly disclosed! Here's how: 1) Add 'Hot Tub Fee' to your additional charges section, 2) Make it optional - guests choose to pay for access, 3) Typical fees are $25-50/night or flat $100-200, 4) Clearly explain the fee covers chemicals, heating, maintenance, 5) Provide hot tub rules and waiver. Alternative approach: increase overall nightly rates to cover costs and market as 'hot tub included.' Some hosts find optional fees reduce maintenance since not all guests use it. Either way, transparency is key - surprise fees hurt reviews."
+  },
+  {
+    "id": "hs-059",
+    "category": "host-seller",
+    "problem": "Three guests have complained about the mattress. Do I really need to replace it?",
+    "solution": "Three complaints about the same issue indicates a real problem requiring action! Here's why mattress quality matters: 1) Sleep quality dramatically impacts reviews, 2) Uncomfortable beds are mentioned in negative reviews, 3) It's a relatively small investment for huge satisfaction gains, 4) Good mattresses last 7-10 years, 5) Mid-range quality is usually sufficient. Consider: buying a highly-rated online mattress (often have trial periods), adding a quality mattress topper temporarily, and checking if bed frame also needs updating. Guest comfort directly correlates with ratings. Don't let a bad mattress tank your reviews!"
+  },
+  {
+    "id": "hs-060",
+    "category": "host-seller",
+    "problem": "Utility bills are crazy high from guests running AC constantly. Help!",
+    "solution": "High utility costs from guest usage can be managed several ways: 1) Install a smart thermostat with limits (68-78°F range), 2) Add clear energy usage guidelines to house rules, 3) Include reasonable usage in price, charge for excessive use, 4) Raise rates during high-usage seasons to cover costs, 5) Consider flat utility fees for longer stays. Many hosts use smart home technology to monitor and control usage remotely. You can also: improve insulation to reduce costs, educate guests about energy conservation, or switch to more efficient HVAC systems. Build expected utility costs into your pricing model."
+  },
+  {
+    "id": "hs-061",
+    "category": "host-seller",
+    "problem": "International guest's payment is pending. It's been 4 days. Is this normal?",
+    "solution": "International payments can take longer due to additional processing: 1) International transactions undergo extra fraud screening, 2) Currency conversion adds processing time, 3) Different banking systems cause delays, 4) 5-7 business days is not uncommon, 5) Check if payment shows 'pending' vs 'failed'. As long as the booking is confirmed and payment shows pending, the guest is approved to stay. You'll receive payment once processing completes. If concerned: contact support with booking details, verify guest has confirmed reservation, and note that payouts may also take longer for international bookings."
+  },
+  {
+    "id": "hs-062",
+    "category": "host-seller",
+    "problem": "Guest wants to see the property before booking. Should I allow this?",
+    "solution": "Property tours before booking are generally NOT recommended for several reasons: 1) Safety concerns with strangers touring your property, 2) Time-consuming with low conversion rates, 3) Goes against platform booking model, 4) Your calendar might change before they decide, 5) Detailed photos and virtual tours serve this purpose. Instead, offer: comprehensive photo gallery, video walkthrough if available, detailed answers to specific questions, and precise property descriptions. Most serious guests book based on online information. Those insisting on tours often aren't serious bookers. Protect your time and safety."
+  },
+  {
+    "id": "hs-063",
+    "category": "host-seller",
+    "problem": "My first guest review was terrible and now I'm not getting bookings. Can I recover?",
+    "solution": "One bad review isn't fatal - you can definitely recover! Here's your comeback strategy: 1) Write a professional, factual response to the review, 2) Address the specific issues they raised, 3) Explain improvements you've made, 4) Consider offering a discount to next few guests, 5) Focus on earning multiple positive reviews quickly. Recovery tactics: ask friends/family to book and leave honest reviews, ensure next guests have absolutely perfect stays, go above and beyond with amenities/communication, and be patient - one bad review's impact diminishes with more positive ones. Most guests understand everyone starts somewhere."
+  },
+  {
+    "id": "hs-064",
+    "category": "host-seller",
+    "problem": "Local host group says I'm charging too little and hurting everyone. Am I?",
+    "solution": "Pricing strategy is ultimately your business decision, but consider the community impact: 1) Unsustainably low prices can devalue the market, 2) Ensure you're covering all costs plus fair profit, 3) Low prices might attract problematic budget guests, 4) Quality service deserves fair compensation, 5) Racing to the bottom hurts everyone. Reevaluate your pricing: calculate true costs including time, research competitor amenities not just price, and consider raising rates gradually. Sustainable pricing benefits everyone long-term. You can be competitive without being the cheapest. Focus on value, not just price."
+  },
+  {
+    "id": "hs-065",
+    "category": "host-seller",
+    "problem": "Guest is live-streaming from my property. Is this allowed?",
+    "solution": "Commercial use of your property requires explicit permission! Here's how to handle it: 1) Check if they disclosed commercial use in booking, 2) Most standard bookings don't include commercial rights, 3) You can request they stop or negotiate commercial rates, 4) Document the activity for potential extra charges, 5) Update house rules to address filming/streaming. You have the right to: charge commercial rates for business use, require additional insurance for filming, restrict or prohibit commercial activities, and protect your property's image rights. Add clear terms about commercial use to prevent future issues."
+  },
+  {
+    "id": "hs-066",
+    "category": "host-seller",
+    "problem": "I'm getting inquiries in Spanish but I only speak English. What do I do?",
+    "solution": "Language barriers can be managed professionally: 1) Use translation tools (Google Translate, DeepL) for basic communication, 2) Keep messages simple and clear, 3) Consider hiring a bilingual co-host for diverse markets, 4) Use translation apps during phone calls if needed, 5) Provide translated house rules and check-in instructions. Many successful hosts serve international guests using: translated welcome materials, picture-based instructions, translation apps for real-time help, and cultural sensitivity. Don't miss bookings due to language - tools make communication possible. Some of the best guests come from international markets!"
+  },
+  {
+    "id": "hs-067",
+    "category": "host-seller",
+    "problem": "My calendar was hacked and all my peak dates were blocked. Lost thousands!",
+    "solution": "Calendar hacking requires immediate action and investigation: 1) Change your password immediately to secure account, 2) Enable two-factor authentication now, 3) Document all incorrectly blocked dates with screenshots, 4) Contact Acme support urgently about the breach, 5) Calculate lost revenue from the blocked dates. Support will: investigate the unauthorized access, potentially restore your calendar, help recover lost bookings if possible, and strengthen your account security. Pursue compensation for provable losses. Always use strong passwords and 2FA to prevent hacking. Consider legal action for significant losses."
+  },
+  {
+    "id": "hs-068",
+    "category": "host-seller",
+    "problem": "Guest brought 8 people but only booked for 4. What are my options?",
+    "solution": "Occupancy violations are serious safety and liability issues! Take immediate action: 1) Document the violation with photos/video if possible, 2) Message guest through platform about the violation, 3) Inform them of additional guest fees or ask extras to leave, 4) You have grounds for eviction if they refuse compliance, 5) File for additional charges through Resolution Center. Safety limits exist for good reasons - fire codes, septic capacity, insurance coverage. Don't tolerate overoccupancy. Charge for all extra guests or terminate their stay. Include this violation in your review to warn other hosts."
+  },
+  {
+    "id": "hs-069",
+    "category": "host-seller",
+    "problem": "My listing has been pending review for a week. Is this normal?",
+    "solution": "While reviews typically take 24-48 hours, delays can occur. Here's what to do: 1) Check your email (including spam) for any requests for additional information, 2) Ensure all required fields are complete in your listing, 3) Verify your identity documents are uploaded, 4) Look for any policy compliance issues, 5) Contact host support for status update. Common delays caused by: missing permit numbers, unclear photos, incomplete safety information, or high volume periods. If it's been over a week, definitely follow up. Your listing might be stuck in the queue and need manual review."
+  },
+  {
+    "id": "hs-070",
+    "category": "host-seller",
+    "problem": "Thinking about hiring a property manager. What percentage is fair?",
+    "solution": "Property management fees vary based on services provided: 1) Basic co-hosting (communication only): 10-15%, 2) Full service (including cleaning coordination): 20-25%, 3) Complete management with maintenance: 25-35%, 4) Premium services in high-end markets: up to 40%. Consider what's included: guest communication, cleaning coordination, maintenance management, price optimization, and emergency response. Interview multiple managers, check references from other hosts, and start with a trial period. Many hosts find 20-25% fair for comprehensive service. The right manager should increase your revenue enough to offset their fee."
+  },
+  {
+    "id": "hs-071",
+    "category": "host-seller",
+    "problem": "Guest complained about noise from upstairs neighbors. I don't control that!",
+    "solution": "While you can't control neighbors, you can manage expectations and responses: 1) Address the issue in your listing ('Urban location with typical city sounds'), 2) Provide white noise machines or fans, 3) Offer earplugs in your amenities, 4) Speak with neighbors about quiet hours if possible, 5) Express empathy to guest while explaining limitations. For current guest: apologize for the disturbance, offer solutions (room change if available, white noise), and consider small compensation for the inconvenience. Update listing to set accurate expectations. Some hosts successfully build neighbor relationships to minimize issues."
+  },
+  {
+    "id": "hs-072",
+    "category": "host-seller",
+    "problem": "Do I need special insurance beyond Acme's Host Protection?",
+    "solution": "While Host Protection provides $1M coverage, additional insurance is strongly recommended: 1) Your homeowner's policy likely excludes short-term rentals, 2) Specialized short-term rental insurance fills gaps, 3) Covers things Host Protection doesn't (maintenance issues, some liabilities), 4) Provides business interruption coverage, 5) Costs typically $500-2000 annually. Popular providers include Proper, CBIZ, or Safely. Discuss with your insurance agent about: converting to landlord policy, adding business liability coverage, or getting dedicated short-term rental policy. Don't risk gaps in coverage - Host Protection isn't comprehensive insurance."
+  },
+  {
+    "id": "hs-073",
+    "category": "host-seller",
+    "problem": "My smart lock died and guests are arriving tonight. Emergency help!",
+    "solution": "Smart lock failures require immediate backup plans: 1) First, try replacing batteries - most common issue, 2) Check if there's a physical key override option, 3) Can you meet guests personally for check-in?, 4) Install a temporary lockbox ASAP from hardware store, 5) Contact a 24-hour locksmith if needed. For tonight: meet guests or have someone do so, provide temporary access solution, and communicate proactively about the issue. Tomorrow: install backup entry method, keep spare batteries on-site, and consider having both smart and traditional locks. Always have contingency plans for tech failures!"
+  },
+  {
+    "id": "hs-074",
+    "category": "host-seller",
+    "problem": "Guests are complaining my place doesn't look like the photos. But it does!",
+    "solution": "Perception gaps between photos and reality need addressing: 1) Review your photos objectively - are they overselling?, 2) Check if lighting/angles create unrealistic expectations, 3) Ensure photos are current (seasons, furniture, etc.), 4) Look for wide-angle lens distortion making spaces seem larger, 5) Add clarifying captions about sizes/features. To prevent issues: use realistic photography angles, include photos showing true scale, update seasonally if appearance changes, mention any limitations in description, and consider 360-degree photos for accuracy. Guest expectations must align with reality for good reviews."
+  },
+  {
+    "id": "hs-075",
+    "category": "host-seller",
+    "problem": "Local news featured crimes near my property. Bookings dropped. How do I recover?",
+    "solution": "Addressing safety perceptions requires proactive communication: 1) Don't ignore the issue - address it professionally, 2) Highlight your specific safety features (locks, lighting, etc.), 3) Emphasize the property's secure aspects, 4) Share positive guest experiences about feeling safe, 5) Consider adding security amenities if needed. In your listing: mention security features prominently, provide honest area context, share local crime statistics if favorable, and offer safety tips for the area. Many guests appreciate honest communication. Focus on what you control - your property's safety. Consider temporary price adjustments while perception recovers."
+  },
+  {
+    "id": "hs-076",
+    "category": "host-seller",
+    "problem": "I want to add a co-host but worried about giving access to my account.",
+    "solution": "Co-host permissions can be customized for security! Here's how to add safely: 1) You control exactly what access they have, 2) Limit permissions to only necessary functions, 3) Common permissions: messaging, calendar viewing, booking management, 4) Keep financial access restricted to yourself, 5) You can revoke access anytime. Best practices: start with minimal permissions, increase gradually as trust builds, monitor their activity initially, use written agreements outlining responsibilities, and maintain owner access to everything. Good co-hosts respect boundaries. The system is designed for secure collaboration."
+  },
+  {
+    "id": "hs-077",
+    "category": "host-seller",
+    "problem": "My reviews are good (4.6) but I'm still not getting Superhost. Why?",
+    "solution": "Superhost requires meeting ALL criteria, not just ratings. Let's check each requirement: 1) 4.8+ rating (you're at 4.6 - need improvement), 2) 90%+ response rate, 3) Less than 1% cancellation rate, 4) 10+ stays in the past year, 5) Zero policy violations. Focus on improving ratings: analyze lower reviews for patterns, enhance common complaint areas, go above-and-beyond for next guests, and aim for consistent 5-star experiences. Small improvements in service can boost ratings quickly. Also verify you're meeting the other criteria in your Performance dashboard."
+  },
+  {
+    "id": "hs-078",
+    "category": "host-seller",
+    "problem": "Guest is asking for my WiFi password before booking. Seems suspicious.",
+    "solution": "This is definitely suspicious - never share access credentials before booking! This could be: 1) Attempting to use your internet without staying, 2) Checking for security vulnerabilities, 3) Planning inappropriate activities. Respond professionally: 'WiFi details are provided to confirmed guests at check-in. I can confirm high-speed internet is available.' Report suspicious inquiries to Acme. Legitimate guests understand security protocols. Pre-booking requests for passwords, alarm codes, or specific access details are red flags. Protect your property and network security."
+  },
+  {
+    "id": "hs-079",
+    "category": "host-seller",
+    "problem": "My payout method failed and payment bounced back. When will I get paid?",
+    "solution": "Failed payouts are frustrating but fixable! Here's the timeline: 1) Failed payment returns to Acme (3-5 days), 2) You'll receive notification to update payment method, 3) Once updated, payout reprocesses next business day, 4) Add 3-5 days for bank delivery. Total: 7-10 days typically. To fix: verify all account details exactly match bank records, consider switching to a more reliable method, and ensure account can receive ACH deposits. Direct deposit is usually most reliable. Contact support if payout doesn't reprocess after updating details."
+  },
+  {
+    "id": "hs-080",
+    "category": "host-seller",
+    "problem": "Previous guest left illegal drugs. Current guest found them. Nightmare!",
+    "solution": "This is a serious situation requiring immediate action: 1) Have current guest secure the area and not touch anything, 2) Document with photos for evidence, 3) Apologize profusely to current guest - offer relocation if desired, 4) Contact local police for proper disposal, 5) Report previous guest to Acme immediately. You may need to: provide police report to Acme, compensate current guest for the distress, and deep clean entire property. This is unacceptable and the previous guest should be banned. Your current guest's comfort and safety are priority."
+  },
+  {
+    "id": "hs-081",
+    "category": "host-seller",
+    "problem": "I offer monthly discounts but guest booked 29 days to avoid it. Can I do anything?",
+    "solution": "While frustrating, guests can book any available dates. However, you can adjust your strategy: 1) Set minimum stays during certain periods, 2) Price individual nights to incentivize longer bookings, 3) Adjust your monthly threshold to 28 days, 4) Consider weekly discounts to capture these bookings, 5) Message guests asking if they need additional nights. You can't force the discount retroactively, but you can: politely offer to extend their stay, adjust your pricing strategy going forward, and use dynamic pricing to prevent gaming. Some hosts remove discounts if they see pattern abuse."
+  },
+  {
+    "id": "hs-082",
+    "category": "host-seller",
+    "problem": "Guest's emotional support animal damaged furniture. Can I charge for this?",
+    "solution": "ESA damage is chargeable like any other property damage: 1) Document all damage thoroughly with photos, 2) Get repair/replacement estimates, 3) File claim through Resolution Center within 48 hours, 4) ESAs are not exempt from damage responsibility, 5) Guest is liable for their animal's actions. While you may need to accept ESAs depending on local laws, damage compensation still applies. Be factual and professional in your claim. Include all documentation. The emotional support designation doesn't waive financial responsibility for property damage. Treat it as any other damage claim."
+  },
+  {
+    "id": "hs-083",
+    "category": "host-seller",
+    "problem": "My listing keeps getting flagged as duplicate but I only have one. Help!",
+    "solution": "False duplicate flags need resolution with support: 1) Contact host support immediately about the error, 2) Provide your single listing ID and details, 3) Check if someone else listed your property fraudulently, 4) Ensure you don't have forgotten draft listings, 5) Verify no co-host created additional listing. This might be: technical glitch, someone using your photos illegally, or old listing reactivating. Support can investigate and resolve. Meanwhile, document your ownership, gather property documents, and monitor for unauthorized use of your content. False flags should be corrected quickly with proper documentation."
+  },
+  {
+    "id": "hs-084",
+    "category": "host-seller",
+    "problem": "Want to sell gift certificates for my cabin. Does Acme support this?",
+    "solution": "While Acme doesn't have built-in gift certificates, you can create your own system: 1) Create custom gift certificates with your branding, 2) Collect payment directly from gift buyers, 3) Provide unique codes to track certificates, 4) Recipients book normally, message you the code, 5) You can offer special perks or discounts. Track carefully: maintain spreadsheet of issued certificates, set expiration dates, clearly state terms, and honor them professionally. Some hosts successfully use this for additional revenue, especially during holidays. Consider partnering with local businesses for package deals."
+  },
+  {
+    "id": "hs-085",
+    "category": "host-seller",
+    "problem": "Superhost status disappeared overnight. I met all requirements! What happened?",
+    "solution": "Superhost status is evaluated quarterly, and several factors could cause loss: 1) Check if a recent review dropped your rating below 4.8, 2) Verify your response rate stayed above 90%, 3) Confirm no cancellations pushed you over 1%, 4) Ensure you maintained 10+ stays annually, 5) Check for any policy violations. In your Performance tab: review exact metrics at evaluation time, look for any warnings or violations, and calculate your rolling averages. Sometimes one bad review or missed response can tip the scales. You can re-earn status next quarter by addressing the specific issue."
+  },
+  {
+    "id": "hs-086",
+    "category": "host-seller",
+    "problem": "Multiple guests asking about long-term stays. Should I pivot my business model?",
+    "solution": "Market demand is telling you something valuable! Consider the benefits of long-term stays: 1) Steadier income with less turnover, 2) Lower cleaning and maintenance costs, 3) Reduced wear on property, 4) Often better guests (professionals, relocating families), 5) Less day-to-day management needed. To test: offer one monthly booking experimentally, adjust pricing for longer stays, create lease agreements for 30+ days, and check local regulations for long-term. Many hosts find hybrid models work best - accepting both short and long-term. Follow the demand while maintaining flexibility."
+  },
+  {
+    "id": "hs-087",
+    "category": "host-seller",
+    "problem": "Cleaner is constantly asking for raises. Already paying $150 per turnover. Fair?",
+    "solution": "Cleaning costs vary by market and property size. Evaluate fairly: 1) Research local cleaning rates for similar properties, 2) Consider the work involved (size, amenities, standards), 3) Factor in reliability and quality, 4) Good cleaners are worth retaining, 5) Poor cleaning tanks reviews instantly. $150 might be reasonable for larger properties or high-standard cleans. Options: negotiate based on performance, offer bonuses for maintaining standards, consider backup cleaners for competition, or adjust cleaning fee to guests accordingly. Reliable, quality cleaning is crucial - sometimes paying more saves money long-term through better reviews."
+  },
+  {
+    "id": "hs-088",
+    "category": "host-seller",
+    "problem": "Guest requesting partial refund due to construction noise. I didn't know about it.",
+    "solution": "Unknown construction is frustrating but guest impact is real. Handle professionally: 1) Apologize for the unexpected disturbance, 2) Verify the construction timing and scope, 3) Document that you weren't notified, 4) Offer reasonable compensation based on impact, 5) Update listing immediately about construction. Fair resolution might be: 10-20% refund for significant daytime noise, more if it severely impacted their stay, or future stay credit instead of cash. Going forward: build neighbor relationships for advance notice, check local permits regularly, and add construction disclaimers if in urban areas."
+  },
+  {
+    "id": "hs-089",
+    "category": "host-seller",
+    "problem": "Worried about squatters with long-term bookings. How do I protect myself?",
+    "solution": "Squatter concerns are valid but manageable with proper precautions: 1) Screen long-term guests thoroughly (ID, employment, references), 2) Use proper rental agreements for 30+ day stays, 3) Never accept cash or off-platform payments, 4) Maintain clear transient rental status, 5) Know your local tenant laws. Protective measures: require guests to acknowledge transient status, don't allow mail delivery, maintain hotel-like services, and limit stays under tenant-right thresholds. Most Acme long-term guests are professionals, not squatter risks. Proper documentation prevents issues. Consult local attorney for area-specific protections."
+  },
+  {
+    "id": "hs-090",
+    "category": "host-seller",
+    "problem": "New host next door is copying my entire listing description. Plagiarism!",
+    "solution": "Content theft is frustrating and actionable: 1) Screenshot their listing showing your copied content, 2) Document your original posting date, 3) Report to Acme support with evidence, 4) Send cease-and-desist message through platform, 5) Focus on what makes you unique beyond words. Acme takes intellectual property seriously and may require them to change. Meanwhile: update your listing with fresh content, add unique details they can't copy, and focus on superior hosting that descriptions can't replicate. Your reviews and experience matter more than copied words. Stay professional while protecting your work."
+  },
+  {
+    "id": "hs-091",
+    "category": "host-seller",
+    "problem": "Power outage during guest stay. They want full refund. Is this reasonable?",
+    "solution": "Power outages are typically 'acts of God' but guest experience matters: 1) Document the outage (utility company notices, duration), 2) Check what amenities were affected, 3) Consider if you provided alternatives (flashlights, updates), 4) Evaluate impact on their stay, 5) Partial compensation may be fair. Reasonable responses: no refund for short outages (under 4 hours), partial refund for extended outages affecting stay, full refund if truly uninhabitable, or future stay credit as compromise. Your response during the outage matters - proactive communication and support reduce refund demands. Building goodwill preserves reviews."
+  },
+  {
+    "id": "hs-092",
+    "category": "host-seller",
+    "problem": "I need surgery and will be unavailable for 6 weeks. Should I close my listing?",
+    "solution": "No need to close! Here are better options for medical leave: 1) Hire a temporary co-host to manage operations, 2) Block calendar for new bookings during recovery, 3) Honor existing bookings with co-host help, 4) Set up automated messaging for common questions, 5) Have emergency contacts ready for issues. Many hosts successfully operate remotely. Prepare: detailed property manual, reliable cleaning crew, local handyman on call, and clear co-host instructions. You can maintain income during recovery with proper systems. Consider this a test run for more passive income strategies. Health comes first but business can continue."
+  },
+  {
+    "id": "hs-093",
+    "category": "host-seller",
+    "problem": "Acme+ guest expecting special treatment. What am I supposed to provide?",
+    "solution": "Acme+ is a guest membership, not a host obligation for extras. However, consider that Acme+ guests often: 1) Book more frequently, 2) Leave better reviews, 3) Spend more on travel, 4) Appreciate good service. You're NOT required to provide anything special, but small touches build loyalty: welcome message acknowledging their membership, flexibility on requests when possible, or quality amenities they'll appreciate. Think of them as frequent travelers who value good experiences. No special requirements, but treating VIP guests well benefits your business through repeat bookings and referrals."
+  },
+  {
+    "id": "hs-094",
+    "category": "host-seller",
+    "problem": "Guest threatening bad review unless I refund them. This is extortion!",
+    "solution": "Review extortion violates Acme policies! Never give in to threats: 1) Screenshot all threatening messages immediately, 2) Do NOT offer refunds based on review threats, 3) Report to Acme support as extortion, 4) Continue professional communication, 5) Document all interactions. Acme takes extortion seriously and can remove retaliatory reviews. Respond calmly: 'I understand your concerns. Please work with me to resolve issues properly. Threatening reviews violates Acme policies.' Support will investigate and protect you from unfair reviews. Stand firm against blackmail - giving in encourages more bad behavior."
+  },
+  {
+    "id": "hs-095",
+    "category": "host-seller",
+    "problem": "Want to create packages (cabin + activities). Is this allowed?",
+    "solution": "Creating experience packages can differentiate your listing! Here's how to do it properly: 1) Partner with local activity providers, 2) Include package details in your description, 3) Price packages as separate offerings, 4) Ensure proper licensing for any tours/activities, 5) Maintain clear terms about weather/cancellations. Popular packages: cabin + ski passes, romantic getaways with dinner reservations, adventure packages with guided tours, or wellness retreats with spa services. Always clarify what's included, maintain liability insurance, and deliver professionally. Unique experiences command premium prices and create memorable stays that earn stellar reviews."
+  },
+  {
+    "id": "hs-096",
+    "category": "host-seller",
+    "problem": "My area is becoming oversaturated with rentals. How do I stand out?",
+    "solution": "In saturated markets, differentiation is crucial: 1) Identify and serve a specific niche (pet-friendly, romantic, family), 2) Offer unique amenities others don't (hot tub, game room, kayaks), 3) Provide exceptional service and communication, 4) Create Instagram-worthy spaces for social sharing, 5) Build direct booking repeat guests. Focus on: professional photos that pop, memorable local experiences, consistent 5-star service, competitive but sustainable pricing, and faster response times than competitors. In crowded markets, being average means invisibility. Excel at something specific. Quality and service always win over commodity competition."
+  },
+  {
+    "id": "hs-097",
+    "category": "host-seller",
+    "problem": "Guest damaged septic system by flushing improper items. $3000 repair!",
+    "solution": "Major system damage requires thorough documentation: 1) Get detailed report from septic company about cause, 2) Document what items caused damage if possible, 3) File claim immediately through Resolution Center, 4) Include all invoices and professional assessments, 5) This exceeds normal wear - guest responsibility. Host Protection covers up to $1M in damages. Septic damage from misuse is claimable. Future prevention: add clear septic rules in house manual, provide bathroom signs about flushing, mention in check-in message, and consider septic-safe products only. This significant damage should be fully covered with proper documentation."
+  },
+  {
+    "id": "hs-098",
+    "category": "host-seller",
+    "problem": "Local government wants list of all my guests for tax purposes. Must I comply?",
+    "solution": "Government requests require careful handling: 1) Verify the request is legitimate (official letterhead, valid statute), 2) Understand exactly what they're requesting and why, 3) Consult with local attorney about requirements, 4) Check Acme's privacy policies about sharing guest data, 5) Many jurisdictions only need aggregate numbers, not names. Generally: you may need to provide booking counts and revenue for tax purposes, but guest personal information is protected. Work with Acme's government relations team if needed. Ensure compliance while protecting guest privacy. Professional legal advice recommended for your specific jurisdiction."
+  },
+  {
+    "id": "hs-099",
+    "category": "host-seller",
+    "problem": "Considering selling hosting courses based on my success. Conflict with Acme?",
+    "solution": "Teaching others about hosting is generally allowed and encouraged! Consider: 1) Review Acme's terms for any restrictions, 2) Don't share proprietary Acme information, 3) Focus on your strategies and experiences, 4) Be honest about results and challenges, 5) Building the host community benefits everyone. Many successful hosts monetize knowledge through: courses, consulting, local host meetups, or YouTube channels. Ensure you're not violating any terms, not promising unrealistic results, and staying ethical in teachings. Sharing knowledge strengthens the entire short-term rental industry. Success teaching can complement hosting income."
+  },
+  {
+    "id": "hs-100",
+    "category": "host-seller",
+    "problem": "After 5 years hosting, I'm ready to retire. How do I wind down properly?",
+    "solution": "Congratulations on your successful hosting journey! Here's how to retire gracefully: 1) Honor all existing bookings or help guests relocate, 2) Block calendar for new bookings 2-3 months out, 3) Notify repeat guests about your retirement, 4) Consider selling your established listing to another host, 5) Download all financial records for taxes. Options include: transitioning to long-term rental, selling property with Acme business included, training a successor to take over, or keeping listing dormant for possible return. Archive your reviews and success metrics - you've built something valuable. Thank your guests, team, and community. Exit professionally to preserve your reputation and relationships."
+  }
+]

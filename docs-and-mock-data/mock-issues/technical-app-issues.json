@@ -1,0 +1,602 @@
+[
+  {
+    "id": "ta-001",
+    "category": "technical-app",
+    "problem": "I can't log in! I know my password is correct but it keeps saying invalid credentials.",
+    "solution": "I understand how frustrating login issues can be. Let's troubleshoot this step by step: 1) First, ensure you're entering the correct email address - check for typos or extra spaces, 2) Try the 'Forgot Password' link to reset it, even if you think it's correct, 3) Clear your browser cache and cookies or app cache, 4) Try logging in from a different device or browser to rule out device issues, 5) Your account may be locked for security after multiple attempts - wait 30 minutes or contact support. If none of these work, your account may need manual verification."
+  },
+  {
+    "id": "ta-002",
+    "category": "technical-app",
+    "problem": "The app crashes every time I try to search for properties. Using iPhone 12.",
+    "solution": "App crashes are definitely frustrating! Let's fix this for your iPhone 12: 1) First, update to the latest app version in the App Store, 2) Restart your iPhone completely (hold power button, slide to power off), 3) Check that your iOS is 13.0 or higher for compatibility, 4) Delete and reinstall the app for a clean installation, 5) Check Settings > General > iPhone Storage to ensure you have at least 1GB free. If crashes persist after these steps, please report the bug through the app's feedback option with crash details so our team can investigate."
+  },
+  {
+    "id": "ta-003",
+    "category": "technical-app",
+    "problem": "I requested a password reset 3 times but haven't received any emails.",
+    "solution": "Missing password reset emails usually have a simple fix. Please check: 1) Your spam/junk folder - reset emails often get filtered there, 2) Make sure you're checking the right email account if you have multiple, 3) Each reset link expires in 1 hour - request a fresh one now, 4) Verify you're entering the exact email address associated with your account, 5) Add noreply@acmerentals.com to your contacts to prevent filtering. If you still don't receive it within 10 minutes, contact support with your account email so we can manually assist with the reset."
+  },
+  {
+    "id": "ta-004",
+    "category": "technical-app",
+    "problem": "Two-factor authentication code never arrives. I can't access my account!",
+    "solution": "Let's get you back into your account! For 2FA issues: 1) Ensure your phone number is entered correctly in your account (including country code), 2) Check if SMS messages are being delayed by your carrier, 3) Try the 'Voice Call' option instead of SMS for the code, 4) If you saved backup codes when setting up 2FA, use one of those, 5) Check if you're in an area with poor cell reception. If you have an authenticator app linked, use that instead. As a last resort, contact support with account verification details to temporarily disable 2FA."
+  },
+  {
+    "id": "ta-005",
+    "category": "technical-app",
+    "problem": "My account says it's locked due to suspicious activity. I haven't done anything wrong!",
+    "solution": "Account locks are frustrating but they're for your protection. Common triggers include: multiple failed login attempts, logging in from new locations/devices, unusual booking patterns, or payment issues. To unlock: 1) Check your email for a security notification with unlock instructions, 2) You may need to verify your identity by answering security questions, 3) Reset your password as a precaution, 4) Enable two-factor authentication for better security, 5) Contact support if you can't self-unlock - have ID ready for verification. This is likely a false positive from our security system."
+  },
+  {
+    "id": "ta-006",
+    "category": "technical-app",
+    "problem": "The Android app is running extremely slowly. Takes forever to load anything.",
+    "solution": "Let's speed up your Android app experience! Try these optimization steps: 1) Close all other apps to free up memory, 2) Go to Settings > Apps > Acme > Storage > Clear Cache (not data), 3) Check your internet connection speed, 4) Update to the latest app version in Google Play, 5) In app settings, try lowering image quality for faster loading, 6) Disable battery optimization for Acme app (Settings > Battery > App Battery Management). If still slow, restart your device completely. Older Android devices may need the 'Lite' version of our app for better performance."
+  },
+  {
+    "id": "ta-007",
+    "category": "technical-app",
+    "problem": "Search filters aren't working. I set them but results ignore my preferences.",
+    "solution": "Filter issues can be tricky. Let's troubleshoot: 1) We recommend using maximum 5 filters at a time - too many can conflict, 2) Some filter combinations are incompatible (the system should warn you), 3) Make sure to tap 'Apply' or 'Show Results' after setting filters, 4) Price ranges are inclusive - check your min/max values, 5) Try clearing all filters and adding them back one at a time to identify conflicts. Also pull down to refresh results after changing filters. If specific filters consistently fail, note which ones and report to our tech team."
+  },
+  {
+    "id": "ta-008",
+    "category": "technical-app",
+    "problem": "Website won't load at all. Just shows a blank white page.",
+    "solution": "A blank page usually indicates a browser issue. Let's fix this: 1) First, check if it's just our site - visit other websites to test your connection, 2) Try a different browser (Chrome, Safari, Firefox, or Edge), 3) Clear your browser cache and cookies for acmerentals.com, 4) Disable browser extensions, especially ad blockers, which can interfere, 5) Try loading in incognito/private browsing mode. Also ensure JavaScript is enabled in your browser settings. If you're using a work computer, corporate firewalls sometimes block travel sites - try from personal device."
+  },
+  {
+    "id": "ta-009",
+    "category": "technical-app",
+    "problem": "Push notifications stopped working. I'm missing important messages from hosts!",
+    "solution": "Missing notifications can impact your travel plans. Let's restore them: 1) Check device settings: Settings > Notifications > Acme - ensure all toggles are ON, 2) In the app, go to Settings > Notifications and verify they're enabled, 3) Make sure your phone isn't in Do Not Disturb mode, 4) Enable 'Background App Refresh' for Acme app, 5) Sometimes reinstalling the app resets notification permissions properly. Also check that you haven't accidentally muted specific conversations. If still not working, log out and back in to refresh your notification token."
+  },
+  {
+    "id": "ta-010",
+    "category": "technical-app",
+    "problem": "Map view is broken. Properties don't show up on the map at all.",
+    "solution": "Map issues usually relate to location services or data loading. Try these fixes: 1) Enable location services for Acme app in your device settings, 2) Zoom in and out on the map to trigger a refresh, 3) Click 'Redo search in area' button after moving the map, 4) Switch between map and list view to reset the display, 5) Check your internet connection - maps require good data speed. Sometimes clearing the app cache helps with map rendering. Note that GPS accuracy varies by device and location. If indoor, try near a window for better GPS signal."
+  },
+  {
+    "id": "ta-011",
+    "category": "technical-app",
+    "problem": "Can't download the app. App Store says it's not available in my region.",
+    "solution": "Regional availability can be limiting. Here are your options: 1) Acme app may not be released in all countries yet - check our website for supported regions, 2) Make sure your Apple ID or Google account is set to a supported country, 3) You can change your store region temporarily (be aware of payment method requirements), 4) VPNs won't help with app store restrictions, 5) Consider using our mobile website instead - it has full functionality. If you're traveling, you can switch your app store country to your destination to download. We're constantly expanding to new regions!"
+  },
+  {
+    "id": "ta-012",
+    "category": "technical-app",
+    "problem": "In-app messages won't send. They just show 'sending' forever.",
+    "solution": "Stuck messages are annoying when you need to communicate. Try these solutions: 1) Check your internet connection - switch between WiFi and cellular data, 2) Pull down to refresh the conversation, 3) Check if the recipient hasn't blocked you (rare but possible), 4) Ensure your message is within character limits and contains no prohibited content, 5) Force close the app and reopen to reset the connection. If a specific message is stuck, try copying the text, deleting the stuck message, and sending again. Sometimes server delays cause this - messages often send after a few minutes."
+  },
+  {
+    "id": "ta-013",
+    "category": "technical-app",
+    "problem": "My saved payment methods disappeared. I have to re-enter cards every time!",
+    "solution": "Disappearing payment methods are often a security feature, not a bug: 1) After 90 days of inactivity, we remove saved cards for security, 2) Make sure you're logged into the correct account, 3) Check if your payment method expired - expired cards are auto-removed, 4) Some security software blocks payment storage, 5) Re-add your payment method and check 'Save for future use'. For added convenience, consider using digital wallets like Apple Pay or Google Pay which don't expire. This security measure protects you from unauthorized use of stored payment methods."
+  },
+  {
+    "id": "ta-014",
+    "category": "technical-app",
+    "problem": "Calendar sync with Airbnb isn't working. Getting double bookings!",
+    "solution": "Calendar sync issues can cause serious problems! Let's fix this immediately: 1) Check that your calendar URLs haven't changed - regenerate them if needed, 2) Verify two-way sync is enabled in both platforms, 3) Normal sync delay is 15 minutes - immediate updates aren't expected, 4) Manually refresh the sync in your calendar settings, 5) Make sure the calendar URLs are correctly pasted without extra spaces. If sync is broken, temporarily block dates manually on both platforms until fixed. Some users find third-party sync tools more reliable for managing multiple platforms."
+  },
+  {
+    "id": "ta-015",
+    "category": "technical-app",
+    "problem": "App crashes when I try to upload photos for my listing. Can't complete setup!",
+    "solution": "Photo upload crashes are often related to file sizes or formats. Here's the fix: 1) Reduce photo file sizes - most phones take huge photos that can crash apps, 2) Upload one photo at a time instead of multiple, 3) Ensure photos are in JPEG or PNG format, not HEIC or RAW, 4) Check available storage on your device, 5) Try uploading through the website instead of the app. If using iPhone, go to Settings > Camera > Formats > Most Compatible. For immediate solution, email photos to support and we can upload them for you."
+  },
+  {
+    "id": "ta-016",
+    "category": "technical-app",
+    "problem": "Security warning appears saying the site isn't secure. Is it safe to book?",
+    "solution": "Security warnings need attention, but let's verify if it's legitimate: 1) Check the URL starts with https:// (not http://), 2) Look for the padlock icon in your browser address bar, 3) Ensure you're on acmerentals.com (not a phishing site with similar name), 4) Our SSL certificate is always valid - warnings might indicate browser issues, 5) Try a different browser or update your current one. Never enter payment info if the padlock is missing or broken. Legitimate Acme emails only come from @acmerentals.com domain. When in doubt, navigate directly to our site rather than clicking email links."
+  },
+  {
+    "id": "ta-017",
+    "category": "technical-app",
+    "problem": "Wishlist items keep disappearing. I save properties but they're gone later.",
+    "solution": "Disappearing wishlists are frustrating when planning trips! Here's what's happening: 1) Ensure you're logged in - wishlists don't save for guest browsing, 2) Check your internet connection when saving - poor connection may fail to sync, 3) Pull down to refresh your wishlist page, 4) Wishlists are device-specific if not logged in, 5) Properties may be removed by hosts and disappear from wishlists. Try creating named lists for better organization. If lists consistently disappear, contact support to check for account sync issues. We can often restore recently lost wishlists."
+  },
+  {
+    "id": "ta-018",
+    "category": "technical-app",
+    "problem": "Website display is all messed up. Text overlapping, buttons in wrong places.",
+    "solution": "Display issues usually have simple fixes: 1) Check your browser zoom level - press Ctrl/Cmd + 0 to reset to 100%, 2) Clear browser cache and reload the page, 3) Ensure JavaScript is enabled in browser settings, 4) Disable browser extensions, especially ad blockers that can break layouts, 5) Try incognito/private browsing mode to rule out extension conflicts. Also check if you're using a supported browser - we support the latest 2 versions of Chrome, Safari, Firefox, and Edge. Older browsers may not display correctly."
+  },
+  {
+    "id": "ta-019",
+    "category": "technical-app",
+    "problem": "I can't find the bug report feature. The app has issues but no way to report!",
+    "solution": "We definitely want to hear about bugs! Here's where to find reporting options: 1) In the app, go to Profile > Help > Report a Problem, 2) Shake your phone while in the app to trigger bug reporter (on most versions), 3) Email directly to tech@acmerentals.com with details, 4) Include: device type, OS version, app version, screenshots, and steps to reproduce, 5) Be specific about error messages and when the problem occurs. Our beta testing program (sign up in account settings) gives early access to fixes. Thanks for helping improve the app!"
+  },
+  {
+    "id": "ta-020",
+    "category": "technical-app",
+    "problem": "Search shows 'No results' even for popular destinations like Paris. Something's broken!",
+    "solution": "When search returns no results for obviously popular destinations, try these fixes: 1) Check your spelling - even small typos can cause issues, 2) Clear all filters - you might have restrictive filters set, 3) Try searching for broader areas (France instead of specific Paris neighborhood), 4) Use the 'Flexible dates' option to see more results, 5) Force close and reopen the app to reset search function. If still showing no results for major cities, this indicates a temporary server issue. Try again in a few minutes or use the website. Report persistent issues to support."
+  },
+  {
+    "id": "ta-021",
+    "category": "technical-app",
+    "problem": "Payment page keeps timing out. I've tried 5 times to book this property!",
+    "solution": "Payment timeouts are incredibly frustrating! Let's get your booking completed: 1) Disable popup blockers which can interfere with payment processing, 2) Ensure JavaScript is enabled in your browser, 3) Clear browser cache and cookies, 4) Try a different browser or device, 5) Check if security software or VPN is blocking the payment page. Payment pages have 10-minute timeouts for security - have your payment info ready before starting. If still failing, try the mobile app instead of website, or contact support to process your booking manually."
+  },
+  {
+    "id": "ta-022",
+    "category": "technical-app",
+    "problem": "App says I need to update but Play Store shows no update available.",
+    "solution": "Version mismatch between app and store is common. Here's the fix: 1) Clear Google Play Store cache: Settings > Apps > Google Play Store > Clear Cache, 2) Check if your Google account is the same one used to download the app, 3) Pull down to refresh in Play Store to check for updates, 4) Updates roll out gradually - you might not have it yet in your region, 5) Uninstall and reinstall the app to get the latest version. If the app is unusable without update, you can use our mobile website temporarily while waiting for the update to appear."
+  },
+  {
+    "id": "ta-023",
+    "category": "technical-app",
+    "problem": "Booking confirmation never arrived but my card was charged. Where's my reservation?",
+    "solution": "Missing confirmations with charges are concerning but usually easily found: 1) Check the Trips section in your account - bookings appear there even without email, 2) Email confirmations can be delayed up to an hour during busy times, 3) Check spam/junk folders for the confirmation, 4) Verify the email address in your account settings is correct, 5) You can download confirmation directly from the app. If the booking doesn't appear in Trips but charge is real, contact support immediately with the charge amount and date. We'll trace your booking and ensure confirmation delivery."
+  },
+  {
+    "id": "ta-024",
+    "category": "technical-app",
+    "problem": "Dark mode isn't working properly. Some screens are still bright white.",
+    "solution": "Dark mode implementation can be inconsistent across app sections. Here's what to check: 1) Ensure dark mode is enabled both in device settings AND app settings, 2) Some screens may not support dark mode yet - we're updating gradually, 3) Force close and reopen the app after enabling dark mode, 4) Update to the latest app version for best dark mode support, 5) Report specific screens that aren't dark to help us prioritize updates. Note that embedded web content (like help articles) may not follow dark mode. Full dark mode support is coming to all screens soon!"
+  },
+  {
+    "id": "ta-025",
+    "category": "technical-app",
+    "problem": "Can't change my email address. The save button does nothing when clicked.",
+    "solution": "Email changes require extra verification for security. Here's the proper process: 1) You may need to verify your current email first before changing, 2) Check for a verification email sent to your NEW email address, 3) Some special characters in email addresses cause issues - stick to standard formats, 4) Try using the website instead of the app for account changes, 5) Clear cache and try again. Email changes are critical for account security, so the system is extra cautious. If the button truly does nothing, report this bug with your browser/app details. Support can manually update if needed."
+  },
+  {
+    "id": "ta-026",
+    "category": "technical-app",
+    "problem": "Photos won't load in the app. Just see gray placeholder boxes.",
+    "solution": "Image loading issues usually relate to connection or cache problems: 1) Check your internet connection speed - images need decent bandwidth, 2) In app settings, check if 'Data Saver' or 'Low Quality Images' is enabled, 3) Clear the app cache to remove corrupted image files, 4) Try switching between WiFi and cellular data, 5) Pull down to refresh on pages with missing images. If on cellular, check if your carrier is throttling data. Some corporate/public WiFi blocks image hosting servers. The mobile website might load images better if app continues having issues."
+  },
+  {
+    "id": "ta-027",
+    "category": "technical-app",
+    "problem": "Getting 'Session expired' errors constantly. Have to log in every few minutes!",
+    "solution": "Frequent session expirations are annoying but usually fixable: 1) Check if you're logged in on multiple devices - this can cause conflicts, 2) Clear all cookies for acmerentals.com and log in fresh, 3) Disable 'Private Browsing' mode which doesn't save sessions, 4) Check if your browser is set to clear cookies on exit, 5) Security software or VPNs can interfere with session management. Try staying logged in on just one device for stability. If using shared/public computers, sessions expire quickly for security. Enable 'Remember Me' when logging in on personal devices."
+  },
+  {
+    "id": "ta-028",
+    "category": "technical-app",
+    "problem": "Android app crashes immediately on launch. Can't even get to login screen.",
+    "solution": "Immediate crashes on launch require aggressive troubleshooting: 1) Clear both cache AND data: Settings > Apps > Acme > Storage (you'll need to log in again), 2) Update Android System WebView in Play Store - this often causes crashes, 3) Check if your Android version is 6.0 or higher for compatibility, 4) Uninstall and reinstall the app completely, 5) Disable any app-modifying tools like screen dimmers or accessibility services. If still crashing, check available storage space - you need at least 100MB free. Report persistent crashes with your exact device model and Android version."
+  },
+  {
+    "id": "ta-029",
+    "category": "technical-app",
+    "problem": "Credit card form won't accept my card number. Says invalid but it's correct!",
+    "solution": "Card validation errors are often format-related: 1) Enter numbers without spaces or dashes - just 16 digits, 2) Check if your card type (Visa, Mastercard, etc.) is supported, 3) Ensure no extra spaces before or after the number, 4) Some prepaid or virtual cards aren't accepted - try a standard credit/debit card, 5) Browser autofill sometimes adds hidden characters - type manually. Also verify the expiration date format (MM/YY) and that your card isn't expired. If still rejected, try a different payment method or contact your bank to ensure online purchases are enabled."
+  },
+  {
+    "id": "ta-030",
+    "category": "technical-app",
+    "problem": "App language changed to Spanish randomly. I can't find settings to change back!",
+    "solution": "Accidental language changes happen! Here's how to fix it: 1) Look for 'Configuración' (Settings) in the menu, then 'Idioma' (Language), 2) The flag or globe icon usually indicates language settings, 3) Force close and reopen the app - sometimes it resets to device language, 4) Check if your device language settings changed, 5) Uninstall/reinstall as last resort - it'll use your device language. Pro tip: the layout is the same in all languages, so navigate by position/icons. Language settings are usually in Profile/Account section at the bottom of settings lists."
+  },
+  {
+    "id": "ta-031",
+    "category": "technical-app",
+    "problem": "Location services keep asking for permission every time. It won't remember my choice!",
+    "solution": "Repeated permission requests indicate a settings issue: 1) Go to device Settings > Privacy > Location Services > Acme, 2) Set to 'Always Allow' or 'While Using App' (not 'Ask Next Time'), 3) Check if you have any privacy apps that reset permissions, 4) On Android, ensure permission isn't set to 'Only this time', 5) Try deleting and reinstalling the app to reset all permissions properly. Some privacy-focused browsers/apps interfere with permission storage. The app needs location for map searches and nearby properties, but you can use search bar instead if preferred."
+  },
+  {
+    "id": "ta-032",
+    "category": "technical-app",
+    "problem": "Booking history only shows last 3 months. Where are my older bookings?",
+    "solution": "All your booking history is preserved! Here's how to access it: 1) Check if there's a date range filter applied - look for 'All Time' option, 2) Archived bookings might be in a separate section, 3) Use the 'Download Full History' option for complete records, 4) Log out and back in to refresh your full history, 5) Bookings are never permanently deleted from our system. If you still can't see older bookings, they might be under a different email if you changed accounts. Contact support with approximate dates and we can locate all your historical bookings."
+  },
+  {
+    "id": "ta-033",
+    "category": "technical-app",
+    "problem": "App store reviews say the app is malware. Is it safe to download?",
+    "solution": "Fake reviews are unfortunately common for popular apps. Here's how to verify safety: 1) Only download from official Apple App Store or Google Play Store, 2) Check the developer name is 'Acme Rentals Inc.' exactly, 3) Look for the blue verified checkmark (on some stores), 4) Our official app has millions of downloads and 4+ star rating, 5) Be wary of similar-named copycat apps. We never ask for unnecessary permissions like contacts or phone access. Our app is regularly audited for security and privacy. Report any suspicious apps using our name to legal@acmerentals.com."
+  },
+  {
+    "id": "ta-034",
+    "category": "technical-app",
+    "problem": "Can't use the app in China. It won't connect at all even with VPN.",
+    "solution": "Some countries have specific connectivity challenges: 1) China's Great Firewall blocks many international services, 2) VPNs may not help if the app checks location via other methods, 3) Try using our mobile website instead of the app, 4) Some features may be limited in certain regions due to regulations, 5) Consider downloading the app before traveling to such regions. If you're a host in China, we have specific guidance for operating there. For guests, booking before arrival often works better than trying to book while in restricted regions."
+  },
+  {
+    "id": "ta-035",
+    "category": "technical-app",
+    "problem": "Battery drain is insane! The app uses 40% of my battery even when not using it.",
+    "solution": "Excessive battery drain needs immediate attention: 1) Check if Background App Refresh is enabled - disable if not needed, 2) Turn off location services or set to 'While Using App' only, 3) Disable unnecessary notifications that wake the app, 4) Check Settings > Battery for specific app usage breakdown, 5) Reinstall the app to fix any corrupted processes. On Android, ensure the app isn't exempt from battery optimization. Some users report specific app versions have battery bugs - check for updates. Report excessive drain with your device model so we can investigate."
+  },
+  {
+    "id": "ta-036",
+    "category": "technical-app",
+    "problem": "Search autocomplete suggests weird/inappropriate locations. This seems wrong.",
+    "solution": "Inappropriate autocomplete suggestions should be reported: 1) Our algorithm learns from user searches - sometimes this goes wrong, 2) Clear your search history in app settings to reset personal suggestions, 3) Report specific inappropriate suggestions to our team, 4) The system should filter offensive content automatically, 5) Updates regularly improve the suggestion quality. Take screenshots of problematic suggestions and send to tech@acmerentals.com. We take this seriously and will clean up the suggestion database. Public place names sometimes have unfortunate alternate meanings we need to handle better."
+  },
+  {
+    "id": "ta-037",
+    "category": "technical-app",
+    "problem": "Desktop site keeps redirecting to mobile version. I want the full site!",
+    "solution": "Forced mobile redirects are annoying on capable devices: 1) Look for 'Desktop Site' link at the bottom of the mobile page, 2) In your browser settings, enable 'Request Desktop Site', 3) Try adding '?desktop=1' to the URL, 4) Clear cookies that might remember your preference, 5) Some browsers have permanent desktop mode settings. The desktop site works better for complex tasks like managing multiple listings. If redirects persist, try a different browser. Tablet users especially benefit from desktop mode for the larger interface."
+  },
+  {
+    "id": "ta-038",
+    "category": "technical-app",
+    "problem": "Messages show as 'read' immediately even though the host hasn't responded.",
+    "solution": "Message read receipts can be confusing. Here's what they mean: 1) 'Delivered' means message reached our servers, 2) 'Read' means it was opened (automatic in some cases), 3) Push notifications can mark messages as read, 4) Some hosts have auto-read enabled for organization, 5) This doesn't mean the host has actually seen/responded yet. Focus on response time rather than read receipts. Hosts have 24 hours to respond to maintain good standing. The read receipt system helps with message delivery confirmation but isn't perfect for gauging actual human reading."
+  },
+  {
+    "id": "ta-039",
+    "category": "technical-app",
+    "problem": "Can't delete my account. The option is grayed out or missing entirely.",
+    "solution": "Account deletion has specific requirements for your protection: 1) You must have no active bookings or hosting listings, 2) All financial transactions must be completed, 3) No ongoing disputes or claims, 4) You may need to verify identity first, 5) Try using the website if app deletion isn't working. The option is under Settings > Privacy > Delete Account. If grayed out, hover/tap to see why. For immediate deletion needs, contact support with ID verification. Note: deletion is permanent and removes all history, reviews, and messages."
+  },
+  {
+    "id": "ta-040",
+    "category": "technical-app",
+    "problem": "Verification selfie keeps getting rejected. Taken 20 photos already!",
+    "solution": "ID verification can be picky for security reasons. Here are tips for success: 1) Ensure good lighting - natural light works best, avoid shadows, 2) Remove glasses, hats, or anything covering your face, 3) Hold ID steady and flat - all corners visible, no fingers covering info, 4) Match your appearance to your ID photo reasonably, 5) Use the main camera, not selfie camera, for clearer photos. Common rejections: blurry photos, glare on ID, or expired documents. If repeatedly failing, contact support for manual verification. The system is strict to prevent fraud."
+  },
+  {
+    "id": "ta-041",
+    "category": "technical-app",
+    "problem": "App notifications are in wrong language. Rest of app is in English.",
+    "solution": "Mixed language issues can occur with notifications: 1) Check your device's language settings - notifications often use system language, 2) In app settings, ensure language is set to English (not 'System Default'), 3) Turn notifications off and on again to reset, 4) Some notification texts come from your device OS, not our app, 5) Reinstalling the app usually syncs language settings properly. This is a known issue where push notifications don't always respect app language preferences. We're working on a fix, but the workaround is setting both device and app to the same language."
+  },
+  {
+    "id": "ta-042",
+    "category": "technical-app",
+    "problem": "Privacy settings won't save. I turn off data sharing but it re-enables itself.",
+    "solution": "Privacy settings reverting is a serious issue we need to fix: 1) Make sure you're hitting 'Save' after changing settings, 2) Check if you're logged into the correct account, 3) Clear app cache and try again, 4) Document which specific settings won't save, 5) Try changing settings via website instead of app. This shouldn't happen - privacy choices must be respected. Report this bug immediately to privacy@acmerentals.com with screenshots. As a workaround, we can manually set your privacy preferences from our end. Your privacy control is paramount."
+  },
+  {
+    "id": "ta-043",
+    "category": "technical-app",
+    "problem": "Website says I need to enable cookies but they're already enabled. Can't proceed!",
+    "solution": "Cookie detection errors usually have these solutions: 1) Check if third-party cookies are also enabled (some sites need both), 2) Add acmerentals.com to your browser's allowed sites list, 3) Disable any cookie-blocking extensions temporarily, 4) Try incognito/private mode which has fresh cookie settings, 5) Clear existing cookies for our site and try again. Some privacy-focused browsers block cookies despite settings. The site needs cookies for cart/session management. If still blocked, try a mainstream browser like Chrome or Safari for booking."
+  },
+  {
+    "id": "ta-044",
+    "category": "technical-app",
+    "problem": "Dates picker is broken. Can't select check-out date after check-in.",
+    "solution": "Date picker issues can be frustrating. Here are fixes: 1) Ensure you're selecting dates in order - check-in first, then check-out, 2) Some dates might be unavailable (booked or blocked), 3) Check minimum stay requirements for the property, 4) Try tapping dates instead of sliding if on mobile, 5) Refresh the page and try again. If the calendar widget is completely broken, try: different browser, disable browser extensions, or use the mobile app instead. You can also type dates manually if the input field allows. Report persistent calendar bugs with browser details."
+  },
+  {
+    "id": "ta-045",
+    "category": "technical-app",
+    "problem": "Coupon/promo code field is missing at checkout. I have a valid code!",
+    "solution": "Missing promo code fields can cost you savings! Here's where to look: 1) The field might be collapsed - look for 'Add promo code' link, 2) Some properties or dates don't allow promo codes, 3) Check if you're on the final payment page - codes often apply earlier, 4) Try the mobile app if website doesn't show the field, 5) Ensure your code hasn't expired. If you definitely should have a promo field but don't, take a screenshot and contact support. We can manually apply valid codes to your booking. Don't complete booking without your discount!"
+  },
+  {
+    "id": "ta-046",
+    "category": "technical-app",
+    "problem": "Getting weird symbols/characters instead of text (like □□□). Encoding problem?",
+    "solution": "Character encoding issues make the app unusable! Try these fixes: 1) Check if your device language is set to one we support, 2) Update your device's language packs and fonts, 3) Clear app cache which might have corrupted text files, 4) Ensure you have the latest app version, 5) Try changing app language to English then back. This often happens with special characters in property descriptions or messages. If persistent, your device might be missing required fonts. Screenshot the garbled text and send to tech support with your device language settings."
+  },
+  {
+    "id": "ta-047",
+    "category": "technical-app",
+    "problem": "Keep getting logged out of the app randomly. Sometimes mid-booking!",
+    "solution": "Random logouts are disruptive and shouldn't happen: 1) Check if you're logged in on multiple devices - this can cause conflicts, 2) Ensure your app is updated to the latest version, 3) Don't use VPNs that change your location frequently, 4) Check if your device has aggressive battery saving that kills apps, 5) Enable 'Stay Logged In' option if available. For immediate relief, try using just one device for bookings. If happening mid-booking, take screenshots of your selection before payment page. Report this issue with your device model and iOS/Android version for investigation."
+  },
+  {
+    "id": "ta-048",
+    "category": "technical-app",
+    "problem": "Upload speed is terrible. Takes 10 minutes to upload one listing photo!",
+    "solution": "Slow uploads make listing creation painful. Let's speed things up: 1) Reduce photo sizes - phones take huge photos unnecessary for web, 2) Use WiFi instead of cellular for uploads, 3) Close other apps that might be using bandwidth, 4) Try uploading during off-peak hours for better speeds, 5) Use image compression apps to reduce file sizes first. For immediate relief: email photos to support@acmerentals.com and we'll upload them. Consider using our free professional photography service which handles all photo optimization. Modern phone cameras create 10-20MB files when we only need 1-2MB."
+  },
+  {
+    "id": "ta-049",
+    "category": "technical-app",
+    "problem": "Accessibility features not working. Screen reader can't read important buttons.",
+    "solution": "Accessibility is crucial and we take these issues seriously: 1) Ensure your screen reader is updated to the latest version, 2) Try different accessibility apps as some work better than others, 3) Report specific unlabeled buttons or inaccessible features, 4) The mobile app generally has better accessibility than the website, 5) We're actively improving accessibility - your feedback is vital. Please email accessibility@acmerentals.com with specific issues, screen reader used, and device details. We'll prioritize fixing these problems. Include recordings if possible to help us understand the exact issues."
+  },
+  {
+    "id": "ta-050",
+    "category": "technical-app",
+    "problem": "Gets stuck on 'Loading...' screen forever. Never actually loads anything.",
+    "solution": "Infinite loading screens need aggressive troubleshooting: 1) Force close the app completely and reopen, 2) Check your internet connection - switch between WiFi and cellular, 3) Clear the app cache or browser cache, 4) Disable any VPN or proxy that might interfere, 5) Try airplane mode for 30 seconds then reconnect. If specific screens always stick loading: note which ones and report the pattern. Sometimes our servers have regional issues - check status.acmerentals.com. The mobile website might work when the app doesn't, giving you a backup option."
+  },
+  {
+    "id": "ta-051",
+    "category": "technical-app",
+    "problem": "QR code scanner for mobile check-in doesn't work. Camera won't focus.",
+    "solution": "QR scanner issues can delay check-in. Here are solutions: 1) Clean your camera lens - smudges prevent QR reading, 2) Ensure adequate lighting - QR codes need good contrast, 3) Hold phone steady about 6-8 inches from code, 4) Try screenshots of QR codes if camera won't work, 5) Grant camera permissions to the app if prompted. If scanner completely fails, most QR codes have a text code alternative you can type manually. Also try your phone's native camera app - many can read QR codes directly. Report persistent scanner issues with your phone model."
+  },
+  {
+    "id": "ta-052",
+    "category": "technical-app",
+    "problem": "Desktop browser says 'unsupported' but I'm using latest Chrome. What browsers work?",
+    "solution": "Browser compatibility errors with modern Chrome are unusual. Let's diagnose: 1) We support the latest 2 versions of Chrome, Safari, Firefox, and Edge, 2) Check if you're using Chrome-based browsers (Brave, Opera) which sometimes report incorrectly, 3) Disable compatibility mode if enabled, 4) Some browser extensions mask your browser version, 5) Try incognito mode to bypass extensions. Check your exact version in Chrome menu > About. If truly latest Chrome, this is a detection bug - report it. The error might be about specific features like location services rather than the browser itself."
+  },
+  {
+    "id": "ta-053",
+    "category": "technical-app",
+    "problem": "Instant Book toggle won't turn on. Keeps switching back to Request to Book.",
+    "solution": "Instant Book activation has specific requirements: 1) Your account must meet eligibility criteria (good standing, verified), 2) Your listing needs all required information completed, 3) Some property types don't support Instant Book, 4) Check if you have calendar sync issues preventing activation, 5) Government ID verification might be required first. Look for error messages when toggling - they explain what's blocking activation. Common issues: missing house rules, no cancellation policy selected, or unverified phone number. Complete all requirements and the toggle will work."
+  },
+  {
+    "id": "ta-054",
+    "category": "technical-app",
+    "problem": "Price calculations seem wrong. Math doesn't add up on the booking page.",
+    "solution": "Pricing math errors need investigation: 1) Remember prices include: nightly rate × nights + cleaning fee + service fee + taxes, 2) Check if there are additional guest fees you missed, 3) Currency conversion might apply for international properties, 4) Some dates have different rates (weekends, holidays), 5) Length-of-stay discounts might apply automatically. Take a screenshot of the price breakdown and calculate manually. If truly incorrect, report with screenshots to billing@acmerentals.com. Sometimes display bugs show wrong totals while actual charges are correct - verify final amount carefully."
+  },
+  {
+    "id": "ta-055",
+    "category": "technical-app",
+    "problem": "Videos in listings won't play. Just shows black screen with spinner.",
+    "solution": "Video playback issues can have various causes: 1) Check your internet speed - videos need good bandwidth, 2) Try different browsers as some handle video better, 3) Disable ad blockers which can interfere with video players, 4) Update your browser for latest video codec support, 5) Clear browser cache if videos previously worked. On mobile, check if you're in data saver mode. Some corporate networks block streaming video. If no videos work anywhere on the site, report it. Individual broken videos should be reported to the host to re-upload."
+  },
+  {
+    "id": "ta-056",
+    "category": "technical-app",
+    "problem": "Email preferences keep resetting. I unsubscribe but still get marketing emails.",
+    "solution": "Unwanted emails after unsubscribing are unacceptable: 1) Unsubscribe links can take 48 hours to process - check when you unsubscribed, 2) Make sure you're unsubscribing the correct email address, 3) We have different email types - unsubscribe from ALL in preferences, 4) Check if emails are actually from us (@acmerentals.com), 5) Use the 'Unsubscribe from all' option for complete opt-out. If still receiving emails after 48 hours, forward examples to privacy@acmerentals.com. We take email preferences seriously and will investigate why your unsubscribe didn't work."
+  },
+  {
+    "id": "ta-057",
+    "category": "technical-app",
+    "problem": "Host response timer shows negative numbers like '-2 hours'. That's not possible!",
+    "solution": "Negative timer displays are definitely a bug! Here's what's happening: 1) This is a display glitch - the actual deadline hasn't passed, 2) Could be timezone calculation errors, 3) Try refreshing the page to recalculate correctly, 4) The host's actual response window is still 24 hours, 5) Report this bug with screenshot and your timezone. Despite the display error, the system correctly tracks response times. If you're a host seeing this, respond normally - your metrics won't be affected by the display bug. We're working on fixing these timezone-related display issues."
+  },
+  {
+    "id": "ta-058",
+    "category": "technical-app",
+    "problem": "Touch ID/Face ID stopped working for app login. Has to be password every time.",
+    "solution": "Biometric login failures reduce convenience. Let's restore it: 1) Go to app settings and toggle biometric login off then on, 2) Check your device settings to ensure Acme has permission for Face/Touch ID, 3) Re-enroll your fingerprint or face in device settings, 4) Log out completely and log back in to reset biometric association, 5) iOS/Android updates sometimes reset these permissions. If still not working, delete and reinstall the app for fresh biometric setup. Some devices limit how many apps can use biometrics - check if you're at the limit."
+  },
+  {
+    "id": "ta-059",
+    "category": "technical-app",
+    "problem": "Share button doesn't work. Want to send listings to friends but nothing happens.",
+    "solution": "Sharing features help trip planning with friends! Fix it with: 1) Check if your device has sharing restrictions enabled, 2) Try long-pressing the share button instead of tapping, 3) Some browsers block sharing APIs - try the app instead, 4) Copy the listing URL manually as a workaround, 5) Update your app for latest sharing features. On iOS, check Settings > Screen Time > Content Restrictions. On Android, ensure the app has permission to access other apps for sharing. Report which sharing method you're trying (text, email, social) for specific troubleshooting."
+  },
+  {
+    "id": "ta-060",
+    "category": "technical-app",
+    "problem": "Keyboard covers text fields. Can't see what I'm typing on the form!",
+    "solution": "Keyboard overlap is a common mobile frustration: 1) Try rotating your device to landscape mode for more space, 2) Scroll the page up manually while typing, 3) Tap 'Next' on keyboard to auto-advance fields, 4) Some keyboards are taller - try a different keyboard app, 5) Update the app as we regularly fix keyboard issues. This happens more on smaller phones. The app should auto-scroll to keep fields visible, but this sometimes breaks. Report specific forms where this happens along with your device model and screen size for fixes."
+  },
+  {
+    "id": "ta-061",
+    "category": "technical-app",
+    "problem": "Loading spinners everywhere but nothing actually loads. Stuck in loading limbo!",
+    "solution": "Multiple stuck loading spinners indicate connection issues: 1) Check if you're on a captive WiFi that needs login (airports, hotels), 2) VPNs can cause requests to hang - try disconnecting, 3) Clear all app data and cache for a fresh start, 4) Check status.acmerentals.com for service outages, 5) Try cellular data instead of WiFi or vice versa. If specific features always show spinners, note which ones. Sometimes firewall or security software blocks our API calls. The website might work better if app is completely stuck."
+  },
+  {
+    "id": "ta-062",
+    "category": "technical-app",
+    "problem": "Calendar widget shows wrong month/year. Stuck in 2019 somehow!",
+    "solution": "Time-traveling calendar bugs are confusing! Fix with: 1) Check your device date/time settings are correct and set to automatic, 2) Clear browser/app cache which might have old date data, 3) Refresh the page to reload the calendar widget, 4) Try clicking today's date button to reset to current, 5) Different browser might not have this issue. This often happens when device time is wrong or JavaScript has cached incorrect dates. If calendar is consistently wrong, report with screenshot showing the date error and your actual current date."
+  },
+  {
+    "id": "ta-063",
+    "category": "technical-app",
+    "problem": "Reviews won't submit. Write a long review and submit button does nothing.",
+    "solution": "Losing a carefully written review is frustrating! Prevent this: 1) Copy your review text before submitting (always a good practice), 2) Check character limits - reviews have maximum lengths, 3) Ensure all required rating categories are filled, 4) Look for error messages that might be hidden, 5) Try submitting a shorter review to test. Some special characters or emojis can break submission. If still failing, save your review text and try: different browser, the mobile app, or contact support to submit it for you. Your feedback is valuable and shouldn't be lost to technical issues."
+  },
+  {
+    "id": "ta-064",
+    "category": "technical-app",
+    "problem": "Auto-translate feature is translating English to English. Everything looks weird!",
+    "solution": "Translation loops make text sound robotic! Here's the fix: 1) Check if browser auto-translate is fighting with app translate, 2) Disable browser translation for acmerentals.com, 3) In app settings, ensure source language isn't set to 'Auto-detect', 4) Clear translation cache in app settings if available, 5) Turn off translation features entirely if not needed. This happens when multiple translation services conflict. The app might detect wrong source language and translate unnecessarily. Set your preferred language explicitly rather than using auto-detect for best results."
+  },
+  {
+    "id": "ta-065",
+    "category": "technical-app",
+    "problem": "PDF receipts are corrupted. Need them for expense reports but won't open!",
+    "solution": "Corrupted receipts can delay expense reimbursements: 1) Try downloading again - might be incomplete download, 2) Use a different PDF reader - some are more forgiving, 3) Try 'Save As' instead of opening directly, 4) Request email version instead of downloading, 5) Clear browser cache and re-download. If PDFs consistently fail, your browser might have PDF plugin issues. As immediate workaround: take screenshots of the receipt webpage, use print-to-PDF feature, or contact support for manually generated receipts. We can always regenerate receipts from our records."
+  },
+  {
+    "id": "ta-066",
+    "category": "technical-app",
+    "problem": "Sort options don't actually sort. Results stay in same order no matter what.",
+    "solution": "Broken sorting makes finding ideal properties difficult: 1) After selecting sort, pull down to refresh results, 2) Check if you have conflicting filters that override sorting, 3) Some sort options only work with specific search types, 4) Try clearing all filters then applying just the sort, 5) Different browser/app might sort correctly. Note which sort options fail (price, distance, rating) and report to tech team. As workaround, try adjusting your search criteria to naturally surface what you want. Sorting by price should always work - if not, it's definitely broken."
+  },
+  {
+    "id": "ta-067",
+    "category": "technical-app",
+    "problem": "Infinity scroll keeps loading same properties over and over. Groundhog Day bug!",
+    "solution": "Infinite scroll loops are annoying and waste time: 1) This often happens when filters change mid-scroll - avoid adjusting filters while scrolling, 2) Try using pagination instead if available, 3) Clear cache to reset the scroll position memory, 4) Scroll more slowly to let each batch fully load, 5) Switch to list view without infinite scroll. Report this bug with: search location, active filters, and approximately when the loop starts. As workaround, use map view or pagination to browse properties without the infinite scroll feature."
+  },
+  {
+    "id": "ta-068",
+    "category": "technical-app",
+    "problem": "Street view/360 photos make me dizzy. No way to disable them!",
+    "solution": "Motion sensitivity is real and we should accommodate it: 1) Look for 'Disable animations' in accessibility settings, 2) Use list view instead of immersive photo browsing, 3) On desktop, use arrow keys instead of mouse for smoother movement, 4) Reduce motion settings on your device may help, 5) Browse with static photos only using 'Simple view' if available. We're working on motion preferences. For now, report this accessibility need to accessibility@acmerentals.com. Your comfort while browsing is important and we should provide options for motion-sensitive users."
+  },
+  {
+    "id": "ta-069",
+    "category": "technical-app",
+    "problem": "Chat history disappeared after app update. Lost important host conversations!",
+    "solution": "Missing chat history after updates is concerning: 1) Log out and back in to force history sync, 2) Check if you're in the right account (easy to accidentally create new one), 3) Pull down to refresh in the messages section, 4) Try accessing through website to see if history appears there, 5) Messages are stored on servers, not locally, so they're not truly lost. If still missing, contact support with approximate dates and host names. We can recover message history from backups. Always screenshot important information as backup during active trips."
+  },
+  {
+    "id": "ta-070",
+    "category": "technical-app",
+    "problem": "Time zone confusion! App shows times in random zones. When is check-in really?",
+    "solution": "Time zone confusion can cause missed check-ins! Here's clarity: 1) Property times are ALWAYS in the property's local time zone, 2) Check your device isn't set to wrong time zone, 3) The app should show time zone abbreviation (EST, PST, etc.), 4) When traveling, manually verify the time difference, 5) Ask host to confirm in their local time if confused. Best practice: screenshot booking details before traveling to reference offline. Time zone bugs are serious - report with examples of incorrect times displayed versus actual property location."
+  },
+  {
+    "id": "ta-071",
+    "category": "technical-app",
+    "problem": "Social media login stopped working. Says my Facebook isn't linked but it was!",
+    "solution": "Social login disconnections happen for various reasons: 1) Check if you recently changed your Facebook/Google password, 2) Review app permissions in your social media settings, 3) The connection may have expired - reauthorize the app, 4) Try 'Login with email' using the email from your social account, 5) Privacy settings changes can revoke app access. To relink: log in with email/password, then reconnect social accounts in settings. Sometimes social platforms change their APIs, breaking existing connections. We recommend having email/password backup for reliability."
+  },
+  {
+    "id": "ta-072",
+    "category": "technical-app",
+    "problem": "Export function creates empty files. Need my data for tax purposes!",
+    "solution": "Empty data exports are useless for taxes! Let's get your data: 1) Try different export formats (CSV vs PDF) - one might work, 2) Check if date range is set correctly for the data you need, 3) Disable popup blockers which might prevent download, 4) Try from desktop browser instead of mobile, 5) Export smaller date ranges if full year fails. For urgent tax needs, contact support@acmerentals.com directly - we can manually generate and email your transaction history. Include your tax year needed and preferred format. Data exports are crucial for hosts' business records."
+  },
+  {
+    "id": "ta-073",
+    "category": "technical-app",
+    "problem": "Retina/high DPI display shows tiny text. Can't read anything without zooming!",
+    "solution": "High DPI display issues affect readability: 1) Check browser zoom is at 100% (Ctrl/Cmd+0 to reset), 2) Look for display scaling in your OS settings, 3) Try different browsers - some handle high DPI better, 4) Enable 'Larger Text' in accessibility settings, 5) The app may have text size preferences. This is often Windows-specific with 4K monitors. Right-click desktop > Display Settings > Scale and Layout. Mac users: System Preferences > Displays > Resolution. We're improving high DPI support, but OS-level scaling helps immediately."
+  },
+  {
+    "id": "ta-074",
+    "category": "technical-app",
+    "problem": "Autocomplete addresses are all wrong. Suggests addresses in wrong country!",
+    "solution": "Incorrect address suggestions waste time and cause errors: 1) Check if your VPN is making you appear in a different country, 2) Clear location/cache data that might be confused, 3) Type country/state first to guide the autocomplete, 4) Disable browser autofill fighting with our autocomplete, 5) Grant location permissions for better regional suggestions. The system should prioritize nearby addresses. If consistently suggesting wrong country, report with examples. Workaround: type full address manually or use zip/postal code to force correct region."
+  },
+  {
+    "id": "ta-075",
+    "category": "technical-app",
+    "problem": "Beta features disappeared. I was testing new search but it's gone!",
+    "solution": "Beta features can be temporary or selective: 1) Check Account Settings > Beta Program enrollment status, 2) Some beta tests end without notice when testing completes, 3) Features might be A/B tested - not everyone gets them, 4) Try logging out and back in to refresh feature flags, 5) Beta features may have specific eligibility requirements. If you were actively using a beta feature that disappeared, report to beta@acmerentals.com with the feature name. We appreciate beta testers and try to give warning before removing test features."
+  },
+  {
+    "id": "ta-076",
+    "category": "technical-app",
+    "problem": "Voice search doesn't understand me. Keeps searching for wrong places!",
+    "solution": "Voice search accuracy depends on several factors: 1) Speak clearly and avoid background noise, 2) Check your device's voice recognition language settings, 3) Try saying just the city name without extra words, 4) Spell out unusual destinations letter by letter, 5) Your accent might not be well-recognized by the system. Voice search uses your device's speech recognition, not ours. For better results, use the manual search or improve your device's voice training. Some destination names are inherently difficult for voice recognition."
+  },
+  {
+    "id": "ta-077",
+    "category": "technical-app",
+    "problem": "Print function cuts off important info. Confirmations print badly formatted.",
+    "solution": "Print formatting issues can affect travel documents: 1) Try 'Print Preview' first and adjust settings, 2) Select 'Print Background Graphics' for better formatting, 3) Change orientation to landscape for wide content, 4) Use 'Shrink to Fit' option in print settings, 5) Try printing to PDF first, then print the PDF. Better option: use the download PDF option instead of browser print. Our PDFs are formatted for printing. If no PDF option exists, try different browser or request formatted version from support for important documents."
+  },
+  {
+    "id": "ta-078",
+    "category": "technical-app",
+    "problem": "Cache won't clear no matter what I do. Old data keeps appearing!",
+    "solution": "Stubborn cache requires aggressive clearing: 1) Clear browser cache AND cookies for acmerentals.com specifically, 2) On apps: clear cache, then clear data (you'll need to login again), 3) Try private/incognito browsing to bypass cache entirely, 4) Some devices have system-level cache - restart device, 5) Uninstall/reinstall app for complete cache removal. If old prices or availability keep showing, note specific examples. Sometimes CDN (content delivery network) cache causes this - report to tech team. Hard refresh (Ctrl+Shift+R) forces fresh data load on desktop."
+  },
+  {
+    "id": "ta-079",
+    "category": "technical-app",
+    "problem": "Deep links from emails don't work. Always opens app home screen instead.",
+    "solution": "Deep link failures disrupt your workflow: 1) Make sure you have the latest app version - deep links improve regularly, 2) Check if your email client modifies links (some corporate email does), 3) Try copying link and pasting in browser instead, 4) iOS/Android may have disabled app links - check settings, 5) Long-press the link and select 'Open in Acme app'. If deep links consistently fail, use the website instead or navigate manually in app. Report which types of links fail (booking confirmations, messages, etc.) to help us fix routing issues."
+  },
+  {
+    "id": "ta-080",
+    "category": "technical-app",
+    "problem": "Guest mode doesn't work. Forces me to create account for just browsing!",
+    "solution": "Browsing should be possible without an account: 1) Look for 'Skip' or 'Browse as Guest' option on login screen, 2) Some features require accounts for security/legal reasons, 3) Use the website if app forces registration, 4) Clear cookies that might remember dismissed guest option, 5) 'X' or back button often allows guest browsing. We believe in letting users explore before committing. If truly no guest option exists, this is a bug or intentional change - report it. You can always use a simple email registration without full profile completion."
+  },
+  {
+    "id": "ta-081",
+    "category": "technical-app",
+    "problem": "Switching between accounts is impossible. Have personal and business accounts.",
+    "solution": "Multi-account management is a common need: 1) Currently, you must log out and back in to switch, 2) Use different browsers/devices for each account, 3) Browser profiles can maintain separate sessions, 4) Incognito window for second account works temporarily, 5) Password managers help switch quickly. We're aware users need better multi-account support. For now: use app for one account, website for another, or consider browser extensions that manage multiple sessions. Always double-check which account you're in before booking!"
+  },
+  {
+    "id": "ta-082",
+    "category": "technical-app",
+    "problem": "App permissions keep resetting. Have to re-approve location every session!",
+    "solution": "Permission persistence issues are often OS-related: 1) iOS: Settings > Privacy > Location > Acme - set to 'Always' or 'While Using', 2) Android: Hold app icon > App Info > Permissions - ensure not set to 'Ask every time', 3) Check if you have privacy apps that reset permissions, 4) Some work/managed devices force permission resets, 5) Try reinstalling for fresh permission setup. If permissions won't stick, your device might have MDM (mobile device management) or parental controls affecting settings. Personal devices shouldn't have this issue."
+  },
+  {
+    "id": "ta-083",
+    "category": "technical-app",
+    "problem": "Credit card autofill fills wrong fields. Puts card number in name field!",
+    "solution": "Autofill confusion creates payment errors: 1) Disable browser autofill and use manual entry, 2) Check if password manager is conflicting with browser autofill, 3) Clear saved autofill data and re-save correctly, 4) Our fields might have wrong labels for autofill - we'll fix, 5) Try different browser with better autofill logic. As workaround: type manually or use copy/paste. Report specific field mix-ups so we can adjust our form field names for better autofill compatibility. Digital wallets (Apple/Google Pay) avoid this issue entirely."
+  },
+  {
+    "id": "ta-084",
+    "category": "technical-app",
+    "problem": "Low bandwidth mode doesn't actually reduce data usage. Still eating my data plan!",
+    "solution": "Data saving features should actually save data: 1) Low bandwidth mode mainly reduces image quality - check if enabled properly, 2) Video previews might still autoplay - disable in settings, 3) Map views use significant data - use list view instead, 4) Background refresh might still run - disable it, 5) Check your device's data usage breakdown for the app. Monitor before/after enabling data saver to verify effectiveness. If no difference, report this bug. Meanwhile, use mobile website with images disabled in browser for true low-data browsing."
+  },
+  {
+    "id": "ta-085",
+    "category": "technical-app",
+    "problem": "Haptic feedback is way too strong. Phone buzzes aggressively for every tap!",
+    "solution": "Excessive haptic feedback is jarring: 1) Check app settings for haptic feedback intensity options, 2) Your device settings might amplify haptics - check system preferences, 3) Some Android phones have aggressive defaults - reduce system-wide, 4) iOS: Settings > Sounds & Haptics > System Haptics, 5) If no app control exists, report this as needed feature. Haptic feedback should be subtle confirmation, not jarring. Some users disable it entirely for battery savings. We should provide granular control over feedback intensity."
+  },
+  {
+    "id": "ta-086",
+    "category": "technical-app",
+    "problem": "Split screen mode is broken on iPad. App doesn't resize properly.",
+    "solution": "iPad multitasking should work smoothly: 1) Ensure iPad OS is updated for best compatibility, 2) Try different split ratios - some work better than others, 3) Force-quit and reopen app in split screen mode, 4) Check if app has iPad-specific version installed, 5) Some features may not support split screen yet. Report which orientations and split ratios break with screenshots. Workaround: use slide-over instead of split screen, or use Safari for booking while app shows property details. iPad optimization is ongoing."
+  },
+  {
+    "id": "ta-087",
+    "category": "technical-app",
+    "problem": "Offline mode doesn't save anything. Loses all work when connection returns!",
+    "solution": "Offline capability should preserve your work: 1) Ensure offline mode is actually enabled in settings, 2) Some actions can't be saved offline (payments, bookings), 3) Check if app has permission to store local data, 4) Force-sync when connection returns by pulling down, 5) Screenshot important info while offline as backup. True offline support is limited - mainly for viewing saved properties. For reliability: complete important actions only when connected, use screenshot backup method, or copy important text elsewhere. Report which specific actions lose data when reconnecting."
+  },
+  {
+    "id": "ta-088",
+    "category": "technical-app",
+    "problem": "Widget shows error instead of upcoming trips. Useless on home screen!",
+    "solution": "Widgets should provide quick useful information: 1) Remove and re-add widget to refresh authentication, 2) Ensure you're logged into the app recently, 3) Widgets need background refresh enabled to update, 4) iOS 14+ or Android 12+ required for widgets, 5) Try different widget sizes - some are more reliable. If widget consistently errors, the feature might be broken in current version. Report with OS version and widget size. Alternative: use app shortcuts for quick access instead of broken widgets."
+  },
+  {
+    "id": "ta-089",
+    "category": "technical-app",
+    "problem": "Password requirements are insane! Can't create one that meets all rules.",
+    "solution": "Complex password requirements need clear guidance: 1) Typical requirements: 8+ characters, uppercase, lowercase, number, special character, 2) Avoid common patterns like 'Password123!', 3) No spaces at beginning or end, 4) Can't reuse recent passwords, 5) Try a passphrase like 'Coffee@Beach2024!'. Use a password manager to generate and store complex passwords. If requirements seem impossible or keep changing, screenshot the rules and report the bug. Security is important but requirements should be achievable."
+  },
+  {
+    "id": "ta-090",
+    "category": "technical-app",
+    "problem": "Tab order is wrong. Hitting tab jumps randomly around the form!",
+    "solution": "Proper tab order is crucial for keyboard navigation: 1) This is an accessibility bug we need to fix, 2) Try clicking directly instead of tabbing for now, 3) Report specific forms with bad tab order, 4) Mobile keyboards might have different tab behavior, 5) Some browser extensions interfere with tab order. For efficiency, use mouse/touch while we fix this. This particularly affects users who rely on keyboard navigation. Email accessibility@acmerentals.com with specific forms affected - this is high priority for us to fix."
+  },
+  {
+    "id": "ta-091",
+    "category": "technical-app",
+    "problem": "Confirmation codes expire too fast. Can't type 6 digits in 30 seconds!",
+    "solution": "Short code expiration is frustrating: 1) Copy/paste the code if possible instead of typing, 2) Have the code screen ready before requesting, 3) Request new code if expired - don't rush and mistype, 4) Voice call option might give more time, 5) Check if keyboard is slowing you down on mobile. 30 seconds should be sufficient for 6 digits, but we understand difficulties. Report if codes consistently expire too fast. Consider using authenticator app instead of SMS for more reliable codes without expiration pressure."
+  },
+  {
+    "id": "ta-092",
+    "category": "technical-app",
+    "problem": "App translated my listing to wrong language. Now getting foreign inquiries!",
+    "solution": "Unwanted translation creates communication barriers: 1) Check your listing language settings in host dashboard, 2) Disable automatic translation for your listings, 3) Specify supported languages clearly in description, 4) Update listing to trigger re-indexing in correct language, 5) Report incorrect automatic translations. For current foreign inquiries: use translation tools to explain language limitations politely. Set your listing to specific language rather than 'auto-detect'. We're improving translation accuracy, but host control over listing language is important."
+  },
+  {
+    "id": "ta-093",
+    "category": "technical-app",
+    "problem": "Recent update killed battery life. Phone dies in 2 hours with app installed!",
+    "solution": "Severe battery drain after updates needs immediate fix: 1) Check Settings > Battery for detailed app usage stats, 2) Disable all background features temporarily, 3) Report issue with version number and device model, 4) Downgrade to previous version if possible (Android only), 5) Uninstall until fix is released if critical. This is unacceptable - apps shouldn't kill batteries. We likely have a runaway background process. Your battery life matters and we'll issue emergency fix. Meanwhile, use mobile website to avoid the battery-draining app version."
+  },
+  {
+    "id": "ta-094",
+    "category": "technical-app",
+    "problem": "Gesture navigation conflicts with app. Keep accidentally going back/closing!",
+    "solution": "Modern gesture navigation can conflict with app gestures: 1) Adjust gesture sensitivity in device settings, 2) Use gesture hints/bars instead of full gesture mode, 3) Learn the 'peek and hold' gesture to cancel accidental backs, 4) Some apps have gesture zones - avoid edges, 5) Report specific gesture conflicts for fixes. Android: Settings > System > Gestures. iOS: Settings > Accessibility > Touch. We're updating the app to better handle system gestures, but device-level adjustments help immediately."
+  },
+  {
+    "id": "ta-095",
+    "category": "technical-app",
+    "problem": "Dynamic type/font scaling breaks entire layout. Large text overlaps everything!",
+    "solution": "Accessibility font scaling should work properly: 1) We're working on better dynamic type support, 2) Try medium text size as compromise for now, 3) Use zoom instead of largest text sizes temporarily, 4) Report specific screens that break with large text, 5) Website might handle text scaling better than app. This is an accessibility failure we take seriously. Email accessibility@acmerentals.com with screenshots of broken layouts. Everyone should be able to use their preferred text size. We'll prioritize fixing dynamic type support."
+  },
+  {
+    "id": "ta-096",
+    "category": "technical-app",
+    "problem": "App shows I'm in wrong location. Thinks I'm 500 miles away!",
+    "solution": "Location detection errors affect search results: 1) Check if location services are enabled and set to precise, 2) VPNs often cause wrong location detection - disable temporarily, 3) WiFi location can be inaccurate - try cellular data, 4) Manually enter your correct location in search, 5) Reset location permissions and grant again. Some ISPs route traffic strangely, causing geolocation errors. For immediate fix, always search by entering city name rather than using 'Near me'. Report consistent wrong location detection with your actual location and detected location."
+  },
+  {
+    "id": "ta-097",
+    "category": "technical-app",
+    "problem": "Share sheet crashes every time on iOS 15. Can't share anything!",
+    "solution": "iOS share sheet crashes need specific fixes: 1) Update to latest iOS version - Apple fixed many share sheet bugs, 2) Reset share sheet by going to share > More > Edit, 3) Disable share extensions that might conflict, 4) Try sharing to fewer apps (don't scroll in share sheet), 5) Screenshot and share the image instead as workaround. This is often an iOS bug rather than our app. If persists after iOS update, report with crash logs. Alternative sharing: copy link manually or use the web version for sharing."
+  },
+  {
+    "id": "ta-098",
+    "category": "technical-app",
+    "problem": "Manage subscription button does nothing. Can't cancel Acme+ membership!",
+    "solution": "Subscription management must be accessible: 1) Try managing through your device's subscription settings instead (iOS: Settings > Apple ID > Subscriptions, Android: Play Store > Payments & Subscriptions), 2) Use website instead of app for account management, 3) Clear app cache and try again, 4) Ensure you're logged into the account with subscription, 5) Contact billing@acmerentals.com directly for manual cancellation. You have the right to cancel anytime. If UI is broken, we'll process cancellation manually. Include your account email and request clearly."
+  },
+  {
+    "id": "ta-099",
+    "category": "technical-app",
+    "problem": "AR view for properties crashes immediately. Want to see virtual furniture placement!",
+    "solution": "AR features require specific hardware and software: 1) Check if your device supports ARCore (Android) or ARKit (iOS), 2) Update your OS to latest version for AR support, 3) Ensure camera permissions are granted, 4) Good lighting is essential for AR to work, 5) Clear app cache as AR data can corrupt. Older devices may not support AR features. If your device should support AR but crashes, report with device model. Alternative: use 360-degree photos for immersive viewing without AR requirements."
+  },
+  {
+    "id": "ta-100",
+    "category": "technical-app",
+    "problem": "Emergency contact feature doesn't work. Can't add or call emergency numbers!",
+    "solution": "Emergency features must work reliably: 1) Ensure you've granted phone/contacts permissions, 2) Try adding contacts manually instead of from phone book, 3) Check if numbers include country code correctly, 4) Test with different number formats, 5) Use local emergency numbers (911) directly instead. This is a critical safety feature - if broken, report immediately to tech@acmerentals.com. As backup: save emergency numbers in your phone contacts, share trip details with trusted contacts manually, and know local emergency numbers for your destination. Your safety is paramount!"
+  }
+]
