@@ -124,7 +124,7 @@ Return your response as a JSON object with this exact format:
 
 
 @function_tool
-def get_all_tickets() -> str:
+async def get_all_tickets() -> str:
     """Get all tickets from the knowledge base.
     
     Returns:
@@ -158,7 +158,7 @@ def get_all_tickets() -> str:
 
 
 @function_tool
-def filter_relevant_tickets(customer_problem: str, all_tickets_json: str) -> str:
+async def filter_relevant_tickets(customer_problem: str, all_tickets_json: str) -> str:
     """Filter tickets for relevance to customer problem.
     
     Args:
@@ -185,22 +185,14 @@ Available Tickets:
 
 Which ticket IDs are relevant to solving this customer's problem?"""
         
-        async def evaluate():
-            result = await Runner.run(relevance_agent, input=prompt)
-            return result.final_output
-        
-        # Run relevance evaluation
-        loop = asyncio.new_event_loop()
-        asyncio.set_event_loop(loop)
-        try:
-            relevance_result = loop.run_until_complete(evaluate())
-        finally:
-            loop.close()
+        # Clean async call - no event loop creation!
+        relevance_result = await Runner.run(relevance_agent, input=prompt)
+        result_text = relevance_result.final_output
         
         # Ensure we always return valid JSON
         try:
             # Try to parse the result as JSON
-            parsed_result = json.loads(relevance_result)
+            parsed_result = json.loads(result_text)
             
             # Validate the structure
             if isinstance(parsed_result, dict) and "relevant_ids" in parsed_result:
@@ -227,7 +219,7 @@ Which ticket IDs are relevant to solving this customer's problem?"""
             # If result is not valid JSON, try to extract ticket IDs manually
             relevant_ids = []
             for ticket in tickets:
-                if ticket['id'] in relevance_result:
+                if ticket['id'] in result_text:
                     relevant_ids.append(ticket['id'])
             
             return json.dumps({
