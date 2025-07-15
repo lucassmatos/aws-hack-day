@@ -197,11 +197,47 @@ Which ticket IDs are relevant to solving this customer's problem?"""
         finally:
             loop.close()
         
-        return relevance_result
+        # Ensure we always return valid JSON
+        try:
+            # Try to parse the result as JSON
+            parsed_result = json.loads(relevance_result)
+            
+            # Validate the structure
+            if isinstance(parsed_result, dict) and "relevant_ids" in parsed_result:
+                # Ensure relevant_ids is a list
+                if not isinstance(parsed_result["relevant_ids"], list):
+                    parsed_result["relevant_ids"] = []
+                
+                # Add reasoning if missing
+                if "reasoning" not in parsed_result:
+                    if not parsed_result["relevant_ids"]:
+                        parsed_result["reasoning"] = "No tickets are relevant to this customer's problem"
+                    else:
+                        parsed_result["reasoning"] = f"Found {len(parsed_result['relevant_ids'])} relevant tickets"
+                
+                return json.dumps(parsed_result)
+            else:
+                # Invalid structure, return empty result
+                return json.dumps({
+                    "relevant_ids": [], 
+                    "reasoning": "Could not determine relevant tickets - invalid response format"
+                })
+                
+        except json.JSONDecodeError:
+            # If result is not valid JSON, try to extract ticket IDs manually
+            relevant_ids = []
+            for ticket in tickets:
+                if ticket['id'] in relevance_result:
+                    relevant_ids.append(ticket['id'])
+            
+            return json.dumps({
+                "relevant_ids": relevant_ids,
+                "reasoning": "Extracted IDs from text response" if relevant_ids else "No relevant tickets found"
+            })
         
     except Exception as e:
         print(f"Error filtering tickets: {e}")
-        return json.dumps({"relevant_ids": [], "reasoning": f"Error: {str(e)}"})
+        return json.dumps({"relevant_ids": [], "reasoning": f"Error during filtering: {str(e)}"})
 
 
 @function_tool
@@ -222,12 +258,19 @@ class TicketAgent:
 Process:
 1. Use get_all_tickets to get all available tickets
 2. Use filter_relevant_tickets to find which tickets are relevant to the customer's problem
-3. Analyze the relevant tickets and provide a helpful solution
+3. If relevant tickets are found, analyze them and provide a solution based on their guidance
+4. If NO relevant tickets are found (relevant_ids array is empty), do NOT retry the tools - instead provide general helpful guidance
+
+IMPORTANT - Avoid loops:
+- Only call get_all_tickets ONCE per customer problem
+- Only call filter_relevant_tickets ONCE per customer problem  
+- If filter_relevant_tickets returns empty relevant_ids, accept this result and provide general guidance
+- Do NOT retry the same tools multiple times
 
 Guidelines:
 - Be professional and empathetic
 - Use relevant ticket solutions as guidance but personalize for the specific customer
-- If no relevant tickets found, provide general helpful guidance
+- When no relevant tickets exist, acknowledge this and provide the best general guidance you can
 - Keep solutions clear and actionable
 - Always provide a direct solution, not meta-discussion about the process""",
             tools=[get_all_tickets, filter_relevant_tickets, generate_ticket_id],
