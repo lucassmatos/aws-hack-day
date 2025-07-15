@@ -1,24 +1,23 @@
 """Weaviate client configuration."""
 
-import os
 import weaviate
 from weaviate.classes.init import Auth
 from typing import Optional
+from backend.src.config import get_weaviate_config
 
 
 def create_weaviate_client() -> Optional[weaviate.WeaviateClient]:
     """Create and return Weaviate client."""
-    weaviate_url = os.getenv("WEAVIATE_URL")
-    weaviate_key = os.getenv("WEAVIATE_API_KEY")
+    config = get_weaviate_config()
     
-    if not weaviate_url or not weaviate_key:
+    if not config:
         print("WEAVIATE_URL or WEAVIATE_API_KEY not configured")
         return None
     
     try:
         client = weaviate.connect_to_weaviate_cloud(
-            cluster_url=weaviate_url,
-            auth_credentials=Auth.api_key(weaviate_key),
+            cluster_url=config["url"],
+            auth_credentials=Auth.api_key(config["api_key"]),
         )
         
         if not client.is_ready():

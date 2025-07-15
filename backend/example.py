@@ -1,12 +1,31 @@
-"""Practical example of WeviateService usage."""
+"""Practical example of WeviateService and OpenAI usage."""
 
+import os
+from dotenv import load_dotenv
 from backend.src.weviate_service import create_weviate_service
+from backend.src.openai_service import create_openai_service
+
+# Load environment variables
+load_dotenv()
 
 
 def main():
-    """WeviateService usage example."""
+    """WeviateService and OpenAI usage example."""
     
-    # Create service for your collection
+    print("=== Backend Services Example ===")
+    
+    # Test OpenAI Service
+    print("\n🤖 Testing OpenAI Service...")
+    openai_service = create_openai_service()
+    if openai_service.connect():
+        print("✅ Connected to OpenAI")
+        response = openai_service.generate_text("Say hello in a friendly way!")
+        print(f"AI Response: {response}")
+    else:
+        print("❌ Failed to connect to OpenAI")
+    
+    # Test Weaviate Service
+    print("\n🔍 Testing Weaviate Service...")
     service = create_weviate_service("YourCollectionName")
     
     if service.connect():
@@ -51,11 +70,10 @@ def main():
         for ticket in results:
             print(f"- {ticket['id']}: {ticket['description']}")
         
-        # Search with filter
-        filter_criteria = {"path": ["category"], "operator": "Equal", "valueText": "backend"}
-        filtered_results = service.query_with_filter("system error", filter_criteria, limit=3)
-        print(f"\n🔍 Filtered results ({len(filtered_results)}):")
-        for ticket in filtered_results:
+        # Additional search example
+        tech_results = service.query("technical issues", limit=3)
+        print(f"\n🔍 Technical results ({len(tech_results)}):")
+        for ticket in tech_results:
             print(f"- {ticket['id']}: {ticket['description']}")
         
         service.disconnect()
