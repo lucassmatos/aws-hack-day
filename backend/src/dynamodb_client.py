@@ -119,31 +119,41 @@ def get_ticket_by_id(ticket_id: str) -> Optional[Ticket]:
         return None
 
 
-def list_tickets(limit: int = 50) -> List[Ticket]:
-    """List all tickets for UI."""
+def list_tickets(limit: int = 50, page_token: Optional[Dict] = None) -> Dict[str, Any]:
+    """List tickets with pagination support."""
     client = create_dynamodb_client()
     if not client:
-        return []
+        return {"tickets": [], "next_page_token": None}
     
     config = get_dynamodb_config()
     if not config:
         print("DynamoDB configuration not found")
-        return []
+        return {"tickets": [], "next_page_token": None}
     
     table = get_table(client, config["table_name"])
     if not table:
-        return []
+        return {"tickets": [], "next_page_token": None}
     
     try:
-        response = table.scan(Limit=limit)
+        # Build scan parameters
+        scan_params: Dict[str, Any] = {"Limit": limit}
+        if page_token:
+            scan_params["ExclusiveStartKey"] = page_token
+        
+        response = table.scan(**scan_params)
         
         tickets = response.get('Items', [])
-        print(f"✅ Found {len(tickets)} tickets")
-        return tickets
+        next_page_token = response.get('LastEvaluatedKey')
+        
+        print(f"✅ Found {len(tickets)} tickets on this page")
+        return {
+            "tickets": tickets,
+            "next_page_token": next_page_token
+        }
         
     except Exception as e:
         print(f"Error listing tickets: {e}")
-        return []
+        return {"tickets": [], "next_page_token": None}
 
 
 def query_tickets_by_category(category: str, limit: int = 20) -> List[Ticket]:
