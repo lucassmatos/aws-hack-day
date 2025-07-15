@@ -194,7 +194,7 @@ def test_openai_connection():
         
         # Test with a simple completion
         response = client.chat.completions.create(
-            model="gpt-4.1",
+            model="gpt-4o-mini",
             messages=[{"role": "user", "content": "Say hello in one word"}],
             max_tokens=5
         )
