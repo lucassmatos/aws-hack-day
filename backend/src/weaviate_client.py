@@ -3,7 +3,7 @@
 import weaviate
 from weaviate.classes.init import Auth
 from typing import Optional
-from backend.src.config import get_weaviate_config
+from config import get_weaviate_config
 
 
 def create_weaviate_client() -> Optional[weaviate.WeaviateClient]:

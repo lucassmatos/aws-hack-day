@@ -3,8 +3,8 @@
 from typing import List, Optional, Dict, Any
 import weaviate
 from weaviate.classes.query import Filter
-from backend.src.types import Ticket
-from backend.src.weaviate_client import create_weaviate_client, close_client
+from types import Ticket
+from weaviate_client import create_weaviate_client, close_client
 
 
 class WeviateService:
