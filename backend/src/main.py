@@ -3,7 +3,7 @@
 import os
 from dotenv import load_dotenv
 from fastapi import FastAPI
-from .config import get_settings
+from backend.src.config import get_settings
 
 # Load environment variables from .env file
 load_dotenv()
@@ -17,10 +17,6 @@ app = FastAPI(
     version="0.1.0",
     debug=settings.debug
 )
-from types import Ticket
-from typing import List
-
-app = FastAPI()
 
 
 @app.get("/")
@@ -46,27 +42,39 @@ def config_status():
         "aws_configured": bool(settings.aws_access_key_id and settings.aws_secret_access_key),
     }
 
-@app.post("/tickets/", response_model=Ticket)
-def create_ticket(ticket: dict):  # Accepts problem and solution, assigns id
-    ticket_id = str(uuid4())
-    new_ticket = {
-        "id": ticket_id,
-        "problem": ticket.get("problem"),
-        "solution": ticket.get("solution")
-    }
-    tickets_db[ticket_id] = new_ticket
-    return new_ticket
 
-@app.get("/tickets/", response_model=List[Ticket])
-def get_tickets():
-    return list(tickets_db.values())
+@app.post("/tickets/", response_model=Ticket)
+def create_ticket(ticket: dict):
+    return save_ticket(ticket)
+
+
+from fastapi import Query
+from typing import Optional
+import json
+
+@app.get("/tickets/")
+def get_tickets(
+    limit: int = Query(50, description="Number of tickets per page"),
+    page_token: Optional[str] = Query(None, description="DynamoDB pagination token as JSON string")
+):
+    token = None
+    if page_token:
+        token = json.loads(page_token)
+    result = list_tickets(limit=limit, page_token=token)
+    return result
+
 
 @app.get("/tickets/{ticket_id}", response_model=Ticket)
 def get_ticket(ticket_id: str):
-    ticket = tickets_db.get(ticket_id)
+    ticket = get_ticket_by_id(ticket_id)
     if not ticket:
         raise HTTPException(status_code=404, detail="Ticket not found")
     return ticket
+
+
+@app.get("/tickets/category/{category}", response_model=List[Ticket])
+def get_tickets_by_category(category: str):
+    return query_tickets_by_category(category)
 
 
 if __name__ == "__main__":
