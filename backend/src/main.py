@@ -1,9 +1,14 @@
 """Backend main application."""
 
 import os
+from uuid import uuid4
 from dotenv import load_dotenv
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from .config import get_settings
+from .types import Ticket
+from .categorization_agent import CategorizationAgent
+from .solution_agent import SolutionAgent
+from typing import List
 
 # Load environment variables from .env file
 load_dotenv()
@@ -17,10 +22,13 @@ app = FastAPI(
     version="0.1.0",
     debug=settings.debug
 )
-from types import Ticket
-from typing import List
 
-app = FastAPI()
+# In-memory storage for tickets
+tickets_db = {}
+
+# Initialize AI agents
+categorization_agent = CategorizationAgent()
+solution_agent = SolutionAgent()
 
 
 @app.get("/")
@@ -47,14 +55,34 @@ def config_status():
     }
 
 @app.post("/tickets/", response_model=Ticket)
-def create_ticket(ticket: dict):  # Accepts problem and solution, assigns id
+def create_ticket(ticket: dict):  # Accepts problem, uses AI for categorization and solution
     ticket_id = str(uuid4())
+    problem = ticket.get("problem", "")
+    
+    # Use categorization agent to classify the ticket
+    categorization_result = categorization_agent.categorize_ticket(problem)
+    category = categorization_result.get("category", "technical")
+    
+    # Use solution agent to suggest a solution
+    solution_result = solution_agent.suggest_solution(problem, category)
+    solution = solution_result.get("solution", "Please contact our support team for assistance.")
+    
+    # Create ticket with AI-generated data
     new_ticket = {
         "id": ticket_id,
-        "problem": ticket.get("problem"),
-        "solution": ticket.get("solution")
+        "problem": problem,
+        "solution": solution,
+        "category": category,
+        "priority": "medium",  # Default priority
+        "status": "open"       # Default status
     }
+    
+    # Store ticket in database
     tickets_db[ticket_id] = new_ticket
+    
+    # Store ticket solution in Weaviate for future reference
+    solution_agent.store_ticket_solution(new_ticket)
+    
     return new_ticket
 
 @app.get("/tickets/", response_model=List[Ticket])
@@ -67,6 +95,40 @@ def get_ticket(ticket_id: str):
     if not ticket:
         raise HTTPException(status_code=404, detail="Ticket not found")
     return ticket
+
+@app.post("/categorize")
+def categorize_problem(request: dict):
+    """Categorize a problem without creating a ticket."""
+    problem = request.get("problem", "")
+    if not problem:
+        raise HTTPException(status_code=400, detail="Problem description is required")
+    
+    result = categorization_agent.categorize_ticket(problem)
+    return {
+        "problem": problem,
+        "category": result.get("category"),
+        "category_name": categorization_agent.get_category_name(result.get("category", "")),
+        "confidence": result.get("confidence"),
+        "reasoning": result.get("reasoning")
+    }
+
+@app.post("/suggest-solution")
+def suggest_solution(request: dict):
+    """Suggest a solution for a problem without creating a ticket."""
+    problem = request.get("problem", "")
+    category = request.get("category", "technical")
+    
+    if not problem:
+        raise HTTPException(status_code=400, detail="Problem description is required")
+    
+    result = solution_agent.suggest_solution(problem, category)
+    return {
+        "problem": problem,
+        "category": category,
+        "solution": result.get("solution"),
+        "confidence": result.get("confidence"),
+        "similar_tickets": result.get("similar_tickets", [])
+    }
 
 
 if __name__ == "__main__":
