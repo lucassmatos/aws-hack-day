@@ -6,6 +6,7 @@ import json
 import weaviate
 import weaviate.classes as wvc
 from weaviate.classes.init import Auth
+from weaviate.classes.config import Configure
 from dotenv import load_dotenv
 
 # Load environment variables
@@ -78,30 +79,29 @@ def load_mock_data():
         print("✅ Connected to Weaviate!")
         
         # Collection name for the issues
-        collection_name = "Tickets"
+        collection_name = "TicketsNoVector"
         
         try:
-            # Step 1: Create Collection (if not exists)
+            # Step 1: Delete existing collection if it exists (to avoid config conflicts)
             print(f"\n📁 Setting up collection '{collection_name}'...")
             
             if client.collections.exists(collection_name):
-                print(f"   Collection already exists")
-                collection = client.collections.get(collection_name)
-            else:
-                print(f"   Creating new collection without vectorization...")
-                client.collections.create(
-                    name=collection_name,
-                    description="Customer support issues and solutions dataset",
-                    vectorizer_config=wvc.config.Configure.Vectorizer.none()
-                )
-                collection = client.collections.get(collection_name)
-                print("   ✅ Collection created successfully")
+                print(f"   Deleting existing collection to avoid configuration conflicts...")
+                client.collections.delete(collection_name)
+            
+            print(f"   Creating new collection without vectorization...")
+            
+            # Create collection without vectorization
+            client.collections.create(
+                name=collection_name,
+                description="Customer support issues and solutions dataset (no vectors)",
+                vectorizer_config=Configure.Vectorizer.none(),  # Disable vectorization
+            )
+            collection = client.collections.get(collection_name)
+            print("   ✅ Collection created successfully without vectorization")
             
             # Step 2: Load data in batches
             print(f"\n📚 Loading {len(issues)} issues into Weaviate...")
-            
-            # Clear existing data (optional - skipped for now)
-            print("   ℹ️  Adding to existing data (not clearing)")
             
             # Batch insert the issues
             batch_size = 10
@@ -176,14 +176,14 @@ def load_mock_data():
         return False
 
 if __name__ == "__main__":
-    print("Loading mock issues dataset into Weaviate...\n")
+    print("Loading mock issues dataset into Weaviate (without vectorization)...\n")
     
     success = load_mock_data()
     
     print(f"\n=== Summary ===")
     if success:
         print("✅ Mock data loaded successfully!")
-        print("🔍 You can now test queries against the SupportIssues collection")
+        print("🔍 You can now test queries against the TicketsNoVector collection")
     else:
         print("❌ Data loading failed")
         print("💡 Check your Weaviate configuration and try again") 
