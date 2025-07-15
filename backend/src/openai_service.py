@@ -78,7 +78,7 @@ class OpenAIService:
             return []
 
 
-# Global Weaviate client for function tools
+# Global Weaviate client
 _weaviate_client: Optional[weaviate.WeaviateClient] = None
 
 
@@ -89,7 +89,6 @@ def _get_weaviate_client() -> Optional[weaviate.WeaviateClient]:
     if _weaviate_client is None:
         config = get_weaviate_config()
         if not config:
-            print("Weaviate configuration not found")
             return None
             
         try:
@@ -99,7 +98,6 @@ def _get_weaviate_client() -> Optional[weaviate.WeaviateClient]:
             )
             
             if not _weaviate_client.is_ready():
-                print("Weaviate client not ready")
                 return None
                 
         except Exception as e:
@@ -110,133 +108,105 @@ def _get_weaviate_client() -> Optional[weaviate.WeaviateClient]:
 
 
 # Relevance Evaluator Agent
-relevance_evaluator = Agent(
+relevance_agent = Agent(
     name="Relevance Evaluator",
-    instructions="""You are a ticket relevance evaluator. Your job is to determine which tickets from a knowledge base are actually relevant to a customer's specific problem.
+    instructions="""You are a relevance evaluator. Given a customer problem and a list of support tickets, determine which tickets are actually relevant to solving the customer's problem.
 
-Given a customer problem and a list of potential tickets, evaluate each ticket and return only those that are truly relevant.
+Be strict - only return IDs of tickets that would genuinely help solve the customer's specific issue. Ignore tickets that are only tangentially related or about different problems entirely.
 
-Be strict in your evaluation:
-- Only include tickets that would genuinely help solve the customer's problem
-- Exclude tickets that are only tangentially related or about different issues
-- Consider the core problem, not just keyword matches
-
-Return a JSON response with this exact format:
+Return your response as a JSON object with this exact format:
 {
-    "relevant_tickets": [
-        {
-            "id": "ticket_id",
-            "problem": "ticket problem text", 
-            "solution": "ticket solution text",
-            "relevance_reason": "brief explanation why this ticket is relevant"
-        }
-    ],
-    "total_relevant": number_of_relevant_tickets
+    "relevant_ids": ["ID1", "ID2", "ID3"],
+    "reasoning": "Brief explanation of your filtering decisions"
 }""",
     tools=[],
 )
 
 
 @function_tool
-def get_relevant_tickets(customer_problem: str, limit: int = 3) -> str:
-    """Search for tickets and filter for relevance to customer problem.
+def get_all_tickets() -> str:
+    """Get all tickets from the knowledge base.
     
-    Args:
-        customer_problem: The customer's problem description
-        limit: Maximum number of relevant tickets to return
-        
     Returns:
-        JSON string containing only relevant tickets
+        JSON string with all tickets
     """
     client = _get_weaviate_client()
     if not client:
-        return json.dumps({"relevant_tickets": [], "total_relevant": 0, "error": "Unable to connect to knowledge base"})
+        return json.dumps([])
     
     try:
-        # Search for similar tickets in Weaviate
         collection = client.collections.get("Tickets")
-        response = collection.query.fetch_objects(limit=10)
+        response = collection.query.fetch_objects(limit=50)
         
         if not response.objects:
-            return json.dumps({"relevant_tickets": [], "total_relevant": 0, "error": "No tickets found in knowledge base"})
+            return json.dumps([])
         
-        # Calculate similarity scores
-        problem_lower = customer_problem.lower()
-        candidate_tickets = []
-        
+        # Convert to list
+        all_tickets = []
         for obj in response.objects:
-            ticket_problem = str(obj.properties.get("problem", "")).lower()
-            ticket_solution = str(obj.properties.get("solution", ""))
-            issue_id = str(obj.properties.get("issue_id", ""))
-            
-            # Basic similarity scoring
-            similarity_score = 0
-            problem_words = problem_lower.split()
-            
-            for word in problem_words:
-                if len(word) > 3:
-                    if word in ticket_problem:
-                        similarity_score += 2
-                    if word in ticket_solution:
-                        similarity_score += 1
-            
-            if similarity_score > 0:
-                candidate_tickets.append({
-                    "id": issue_id,
-                    "problem": str(obj.properties.get("problem", "")),
-                    "solution": ticket_solution,
-                    "similarity_score": similarity_score
-                })
+            all_tickets.append({
+                "id": str(obj.properties.get("issue_id", "")),
+                "problem": str(obj.properties.get("problem", "")),
+                "solution": str(obj.properties.get("solution", ""))
+            })
         
-        if not candidate_tickets:
-            return json.dumps({"relevant_tickets": [], "total_relevant": 0, "message": "No similar tickets found"})
+        return json.dumps(all_tickets)
         
-        # Sort by similarity and take top candidates
-        candidate_tickets.sort(key=lambda x: x["similarity_score"], reverse=True)
-        top_candidates = candidate_tickets[:limit * 2]  # Get more candidates for relevance evaluation
-        
-        # Prepare tickets for relevance evaluation
-        tickets_for_evaluation = json.dumps([
-            {
-                "id": ticket["id"],
-                "problem": ticket["problem"],
-                "solution": ticket["solution"]
-            }
-            for ticket in top_candidates
-        ], indent=2)
-        
-        # Use relevance evaluator to filter tickets
-        async def evaluate_relevance():
-            evaluation_prompt = f"""Customer Problem: {customer_problem}
+    except Exception as e:
+        print(f"Error getting tickets: {e}")
+        return json.dumps([])
 
-Candidate Tickets:
-{tickets_for_evaluation}
 
-Please evaluate which tickets are actually relevant to this customer's problem and return the result in the specified JSON format."""
-            
-            result = await Runner.run(relevance_evaluator, input=evaluation_prompt)
+@function_tool
+def filter_relevant_tickets(customer_problem: str, all_tickets_json: str) -> str:
+    """Filter tickets for relevance to customer problem.
+    
+    Args:
+        customer_problem: The customer's problem description
+        all_tickets_json: JSON string with all tickets
+        
+    Returns:
+        JSON string with only relevant ticket IDs
+    """
+    try:
+        tickets = json.loads(all_tickets_json)
+        if not tickets:
+            return json.dumps({"relevant_ids": [], "reasoning": "No tickets available"})
+        
+        tickets_text = "\n\n".join([
+            f"ID: {ticket['id']}\nProblem: {ticket['problem']}\nSolution: {ticket['solution']}"
+            for ticket in tickets
+        ])
+        
+        prompt = f"""Customer Problem: {customer_problem}
+
+Available Tickets:
+{tickets_text}
+
+Which ticket IDs are relevant to solving this customer's problem?"""
+        
+        async def evaluate():
+            result = await Runner.run(relevance_agent, input=prompt)
             return result.final_output
         
         # Run relevance evaluation
         loop = asyncio.new_event_loop()
         asyncio.set_event_loop(loop)
         try:
-            relevance_result = loop.run_until_complete(evaluate_relevance())
-            return relevance_result
+            relevance_result = loop.run_until_complete(evaluate())
         finally:
             loop.close()
-            
+        
+        return relevance_result
+        
     except Exception as e:
-        return json.dumps({"relevant_tickets": [], "total_relevant": 0, "error": f"Error searching tickets: {str(e)}"})
+        print(f"Error filtering tickets: {e}")
+        return json.dumps({"relevant_ids": [], "reasoning": f"Error: {str(e)}"})
 
 
 @function_tool
-def create_ticket_id() -> str:
-    """Generate a unique ticket ID.
-    
-    Returns:
-        A unique ticket ID string
-    """
+def generate_ticket_id() -> str:
+    """Generate a unique ticket ID."""
     return f"AUTO-{str(uuid.uuid4())[:8].upper()}"
 
 
@@ -247,37 +217,28 @@ class TicketAgent:
         """Initialize the ticket agent."""
         self.agent = Agent(
             name="Customer Support Agent",
-            instructions="""You are a professional customer support AI agent. Your job is to help resolve customer problems by:
+            instructions="""You are a professional customer support agent. Your job is to resolve customer problems using the knowledge base.
 
-1. Using the get_relevant_tickets function to find relevant historical tickets
-2. Analyzing the solutions from relevant tickets
-3. Providing a helpful, personalized solution for the customer
+Process:
+1. Use get_all_tickets to get all available tickets
+2. Use filter_relevant_tickets to find which tickets are relevant to the customer's problem
+3. Analyze the relevant tickets and provide a helpful solution
 
 Guidelines:
-- Always search for relevant tickets first using get_relevant_tickets
-- Use the solutions from relevant tickets as guidance
-- Personalize your response to the customer's specific situation  
-- Be professional, empathetic, and clear
-- If no relevant tickets are found, provide general helpful guidance
-- Keep solutions concise but complete
-
-Your response should be a direct solution to the customer's problem, not a meta-discussion about the process.""",
-            tools=[get_relevant_tickets, create_ticket_id],
+- Be professional and empathetic
+- Use relevant ticket solutions as guidance but personalize for the specific customer
+- If no relevant tickets found, provide general helpful guidance
+- Keep solutions clear and actionable
+- Always provide a direct solution, not meta-discussion about the process""",
+            tools=[get_all_tickets, filter_relevant_tickets, generate_ticket_id],
         )
     
     async def generate_solution(self, problem: str) -> str:
-        """Generate a solution for a customer problem.
-        
-        Args:
-            problem: The customer's problem description
-            
-        Returns:
-            A solution generated by the AI agent
-        """
+        """Generate solution for customer problem."""
         try:
             result = await Runner.run(
                 self.agent, 
-                input=f"A customer has this problem: {problem}\n\nPlease help resolve this issue."
+                input=f"Customer problem: {problem}\n\nPlease resolve this issue."
             )
             return result.final_output
         except Exception as e:
@@ -285,18 +246,8 @@ Your response should be a direct solution to the customer's problem, not a meta-
             return "Sorry, I'm unable to generate a solution at this time. Please contact support."
     
     async def create_ticket_with_solution(self, problem: str) -> Ticket:
-        """Create a new ticket and automatically generate a solution.
-        
-        Args:
-            problem: The customer's problem description
-            
-        Returns:
-            A Ticket object with id, problem, and solution
-        """
-        # Generate solution
+        """Create a ticket with generated solution."""
         solution = await self.generate_solution(problem)
-        
-        # Generate ticket ID
         ticket_id = f"AUTO-{str(uuid.uuid4())[:8].upper()}"
         
         return {
