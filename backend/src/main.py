@@ -100,13 +100,36 @@ import json
 @app.get("/tickets/")
 def get_tickets(
     limit: int = Query(50, description="Number of tickets per page"),
-    page_token: Optional[str] = Query(None, description="DynamoDB pagination token as JSON string")
+    page_token: Optional[str] = Query(None, description="Ticket ID to start pagination from")
 ):
+    # Convert simple ID token to DynamoDB key format
     token = None
     if page_token:
-        token = json.loads(page_token)
-    result = list_tickets(limit=limit, page_token=token)
-    return result
+        try:
+            # If it's a simple string ID, convert to DynamoDB key format
+            if not page_token.startswith('{'):
+                token = {"id": page_token}
+            else:
+                # Backward compatibility - if it's JSON, parse it
+                token = json.loads(page_token)
+        except json.JSONDecodeError:
+            raise HTTPException(status_code=400, detail="Invalid page_token format.")
+        except Exception as e:
+            raise HTTPException(status_code=400, detail=f"Error parsing page_token: {str(e)}")
+    
+    try:
+        result = list_tickets(limit=limit, page_token=token)
+        
+        # Simplify the next_page_token to just return the ID
+        if result.get("next_page_token"):
+            next_token = result["next_page_token"]
+            if isinstance(next_token, dict) and "id" in next_token:
+                result["next_page_token"] = next_token["id"]
+        
+        return result
+    except Exception as e:
+        print(f"Error listing tickets: {e}")
+        raise HTTPException(status_code=500, detail=f"Error retrieving tickets: {str(e)}")
 
 
 @app.get("/tickets/{ticket_id}", response_model=Ticket)
