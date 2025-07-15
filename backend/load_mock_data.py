@@ -67,10 +67,11 @@ def load_mock_data():
                 print(f"   Collection already exists")
                 collection = client.collections.get(collection_name)
             else:
-                print(f"   Creating new collection...")
+                print(f"   Creating new collection without vectorization...")
                 client.collections.create(
                     name=collection_name,
-                    description="Customer support issues and solutions dataset"
+                    description="Customer support issues and solutions dataset",
+                    vectorizer_config=wvc.config.Configure.Vectorizer.none()
                 )
                 collection = client.collections.get(collection_name)
                 print("   ✅ Collection created successfully")

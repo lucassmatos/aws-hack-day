@@ -8,3 +8,4 @@ class Ticket(TypedDict):
     id: str
     problem: str
     solution: Optional[str]
+    category: str

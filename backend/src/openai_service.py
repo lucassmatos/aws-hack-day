@@ -4,6 +4,7 @@ import os
 import json
 import uuid
 import asyncio
+import logging
 from typing import Optional, Dict, Any, List, TypedDict
 from openai import OpenAI
 import weaviate
@@ -12,6 +13,10 @@ from config import get_openai_config, get_weaviate_config
 
 # OpenAI agents imports
 from agents import Agent, Runner, function_tool
+
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
 
 class Ticket(TypedDict):
@@ -87,22 +92,32 @@ def _get_weaviate_client() -> Optional[weaviate.WeaviateClient]:
     global _weaviate_client
     
     if _weaviate_client is None:
+        logger.info("🔌 Creating new Weaviate client...")
+        
         config = get_weaviate_config()
         if not config:
+            logger.error("❌ No Weaviate config available")
             return None
             
         try:
+            logger.info(f"🔗 Connecting to Weaviate at {config['url']}")
+            
             _weaviate_client = weaviate.connect_to_weaviate_cloud(
                 cluster_url=config["url"],
                 auth_credentials=Auth.api_key(config["api_key"]),
             )
             
             if not _weaviate_client.is_ready():
+                logger.error("❌ Weaviate client not ready")
                 return None
+            
+            logger.info("✅ Weaviate client connected and ready")
                 
         except Exception as e:
-            print(f"Error connecting to Weaviate: {e}")
+            logger.error(f"❌ Error connecting to Weaviate: {e}")
             return None
+    else:
+        logger.debug("♻️ Reusing existing Weaviate client")
     
     return _weaviate_client
 
@@ -114,11 +129,13 @@ relevance_agent = Agent(
 
 Be strict - only return IDs of tickets that would genuinely help solve the customer's specific issue. Ignore tickets that are only tangentially related or about different problems entirely.
 
-Return your response as a JSON object with this exact format:
+CRITICAL: Return ONLY a valid JSON object with this EXACT format - no additional text before or after:
 {
     "relevant_ids": ["ID1", "ID2", "ID3"],
     "reasoning": "Brief explanation of your filtering decisions"
-}""",
+}
+
+Do NOT include any other text, explanations, or formatting. Just the JSON object.""",
     tools=[],
 )
 
@@ -130,15 +147,19 @@ async def get_all_tickets() -> str:
     Returns:
         JSON string with all tickets
     """
+    logger.info("🎫 get_all_tickets() called - fetching tickets from Weaviate")
+    
     client = _get_weaviate_client()
     if not client:
+        logger.error("❌ No Weaviate client available")
         return json.dumps([])
     
     try:
         collection = client.collections.get("Tickets")
-        response = collection.query.fetch_objects(limit=50)
+        response = collection.query.fetch_objects(limit=10)
         
         if not response.objects:
+            logger.warning("⚠️ No tickets found in Weaviate")
             return json.dumps([])
         
         # Convert to list
@@ -150,10 +171,15 @@ async def get_all_tickets() -> str:
                 "solution": str(obj.properties.get("solution", ""))
             })
         
-        return json.dumps(all_tickets)
+        logger.info(f"✅ Found {len(all_tickets)} tickets in Weaviate")
+        logger.debug(f"Ticket IDs: {[t['id'] for t in all_tickets]}")
+        
+        result = json.dumps(all_tickets)
+        logger.debug(f"Returning JSON with {len(result)} characters")
+        return result
         
     except Exception as e:
-        print(f"Error getting tickets: {e}")
+        logger.error(f"❌ Error getting tickets: {e}")
         return json.dumps([])
 
 
@@ -168,9 +194,15 @@ async def filter_relevant_tickets(customer_problem: str, all_tickets_json: str) 
     Returns:
         JSON string with only relevant ticket IDs
     """
+    logger.info(f"🔍 filter_relevant_tickets() called")
+    logger.info(f"Customer problem: {customer_problem}")
+    
     try:
         tickets = json.loads(all_tickets_json)
+        logger.info(f"📋 Parsed {len(tickets)} tickets from JSON")
+        
         if not tickets:
+            logger.warning("⚠️ No tickets to filter")
             return json.dumps({"relevant_ids": [], "reasoning": "No tickets available"})
         
         tickets_text = "\n\n".join([
@@ -185,19 +217,26 @@ Available Tickets:
 
 Which ticket IDs are relevant to solving this customer's problem?"""
         
+        logger.info("🤖 Calling relevance agent...")
+        logger.debug(f"Prompt length: {len(prompt)} characters")
+        
         # Clean async call - no event loop creation!
         relevance_result = await Runner.run(relevance_agent, input=prompt)
         result_text = relevance_result.final_output
+        
+        logger.info(f"🎯 Relevance agent returned: {result_text}")
         
         # Ensure we always return valid JSON
         try:
             # Try to parse the result as JSON
             parsed_result = json.loads(result_text)
+            logger.info(f"✅ Successfully parsed JSON result")
             
             # Validate the structure
             if isinstance(parsed_result, dict) and "relevant_ids" in parsed_result:
                 # Ensure relevant_ids is a list
                 if not isinstance(parsed_result["relevant_ids"], list):
+                    logger.warning("⚠️ relevant_ids was not a list, converting to empty list")
                     parsed_result["relevant_ids"] = []
                 
                 # Add reasoning if missing
@@ -207,28 +246,34 @@ Which ticket IDs are relevant to solving this customer's problem?"""
                     else:
                         parsed_result["reasoning"] = f"Found {len(parsed_result['relevant_ids'])} relevant tickets"
                 
+                logger.info(f"🎯 Final result: {len(parsed_result['relevant_ids'])} relevant tickets: {parsed_result['relevant_ids']}")
                 return json.dumps(parsed_result)
             else:
+                logger.error("❌ Invalid JSON structure - missing relevant_ids")
                 # Invalid structure, return empty result
                 return json.dumps({
                     "relevant_ids": [], 
                     "reasoning": "Could not determine relevant tickets - invalid response format"
                 })
                 
-        except json.JSONDecodeError:
+        except json.JSONDecodeError as e:
+            logger.error(f"❌ JSON decode error: {e}")
+            logger.info("🔧 Attempting manual ID extraction...")
+            
             # If result is not valid JSON, try to extract ticket IDs manually
             relevant_ids = []
             for ticket in tickets:
                 if ticket['id'] in result_text:
                     relevant_ids.append(ticket['id'])
             
+            logger.info(f"🔧 Extracted IDs manually: {relevant_ids}")
             return json.dumps({
                 "relevant_ids": relevant_ids,
                 "reasoning": "Extracted IDs from text response" if relevant_ids else "No relevant tickets found"
             })
         
     except Exception as e:
-        print(f"Error filtering tickets: {e}")
+        logger.error(f"❌ Error filtering tickets: {e}")
         return json.dumps({"relevant_ids": [], "reasoning": f"Error during filtering: {str(e)}"})
 
 
@@ -270,14 +315,24 @@ Guidelines:
     
     async def generate_solution(self, problem: str) -> str:
         """Generate solution for customer problem."""
+        logger.info(f"🤖 TicketAgent.generate_solution() called")
+        logger.info(f"Problem: {problem}")
+        
         try:
+            logger.info("🚀 Starting Runner.run() with TicketAgent...")
+            
             result = await Runner.run(
                 self.agent, 
                 input=f"Customer problem: {problem}\n\nPlease resolve this issue."
             )
+            
+            logger.info(f"✅ Runner.run() completed successfully")
+            logger.info(f"Final output: {result.final_output}")
+            
             return result.final_output
         except Exception as e:
-            print(f"Error generating solution: {e}")
+            logger.error(f"❌ Error generating solution: {e}")
+            logger.error(f"Exception type: {type(e).__name__}")
             return "Sorry, I'm unable to generate a solution at this time. Please contact support."
     
     async def create_ticket_with_solution(self, problem: str) -> Ticket:
