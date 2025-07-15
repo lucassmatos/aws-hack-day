@@ -1,0 +1,602 @@
+[
+  {
+    "id": "ps-001",
+    "category": "property-stay",
+    "problem": "I arrived at the cabin but haven't received the door code. It's 5 PM and I'm locked out!",
+    "solution": "I understand how frustrating it is to be locked out! Check-in instructions are automatically sent 48 hours before arrival. Let's get you inside: 1) First, check your email (including spam folder) for check-in instructions, 2) Open the app and go to 'Your Trips' - instructions should be there, 3) Use the 'Contact Host' button for immediate help, 4) If the host doesn't respond within 30 minutes, call our emergency line at 1-800-HELP-NOW. We'll get you access immediately. This is considered an emergency situation and we'll ensure you get into your cabin right away."
+  },
+  {
+    "id": "ps-002",
+    "category": "property-stay",
+    "problem": "The cabin is absolutely filthy. There are dirty dishes, unmade beds, and trash everywhere.",
+    "solution": "This is completely unacceptable and we'll address it immediately. Please follow these steps: 1) Document everything with photos and videos right now, 2) Contact the host first - they have 2 hours to respond and arrange cleaning, 3) If no response, contact Acme support immediately, 4) We can arrange professional emergency cleaning, 5) You're entitled to compensation for this issue. Do not start cleaning yourself. This is a major cleanliness violation and you may be eligible for a partial refund or future stay credit. We take cleanliness seriously and will ensure this is resolved."
+  },
+  {
+    "id": "ps-003",
+    "category": "property-stay",
+    "problem": "Can we check in at noon instead of 3 PM? We're arriving early from a long drive.",
+    "solution": "Early check-in is often possible with host approval! Standard check-in is 3 PM, but many hosts accommodate when they can. Here's how to request: 1) Message your host through the app as soon as possible, 2) Explain your situation and arrival time, 3) Some hosts offer early check-in for a small fee, 4) Self-check-in properties often have more flexibility. If the cabin isn't ready, hosts might offer luggage storage or recommend nearby activities. The key is communicating early - hosts appreciate advance notice and often try to accommodate reasonable requests."
+  },
+  {
+    "id": "ps-004",
+    "category": "property-stay",
+    "problem": "There's no heat and it's 20 degrees outside! The thermostat isn't working at all.",
+    "solution": "No heat in winter is an EMERGENCY! Take immediate action: 1) First, check the thermostat settings and manual, ensure it's on 'heat' mode, 2) Check if there's a circuit breaker labeled for HVAC, 3) Look for space heaters as temporary solution, 4) Contact the host immediately AND call our emergency line at 1-800-HELP-NOW. This is considered an emergency habitability issue. We will either get emergency repairs within hours or relocate you to another property. Your safety is our priority. Keep all receipts if you need to purchase heaters or move to a hotel temporarily."
+  },
+  {
+    "id": "ps-005",
+    "category": "property-stay",
+    "problem": "The listing showed a beautiful lake view but the lake is completely dried up. False advertising!",
+    "solution": "I understand this is very disappointing - the property should match its listing. This qualifies as a listing discrepancy. Take these steps: 1) Take photos of the actual view versus listing photos, 2) Report this within 24 hours of arrival (critical timeline), 3) Document the discrepancy in detail. You have several options: request partial refund for the misrepresentation, full refund if you choose to leave, or future stay credit. Natural features can change seasonally, but hosts must keep listings current. We take misrepresentation seriously and will work toward fair compensation."
+  },
+  {
+    "id": "ps-006",
+    "category": "property-stay",
+    "problem": "The WiFi doesn't work and I need it for work. The router seems dead.",
+    "solution": "Let's troubleshoot the WiFi issue: 1) First, check the router location and confirm you have the correct password, 2) Try power cycling the router - unplug for 30 seconds then plug back in, 3) Verify WiFi was listed as an amenity in the booking. If it was advertised and still not working: contact the host for advanced troubleshooting or replacement, they may have a backup hotspot available. If WiFi was specifically advertised but can't be fixed, you may be eligible for compensation. However, if WiFi wasn't listed as an amenity, no compensation is available."
+  },
+  {
+    "id": "ps-007",
+    "category": "property-stay",
+    "problem": "There's a bear on the deck and we're afraid to go outside! What do we do?",
+    "solution": "Wildlife encounters are common in cabin settings. For your safety: 1) Stay inside and keep all doors and windows locked, 2) Do NOT attempt to feed or approach the bear, 3) Make noise from inside to encourage it to leave, 4) Ensure all food is secured inside, 5) Contact the host for local wildlife guidance. Bears typically leave on their own. If the bear appears aggressive or won't leave after an hour, contact local wildlife authorities (host should have numbers). Follow all host wildlife guidelines. This is a natural occurrence in cabin areas, not a property defect."
+  },
+  {
+    "id": "ps-008",
+    "category": "property-stay",
+    "problem": "The hot tub is green and gross. We specifically booked this place for the hot tub.",
+    "solution": "A non-functioning hot tub when it's a key amenity is a significant issue. Here's what to do: 1) Take photos of the hot tub condition, 2) Check if it's listed as a seasonal amenity (some close in certain months), 3) Verify you followed any operating instructions, 4) Report to the host immediately. Since you specifically booked for this amenity, you're entitled to compensation. Options include: partial refund for the unusable amenity, host arranging immediate maintenance, or future stay credit. Advertised amenities must be functional, and this impacts your stay value."
+  },
+  {
+    "id": "ps-009",
+    "category": "property-stay",
+    "problem": "I don't feel safe here. There are people lurking around the property and the locks seem broken.",
+    "solution": "Your safety is our absolute priority. Take immediate action: 1) If you're in immediate danger, call 911 first, 2) Leave the property if you feel unsafe - your safety comes first, 3) Contact Acme emergency support at 1-800-HELP-NOW immediately, 4) Document any security issues with photos, 5) Report suspicious activity to local authorities. We will arrange alternative accommodation immediately and provide a full refund for legitimate safety issues. Do not stay somewhere you feel unsafe. Broken locks are an emergency repair issue and strange visitors should be reported to police."
+  },
+  {
+    "id": "ps-010",
+    "category": "property-stay",
+    "problem": "The stove doesn't work and we planned to cook all our meals. Only the microwave works.",
+    "solution": "A non-functioning stove significantly impacts your stay. Take these steps: 1) First check power and settings - ensure it's plugged in and breakers are on, 2) Look for instruction manuals in kitchen drawers, 3) Try all burners and oven to identify what specifically isn't working, 4) Report to host immediately with details. Since cooking was planned, you're entitled to compensation. Options include: host providing alternative cooking equipment (hot plates, grills), partial refund for the unusable kitchen, or reimbursement for having to eat out. Major appliances must work as advertised."
+  },
+  {
+    "id": "ps-011",
+    "category": "property-stay",
+    "problem": "We need to check out at 1 PM instead of 11 AM due to our flight. Is late checkout possible?",
+    "solution": "Late checkout is often available with host approval. Standard checkout is 11 AM, but here's how to request 1 PM: 1) Message your host through the app as early as possible, 2) Explain your flight schedule to provide context, 3) Many hosts accommodate 1-2 hour extensions, sometimes free or for a small fee, 4) Depends on whether they have same-day arrivals. If approved, get confirmation in writing through the app. If not possible, hosts often allow luggage storage while you wait for your flight. Early communication increases your chances of approval."
+  },
+  {
+    "id": "ps-012",
+    "category": "property-stay",
+    "problem": "The cabin only has 2 bedrooms but the listing said 3. My family doesn't have enough beds.",
+    "solution": "This is a major listing inaccuracy that needs immediate resolution. Missing bedrooms/beds directly violates the listing accuracy. Take action: 1) Document the actual bedroom count with photos, 2) Compare to listing details immediately, 3) Report within 24 hours of arrival (critical for claims). You're entitled to: relocation to a property with correct bedrooms, significant partial refund if you choose to stay, or full refund if you leave. This is false advertising and materially affects your stay. Contact support if the host doesn't offer immediate fair resolution."
+  },
+  {
+    "id": "ps-013",
+    "category": "property-stay",
+    "problem": "I left my prescription medication at the cabin. Can someone check and ship it to me?",
+    "solution": "Medical items are high priority! Here's the fastest way to retrieve your medication: 1) Contact the host immediately with exact location (bathroom, bedroom, etc.), 2) Provide detailed description of the medication and container, 3) Emphasize it's prescription medication for urgency, 4) Offer to pay for overnight shipping, 5) Check the app's lost and found feature. Most hosts understand the urgency of medication and will ship immediately. You'll cover shipping costs, but hosts typically help quickly with medical items. If extremely urgent, consider having doctor call in temporary prescription while waiting."
+  },
+  {
+    "id": "ps-014",
+    "category": "property-stay",
+    "problem": "Check-in instructions say to pick up keys from a neighbor, but no one is home. We're stuck outside.",
+    "solution": "This is an access emergency requiring immediate action. Here's what to do: 1) Try calling/knocking at the neighbor's again, 2) Contact your host immediately through the app, 3) Ask if there's a backup key location or different neighbor, 4) If host doesn't respond within 30 minutes, call Acme emergency support at 1-800-HELP-NOW. No property access is considered an emergency. We'll work to get you inside immediately or arrange alternative accommodation. Keep all documentation of your attempts to follow the check-in instructions. This situation warrants immediate host response."
+  },
+  {
+    "id": "ps-015",
+    "category": "property-stay",
+    "problem": "There are security cameras inside the cabin. This wasn't disclosed and makes us uncomfortable.",
+    "solution": "Interior security cameras are strictly AGAINST Acme policy and a serious privacy violation! Take immediate action: 1) Take photos of all camera locations, 2) Cover or unplug them for your privacy, 3) Report to Acme support immediately - this is a policy violation, 4) Document if cameras are in private spaces (bedrooms, bathrooms). You're entitled to: immediate relocation if desired, full refund, and the host faces serious penalties. Only exterior cameras are allowed and must be disclosed. This is a major violation of guest privacy and trust."
+  },
+  {
+    "id": "ps-016",
+    "category": "property-stay",
+    "problem": "The water smells like rotten eggs and appears brown. Is it safe to use?",
+    "solution": "Water quality issues require immediate attention for health and safety. Do NOT drink the water. Take these steps: 1) Document with photos/videos of the water, 2) Contact host immediately about water safety, 3) Well water can have sulfur smell (rotten eggs) but brown water indicates problems, 4) Use bottled water for drinking and cooking until resolved. This is a habitability issue. Host must provide: immediate water testing results, bottled water for your stay, or offer relocation/refund. If not resolved immediately, contact support. Safe water is a basic requirement."
+  },
+  {
+    "id": "ps-017",
+    "category": "property-stay",
+    "problem": "The AC is broken and it's 95 degrees. We have elderly guests who can't handle the heat.",
+    "solution": "No AC in extreme heat is an EMERGENCY, especially with elderly guests! Take immediate action: 1) Check thermostat settings and circuit breakers first, 2) Look for window units or fans as temporary relief, 3) Contact host immediately AND call 1-800-HELP-NOW, 4) Emphasize the health risk for elderly guests. This is a habitability emergency. We will either: arrange immediate AC repair (within hours), provide portable AC units, or relocate you to air-conditioned accommodation. Keep elderly guests hydrated and cool. Document any health issues or expenses. Your safety is paramount."
+  },
+  {
+    "id": "ps-018",
+    "category": "property-stay",
+    "problem": "The host entered the property without notice while we were out. Our things were moved.",
+    "solution": "Unauthorized entry is a serious violation of your privacy and Acme policies! Hosts cannot enter without notice except for emergencies. Document immediately: 1) Take photos of anything moved or disturbed, 2) Check if anything is missing, 3) Report to Acme support immediately, 4) Ask host for explanation through the app (keep record). You're entitled to: formal apology and explanation, potential partial refund for privacy violation, and assurance it won't happen again. The host will face warnings or penalties. Your privacy and security during stays is protected."
+  },
+  {
+    "id": "ps-019",
+    "category": "property-stay",
+    "problem": "There's mold in the bathroom and bedrooms. My allergies are going crazy.",
+    "solution": "Mold is a serious health hazard requiring immediate action! For your health: 1) Document all mold locations with photos, 2) Avoid using affected areas if possible, 3) Contact host and Acme support immediately, 4) Emphasize health impacts and allergies, 5) Keep any medical receipts. This is a habitability issue. You're entitled to: immediate relocation to safe accommodation, full refund for health hazards, reimbursement for any medical expenses, and the property will be flagged for inspection. Don't compromise your health - mold exposure can be dangerous."
+  },
+  {
+    "id": "ps-020",
+    "category": "property-stay",
+    "problem": "The neighbors are having a loud party until 3 AM. We can't sleep and have kids.",
+    "solution": "Noise disturbances significantly impact your stay quality. Here's how to handle it: 1) First, document the noise with videos showing time stamps, 2) Check if there's a property manager or security to contact, 3) Contact your host about neighbor relations, 4) If severe, you can contact local authorities for noise violations, 5) Report the issue to Acme support. While hosts can't control neighbors, they should provide: local contact numbers for issues, information about quiet hours, or potential room changes if available. You may be eligible for partial compensation for severely disrupted sleep."
+  },
+  {
+    "id": "ps-021",
+    "category": "property-stay",
+    "problem": "We accidentally broke a lamp. How do we report this and what happens next?",
+    "solution": "Thank you for being honest about the accidental damage! Here's the proper process: 1) Take photos of the broken lamp immediately, 2) Report to the host right away through the app with photos, 3) Explain it was accidental, 4) Offer to pay for reasonable replacement cost. Accidental damage is typically covered by Acme's protection plan for normal wear and tear. For a lamp, you'd usually pay actual replacement cost (not inflated prices). Get the host's preferred resolution in writing. Being upfront about accidents usually results in fair, minimal charges versus discovery after checkout."
+  },
+  {
+    "id": "ps-022",
+    "category": "property-stay",
+    "problem": "The property is on a busy highway but was advertised as 'peaceful and quiet'. Very misleading.",
+    "solution": "Location misrepresentation is a valid complaint affecting your stay enjoyment. Document the issue: 1) Record videos showing the noise level and traffic, 2) Compare to listing descriptions about 'peaceful and quiet', 3) Report within 24 hours of arrival for best resolution, 4) Show how it impacts your stay (can't sleep, can't enjoy outdoor spaces). You may be entitled to: partial refund for the misrepresentation, full refund if you choose to leave early, or future credit. Hosts must accurately describe the property environment, and 'peaceful' next to a highway is false advertising."
+  },
+  {
+    "id": "ps-023",
+    "category": "property-stay",
+    "problem": "There are mice/rats in the cabin. We've seen droppings and heard them at night.",
+    "solution": "Rodent infestations are a serious health and cleanliness issue! Take immediate action: 1) Document all evidence with photos (droppings, damage, sightings), 2) Store all food in sealed containers immediately, 3) Contact host and Acme support right away, 4) This is a habitability issue requiring immediate response. You're entitled to: immediate pest control service, relocation if you prefer, partial or full refund depending on severity, and deep cleaning. Rodent infestations make properties uninhabitable. Don't tolerate this health hazard - we'll ensure immediate action."
+  },
+  {
+    "id": "ps-024",
+    "category": "property-stay",
+    "problem": "Check-out instructions require extensive cleaning but we already paid a cleaning fee. What's required?",
+    "solution": "You're right to question excessive cleaning requirements when you've paid a cleaning fee! Here's what's actually expected: 1) Basic tidiness - dishes in dishwasher, garbage in bins, 2) Personal items removed, 3) Follow specific instructions like stripping beds IF requested, 4) You're NOT required to vacuum, mop, clean bathrooms, or do deep cleaning. That's what the cleaning fee covers. If hosts demand extensive cleaning: document their requirements, take photos of how you left the property, and report excessive demands to Acme. Professional cleaning is their responsibility."
+  },
+  {
+    "id": "ps-025",
+    "category": "property-stay",
+    "problem": "The fireplace doesn't work and it's the main heating source. The cabin is freezing.",
+    "solution": "A non-functional primary heat source in cold weather is an emergency! Take immediate steps: 1) Check if it's gas or wood - ensure gas is on or wood is available, 2) Look for pilot light instructions or damper controls, 3) Check for space heaters as backup, 4) Contact host immediately about the heating issue, 5) If no resolution within 2 hours, call 1-800-HELP-NOW. No adequate heating is a habitability emergency. We'll ensure: immediate repair, provision of space heaters, or relocation to heated accommodation. Keep all receipts for any heating you purchase."
+  },
+  {
+    "id": "ps-026",
+    "category": "property-stay",
+    "problem": "Pool is full of algae and leaves. Definitely not swimmable as advertised.",
+    "solution": "An unusable pool when advertised is a significant amenity failure. Document and act: 1) Take clear photos of the pool condition, 2) Check if pool maintenance is scheduled during your stay, 3) Verify pool was listed as available during your dates (not seasonal), 4) Contact host about immediate cleaning. Since the pool was likely a booking factor, you're entitled to: immediate pool cleaning service, partial refund for the unusable amenity, or consideration for early checkout with refund. Advertised amenities must be functional and maintained."
+  },
+  {
+    "id": "ps-027",
+    "category": "property-stay",
+    "problem": "The smoke detectors keep beeping all night. We removed batteries but feel unsafe.",
+    "solution": "Smoke detector issues affect both comfort and safety! Here's the proper approach: 1) First, try replacing batteries (host should provide), 2) For hardwired detectors, there's usually a reset button, 3) Never fully disable smoke detectors - it's unsafe and may violate laws, 4) Contact host for immediate replacement detectors. If beeping continues: host must provide working detectors immediately or offer alternative accommodation. Document the issue for potential compensation for disrupted sleep. Safety devices must function properly without disturbing guests."
+  },
+  {
+    "id": "ps-028",
+    "category": "property-stay",
+    "problem": "There's construction next door starting at 6 AM. This wasn't mentioned anywhere.",
+    "solution": "Undisclosed construction significantly impacts stay quality and should have been revealed. Document the situation: 1) Record video of early morning noise with timestamps, 2) Check if construction appears temporary or ongoing, 3) Report to host and ask why it wasn't disclosed, 4) Contact Acme support about the undisclosed disturbance. You may be entitled to: partial refund for the disturbance, relocation if available, or future stay credit. Hosts must disclose known construction or major disturbances. Early morning construction especially impacts vacation enjoyment."
+  },
+  {
+    "id": "ps-029",
+    "category": "property-stay",
+    "problem": "The bed collapsed in the middle of the night. Now we have nowhere to sleep.",
+    "solution": "A collapsed bed is both a safety issue and accommodation emergency! Take immediate action: 1) First, check if anyone is injured - document any injuries, 2) Take photos of the broken bed and any damage, 3) Contact host immediately regardless of time, 4) Look for alternative sleeping arrangements (couch, other bedrooms). The host must: provide immediate replacement or repair, offer alternative accommodation, or approve early checkout with refund. This is equipment failure, not guest damage. You shouldn't have to sleep on the floor. Document everything for compensation claims."
+  },
+  {
+    "id": "ps-030",
+    "category": "property-stay",
+    "problem": "We found drug paraphernalia in the cabin. This is really concerning with our kids here.",
+    "solution": "This is a serious safety and legal concern requiring immediate action! 1) Do NOT touch or move the items - photograph them where found, 2) Keep children away from the area, 3) Report to Acme support immediately, 4) Contact local authorities if you feel it's necessary, 5) Request immediate relocation. This is completely unacceptable. You're entitled to: immediate relocation to a safe property, full refund, and follow-up on how this happened. The property will be investigated and potentially removed from the platform. Your family's safety is the priority."
+  },
+  {
+    "id": "ps-031",
+    "category": "property-stay",
+    "problem": "The septic system is backing up and there's sewage smell throughout the cabin.",
+    "solution": "Sewage backup is a severe health hazard and habitability emergency! Take immediate action: 1) Stop using all water facilities immediately, 2) Document the backup and smell with photos/video, 3) Contact host AND Acme emergency support at 1-800-HELP-NOW, 4) This requires professional intervention within hours. You cannot stay with sewage issues. You're entitled to: immediate relocation to another property, full refund for affected nights, reimbursement for any expenses incurred. This is a critical health and safety issue requiring emergency response."
+  },
+  {
+    "id": "ps-032",
+    "category": "property-stay",
+    "problem": "Host is asking us to leave early because they have other guests coming. Is this allowed?",
+    "solution": "NO! Hosts cannot ask you to leave early once your booking is confirmed. This is a serious violation of your reservation contract. 1) Do NOT agree to leave early, 2) Get the request in writing through the app, 3) Report to Acme support immediately, 4) You have the right to stay for your entire booked period. If the host has double-booked, that's their problem to solve. You're entitled to: complete your full stay as booked, compensation if you choose to leave voluntarily, or host penalties for attempting illegal eviction."
+  },
+  {
+    "id": "ps-033",
+    "category": "property-stay",
+    "problem": "The door lock is broken and won't secure. We don't feel safe leaving our belongings.",
+    "solution": "A broken lock is a security emergency requiring immediate resolution! For your safety: 1) Document the broken lock with photos/video, 2) Contact host immediately for emergency locksmith, 3) If not fixed within 2 hours, call Acme emergency support, 4) Don't leave valuables unattended meanwhile. Broken locks must be fixed immediately or you're entitled to: emergency locksmith service, temporary security measures, relocation if preferred, or compensation for the security risk. Your safety and security are non-negotiable. Keep valuables with you until resolved."
+  },
+  {
+    "id": "ps-034",
+    "category": "property-stay",
+    "problem": "There's no hot water for showers. The water heater seems to be broken.",
+    "solution": "No hot water significantly impacts basic comfort and hygiene. Here's what to do: 1) First check the water heater - look for pilot light or reset button, 2) Check circuit breakers for water heater, 3) Verify hot water was supposed to be available, 4) Contact host for immediate repair. Hot water is a basic amenity. If not fixed within 24 hours, you're entitled to: partial refund for the inconvenience, access to shower facilities elsewhere, or relocation if preferred. Document attempts to shower and the cold water issue."
+  },
+  {
+    "id": "ps-035",
+    "category": "property-stay",
+    "problem": "We can hear and see the neighbors through thin walls. No privacy at all.",
+    "solution": "Lack of privacy in accommodations is a significant issue. Document the problem: 1) Record audio/video showing how easily sound travels, 2) Note if this appears to be shared walls (duplex) not disclosed, 3) Check if listing mentioned attached units or neighbors, 4) Report to host and Acme if not properly disclosed. If the property was misrepresented as private/standalone, you may receive: partial refund for lack of privacy, relocation if available, or future credit. Properties must accurately describe proximity to neighbors and privacy levels."
+  },
+  {
+    "id": "ps-036",
+    "category": "property-stay",
+    "problem": "The cleaning person walked in while we were sleeping at 8 AM. No knock or warning!",
+    "solution": "Unauthorized entry during your stay is completely unacceptable! This violates your privacy and Acme policies. Take action: 1) Document the time and circumstances, 2) Get the cleaner's information if possible, 3) Contact host immediately about this violation, 4) Report to Acme support - this is serious. You're entitled to: formal apology and assurance it won't recur, partial refund for privacy violation, and new check-out arrangements. Cleaning should NEVER occur during guest stays without explicit permission. This is a major breach of hospitality standards."
+  },
+  {
+    "id": "ps-037",
+    "category": "property-stay",
+    "problem": "There are wasps nests around the deck and door. My child was stung twice already.",
+    "solution": "Active wasp nests are a safety hazard, especially with stung children! Take immediate action: 1) Document nest locations and any stings, 2) Keep children inside until resolved, 3) Contact host for immediate pest control, 4) If child has allergic reaction, seek medical attention. This is a safety issue requiring same-day response. Host must: arrange immediate professional wasp removal, provide safe alternate entry if needed, offer compensation for medical needs. If not resolved immediately, you may relocate. Child safety is paramount."
+  },
+  {
+    "id": "ps-038",
+    "category": "property-stay",
+    "problem": "The property has no cell service but WiFi calling was promised. WiFi doesn't work either.",
+    "solution": "Communication access is critical for safety and convenience. When both cell and WiFi fail: 1) Document the lack of service with screenshots, 2) Check if listing mentioned limited connectivity, 3) Verify WiFi troubleshooting steps were attempted, 4) Contact host about communication solutions. If connectivity was promised but unavailable, you're entitled to: immediate WiFi repair or hotspot device, partial refund for the major inconvenience, or relocation if communication is critical. For safety, you must have some way to contact emergency services."
+  },
+  {
+    "id": "ps-039",
+    "category": "property-stay",
+    "problem": "The oven is sparking and smoking when we try to use it. Seems dangerous.",
+    "solution": "A sparking oven is a FIRE HAZARD - stop using it immediately! For safety: 1) Turn off the oven and don't use it again, 2) Check circuit breaker to ensure it's fully off, 3) Document the sparking/smoking with video if safe, 4) Contact host immediately about the danger, 5) If you smell gas or see flames, evacuate and call 911. This dangerous appliance must be repaired or replaced before use. You're entitled to: alternative cooking arrangements, partial refund if cooking was planned, or repair by qualified technician. Don't risk fire - safety first."
+  },
+  {
+    "id": "ps-040",
+    "category": "property-stay",
+    "problem": "We were told there would be firewood but there's none. It's cold and we're counting on the fireplace.",
+    "solution": "Missing promised firewood impacts both comfort and heating. Here's your recourse: 1) Check all typical storage spots (shed, covered areas, garage), 2) Confirm firewood was listed as included amenity, 3) Contact host about the missing firewood, 4) Ask for immediate delivery or location to purchase. If firewood was advertised as included, host must: provide it promptly, reimburse you for purchasing it, or offer alternative heating solutions. Keep receipts for any firewood you buy. This is especially important if fireplace is a primary heat source."
+  },
+  {
+    "id": "ps-041",
+    "category": "property-stay",
+    "problem": "The host is demanding we pay cash for 'damages' before we leave. Seems like a scam.",
+    "solution": "NEVER pay cash for alleged damages! This violates Acme policies and sounds like a scam. Take immediate action: 1) Refuse any cash payments - all damage claims go through Acme, 2) Document the host's demands in writing/recording, 3) Take photos of the property's current condition, 4) Report to Acme support immediately, 5) Don't let host prevent you from leaving. All damage claims must be processed through the platform with documentation. This host behavior is prohibited. Continue with normal checkout and let Acme handle any legitimate claims."
+  },
+  {
+    "id": "ps-042",
+    "category": "property-stay",
+    "problem": "There's black mold in the shower and it's making me sick. I have asthma.",
+    "solution": "Black mold is a serious health hazard, especially with asthma! Take immediate action for your health: 1) Stop using the affected shower immediately, 2) Document all mold with detailed photos, 3) Keep any medical records if you need treatment, 4) Contact host and Acme support urgently, 5) Emphasize your asthma and health impacts. This is uninhabitable with your condition. You're entitled to: immediate relocation to safe accommodation, full refund for health hazards, medical expense reimbursement, and property inspection. Don't risk your health - mold and asthma are dangerous combination."
+  },
+  {
+    "id": "ps-043",
+    "category": "property-stay",
+    "problem": "The driveway is completely iced over and we can't get our car out. We're trapped.",
+    "solution": "Being unable to leave due to icy conditions is a safety concern. Take these steps: 1) Document the icy driveway conditions with photos, 2) Check if host provided ice melt/sand (often in garage/shed), 3) Contact host about immediate ice treatment, 4) Ask about plow service or sanding arrangements. Hosts in winter areas should maintain safe access. If truly trapped: host must arrange immediate ice treatment, provide/reimburse for ice melt materials, or arrange alternate transportation if needed. Your ability to leave safely is essential."
+  },
+  {
+    "id": "ps-044",
+    "category": "property-stay",
+    "problem": "We found bedbugs in the mattress. This is horrifying and we need to leave immediately.",
+    "solution": "Bedbugs are a serious infestation requiring immediate action! Do NOT stay another night: 1) Take clear photos/video of the bedbugs and bites, 2) Carefully bag any affected clothing separately, 3) Contact Acme emergency support immediately at 1-800-HELP-NOW, 4) You need immediate relocation, 5) Document any bites or reactions. You're entitled to: immediate relocation to verified clean accommodation, full refund for this property, laundry/cleaning expense reimbursement, and medical expense coverage. The property will be removed pending professional treatment. Your health and preventing spread is priority."
+  },
+  {
+    "id": "ps-045",
+    "category": "property-stay",
+    "problem": "The shower door shattered while my wife was showering. Glass everywhere and she has cuts.",
+    "solution": "This is a medical emergency and safety hazard! Take immediate action: 1) First aid for any cuts - apply pressure to stop bleeding, 2) If serious cuts, seek immediate medical attention, 3) Document injuries and shattered door with photos, 4) Keep everyone away from glass area, 5) Contact host and Acme support immediately. This is equipment failure, not guest fault. You're entitled to: all medical expense coverage, immediate repair/boarding of shower, relocation if bathroom unusable, and compensation for injury/trauma. Keep all medical records and receipts."
+  },
+  {
+    "id": "ps-046",
+    "category": "property-stay",
+    "problem": "The carbon monoxide detector is beeping. Should we be worried?",
+    "solution": "Carbon monoxide alarms are LIFE-THREATENING emergencies! Take immediate action: 1) EVACUATE everyone outside immediately, 2) Call 911 from outside - tell them CO alarm is sounding, 3) Do NOT re-enter until emergency services clear it, 4) Contact host and Acme after you're safe. CO is invisible and deadly. Wait for fire department all-clear. If it's a low battery chirp (intermittent beep vs continuous alarm), you can replace batteries, but continuous alarms mean evacuate. You're entitled to immediate relocation if CO is detected. Safety first - never ignore CO alarms!"
+  },
+  {
+    "id": "ps-047",
+    "category": "property-stay",
+    "problem": "The listing said 'private cabin' but there are 3 other units on the property with shared spaces.",
+    "solution": "This is significant misrepresentation of privacy and property type. Document the issue: 1) Take photos showing other units and shared areas, 2) Compare to listing description claiming 'private cabin', 3) Note any shared amenities not disclosed, 4) Report within 24 hours for best resolution. 'Private cabin' implies standalone, not multi-unit. You're entitled to: partial refund for misrepresentation, full refund if privacy was essential, or relocation to actual private cabin. Hosts must accurately describe property type and any shared aspects."
+  },
+  {
+    "id": "ps-048",
+    "category": "property-stay",
+    "problem": "Kids broke a window playing ball. How much trouble are we in? Very worried about costs.",
+    "solution": "Accidents happen, especially with kids! Here's how to handle it properly: 1) Ensure area is safe - clean up glass carefully, 2) Take photos of the broken window, 3) Report to host immediately with honest explanation, 4) Offer to pay reasonable repair costs, 5) Board up or secure the window for safety/weather. Accidental damage is typically covered by protection plans. You'll likely pay actual repair cost (not inflated). Being honest upfront usually results in understanding and fair resolution. Most hosts appreciate honesty over finding damage later."
+  },
+  {
+    "id": "ps-049",
+    "category": "property-stay",
+    "problem": "The grill exploded when we tried to light it. Propane tank seems faulty.",
+    "solution": "Grill explosion is a serious safety incident! Ensure everyone's safety first: 1) Check if anyone is injured - seek medical attention if needed, 2) Turn off propane at tank immediately, 3) Document the faulty equipment with photos, 4) Do NOT attempt to use grill again, 5) Contact host and Acme support about dangerous equipment. This is equipment failure and safety hazard. Host is responsible for maintaining safe appliances. You shouldn't be charged for equipment failure. Document any injuries or property damage. Host must provide safe equipment or remove dangerous items."
+  },
+  {
+    "id": "ps-050",
+    "category": "property-stay",
+    "problem": "The toilet is overflowing and we can't stop it. Water is going everywhere!",
+    "solution": "Toilet overflow is an urgent plumbing emergency! Act fast to minimize damage: 1) Turn off water valve behind toilet immediately (turn clockwise), 2) If can't find valve, turn off main water supply, 3) Use towels to contain water and prevent damage, 4) Take photos of the issue and any water damage, 5) Contact host immediately for emergency plumber. This is typically not guest fault unless something was flushed that shouldn't be. Host must arrange immediate plumbing repair. You're not responsible for plumbing failures. May need relocation if bathroom becomes unusable."
+  },
+  {
+    "id": "ps-051",
+    "category": "property-stay",
+    "problem": "We left the cabin spotless but the host is claiming we trashed it. They want $500 extra!",
+    "solution": "Fight unfair damage claims with documentation! Here's your defense: 1) Hopefully you took photos/video before leaving (always recommended), 2) Dispute the claim immediately through Acme, 3) Provide your checkout photos as evidence, 4) List exactly how you left the property, 5) Request host provides timestamped photos of alleged damage. You have protection against false claims. Acme will mediate fairly requiring hosts to prove damage with documentation. Never pay outside the platform. The dispute process protects honest guests from scam charges."
+  },
+  {
+    "id": "ps-052",
+    "category": "property-stay",
+    "problem": "There's a terrible gas smell in the cabin. We're scared it might explode.",
+    "solution": "Gas leaks are EXTREME EMERGENCIES! Take immediate life-saving action: 1) Do NOT turn on/off any switches or use phones inside, 2) EVACUATE everyone immediately, 3) Leave doors open as you exit, 4) Call 911 from a safe distance outside, 5) Call gas company emergency line, 6) Contact host and Acme after you're safe. Do not re-enter until gas company gives all-clear. This is life-threatening - no possession is worth the risk. You'll receive immediate relocation and full refund. Property cannot be occupied with gas leaks."
+  },
+  {
+    "id": "ps-053",
+    "category": "property-stay",
+    "problem": "The deck railing broke and my friend fell. They're injured and we need help.",
+    "solution": "This is a medical emergency and serious safety failure! Take immediate action: 1) Call 911 if injuries are serious - don't move them if back/neck injury suspected, 2) Administer first aid if trained, 3) Document the broken railing and accident scene, 4) Get witness statements if possible, 5) Contact Acme emergency support after medical help. Keep all medical records and expenses. This is property negligence - failed safety equipment. Full medical coverage and compensation should be provided. The property has serious liability. Focus on medical care first, documentation second."
+  },
+  {
+    "id": "ps-054",
+    "category": "property-stay",
+    "problem": "We're locked in! The door won't open from inside and we can't get out.",
+    "solution": "Being locked inside is a SERIOUS safety hazard! Take immediate action: 1) Check all door locks and mechanisms again, 2) Try windows as emergency exits (if safe), 3) Call host immediately for solution, 4) If no quick response, call Acme emergency line AND local emergency services, 5) Document the faulty lock mechanism. This is a fire/safety code violation. You must be able to exit freely. Host must send someone immediately or you may need to call locksmith/fire department. All costs are host's responsibility. This is unacceptable safety violation."
+  },
+  {
+    "id": "ps-055",
+    "category": "property-stay",
+    "problem": "The stairs to the loft collapsed. Thankfully no one was on them but now we can't access our beds.",
+    "solution": "Structural failure is extremely dangerous! Immediate safety measures: 1) Block off access to prevent anyone attempting to use stairs, 2) Document the collapsed stairs thoroughly, 3) Check if there are any other structural concerns, 4) Contact host and Acme support immediately, 5) Do NOT attempt repairs or use damaged stairs. This is major safety hazard requiring immediate response. You're entitled to: immediate relocation (structure may be unsafe), full refund for safety issues, or emergency repairs if staying. Structural failures indicate serious property problems."
+  },
+  {
+    "id": "ps-056",
+    "category": "property-stay",
+    "problem": "There are used needles in the bathroom drawer. This is so dangerous with our kids!",
+    "solution": "Used needles are extreme health and safety hazards! Protect your family: 1) Do NOT touch needles - serious disease risk, 2) Close off access to that area immediately, 3) Photograph for documentation (don't get close), 4) Contact Acme support immediately - this is critical, 5) You need immediate relocation for family safety. This is completely unacceptable and dangerous. Full refund and immediate relocation will be arranged. The property will be investigated and likely removed from platform. Your children's safety is the absolute priority here."
+  },
+  {
+    "id": "ps-057",
+    "category": "property-stay",
+    "problem": "The outdoor lighting doesn't work and it's pitch black. We can't see to walk safely.",
+    "solution": "Lack of outdoor lighting is a safety issue, especially in remote areas. Address this by: 1) Check if lights have switches, timers, or sensors, 2) Look for circuit breakers labeled for outdoor lights, 3) Use phone flashlights temporarily for safety, 4) Contact host about the lighting issue. If advertised amenity, host should: provide temporary lighting (lanterns/flashlights), repair lighting promptly, or offer partial compensation. For immediate safety, most hosts have emergency flashlights somewhere. Adequate lighting is important for preventing falls and injuries."
+  },
+  {
+    "id": "ps-058",
+    "category": "property-stay",
+    "problem": "The advertised 'gourmet kitchen' has a broken stove, no dishwasher, and missing utensils.",
+    "solution": "This is false advertising of a premium amenity. Document everything: 1) Photo all missing/broken items versus listing claims, 2) List what's actually available vs. advertised, 3) Report within 24 hours with comparison to listing, 4) 'Gourmet kitchen' has specific expectations. You're entitled to significant compensation for this misrepresentation: partial refund reflecting the downgrade, host providing missing items immediately, or consideration for the cooking limitations. 'Gourmet kitchen' implies fully functional high-end appliances and complete cookware."
+  },
+  {
+    "id": "ps-059",
+    "category": "property-stay",
+    "problem": "We have no electricity since a storm last night. Host says it's not their problem.",
+    "solution": "The host is WRONG - they must help with utility outages! While weather isn't their fault, guest support is their responsibility: 1) Document the outage and host's refusal to help, 2) Check if it's area-wide or just the property, 3) Report host's unhelpful response to Acme. Host should: provide generator if available, offer battery lanterns/essentials, assist with relocation if extended outage, or provide updates from power company. If power won't return soon, you may need relocation. Hosts must assist during emergencies, not abandon guests."
+  },
+  {
+    "id": "ps-060",
+    "category": "property-stay",
+    "problem": "The host keeps texting asking if everything is OK every few hours. It's intrusive.",
+    "solution": "While host concern is nice, excessive contact is intrusive to your vacation. Handle diplomatically: 1) Respond once saying everything is fine and you'll contact if needed, 2) Set boundaries: 'We'll reach out if we need anything, enjoying our privacy', 3) If it continues, document the excessive messages, 4) Report to Acme if it becomes harassment. You're entitled to reasonable privacy during your stay. Hosts should be available but not intrusive. If they don't respect boundaries after being asked, that's a policy violation worth reporting."
+  },
+  {
+    "id": "ps-061",
+    "category": "property-stay",
+    "problem": "The well ran dry and we have no water at all. Can't shower, flush toilets, or cook.",
+    "solution": "No water makes the property completely uninhabitable! This is an emergency: 1) Document the lack of water (try all faucets), 2) Contact host immediately - wells can sometimes be reset, 3) If not quickly resolved, call Acme emergency support, 4) You cannot stay without water. Host must either: restore water immediately (reset well pump, emergency water delivery), provide portable facilities and water, or relocate you immediately. No water = uninhabitable. You're entitled to relocation or full refund. This is a basic habitability requirement."
+  },
+  {
+    "id": "ps-062",
+    "category": "property-stay",
+    "problem": "There's a wasp nest inside the bedroom wall. They're coming through cracks!",
+    "solution": "Indoor wasp infestation is dangerous and uninhabitable! Immediate safety action: 1) Evacuate that room immediately and close it off, 2) Seal door gaps with towels to contain wasps, 3) Document the infestation and entry points, 4) Contact host and Acme support urgently, 5) Do NOT attempt removal yourself. This requires professional pest control TODAY. You may need immediate relocation as indoor wasps are dangerous, especially if anyone is allergic. This is a habitability and safety emergency requiring immediate professional intervention."
+  },
+  {
+    "id": "ps-063",
+    "category": "property-stay",
+    "problem": "The cabin reeks of cigarette smoke but was listed as non-smoking. I have asthma.",
+    "solution": "Smoke in a non-smoking property is a health hazard and misrepresentation! With asthma, this is serious: 1) Document the smoke smell (video of your reaction helps), 2) Open windows for immediate relief if possible, 3) Contact host and Acme support immediately, 4) Emphasize your asthma and health impact, 5) You may need immediate relocation. Non-smoking means smoke-free environment. You're entitled to: immediate relocation to smoke-free property, full refund for health hazard, or professional odor treatment (though that takes time). Your health comes first."
+  },
+  {
+    "id": "ps-064",
+    "category": "property-stay",
+    "problem": "We discovered the host has been watching us through the window. Caught them twice!",
+    "solution": "This is stalking behavior and completely unacceptable! Take immediate action: 1) Document any sightings (photos/video if possible), 2) Ensure all curtains/blinds are closed, 3) Report to Acme support immediately - this is serious violation, 4) Consider contacting local police for stalking, 5) You should relocate for your safety and privacy. This is severe misconduct. You're entitled to immediate relocation, full refund, and the host faces potential removal from platform. Your privacy and safety are paramount. No guest should tolerate this behavior."
+  },
+  {
+    "id": "ps-065",
+    "category": "property-stay",
+    "problem": "The roof is leaking badly in the rain. Water is pouring into the living room.",
+    "solution": "Active roof leaks are property emergencies requiring immediate action! Protect property and yourselves: 1) Move belongings away from leak areas, 2) Place buckets/pots to catch water, 3) Document the leaks and any damage with video, 4) Contact host immediately for emergency repairs, 5) If severe, you may need to relocate. Major leaks make property uninhabitable. You're entitled to: immediate relocation if leak is severe, partial refund for the inconvenience, or emergency repairs. Protect your belongings - you're not liable for water damage from property failures."
+  },
+  {
+    "id": "ps-066",
+    "category": "property-stay",
+    "problem": "The cabin has fleas! We're all getting bitten constantly.",
+    "solution": "Flea infestation is a serious cleanliness and health issue! Take immediate action: 1) Document all bites and visible fleas with photos, 2) Wash all clothes in hot water immediately, 3) Contact host and Acme support urgently, 4) You may need to leave to avoid bringing fleas home, 5) Keep medical records of any treatments needed. This property is uninhabitable with fleas. You're entitled to: immediate relocation to clean property, full refund for the infestation, laundry/medical expense reimbursement, and professional pest treatment before others stay."
+  },
+  {
+    "id": "ps-067",
+    "category": "property-stay",
+    "problem": "The property manager is drunk and making us uncomfortable with inappropriate comments.",
+    "solution": "Inappropriate behavior from staff is completely unacceptable! Protect yourselves: 1) Document the behavior (recording if possible and legal), 2) Avoid being alone with this person, 3) Report to Acme support immediately, 4) Contact host about their employee's behavior, 5) If you feel threatened, contact local police. You shouldn't tolerate harassment. You're entitled to: immediate removal of that staff member, formal apology and assurance of no further contact, partial refund for the discomfort, or relocation if you prefer. This behavior violates professional standards."
+  },
+  {
+    "id": "ps-068",
+    "category": "property-stay",
+    "problem": "The bathroom ceiling just collapsed. Thank god no one was in there!",
+    "solution": "Ceiling collapse is a major structural failure and extreme safety hazard! Take immediate action: 1) Block all access to that bathroom - it's dangerous, 2) Check for water damage or other structural issues, 3) Document extensively with photos/video, 4) Contact host and Acme emergency support NOW, 5) The property may be structurally unsafe. You cannot stay with structural failures. Immediate relocation is likely necessary. You're entitled to full refund and emergency relocation. The property needs professional inspection before anyone else stays. Consider yourself lucky no one was hurt!"
+  },
+  {
+    "id": "ps-069",
+    "category": "property-stay",
+    "problem": "There's a tree on power lines sparking outside. Looks really dangerous.",
+    "solution": "Electrical hazards are extreme emergencies! Take immediate safety action: 1) Stay inside and away from windows, 2) Call 911 and report the hazard immediately, 3) Call the power company emergency line, 4) Do NOT go outside or attempt to move anything, 5) Contact host about the emergency. Downed power lines can kill - stay at least 30 feet away. If power is lost, host should provide generator or relocation. This is an act of nature but host must help coordinate response and ensure your safety during the emergency."
+  },
+  {
+    "id": "ps-070",
+    "category": "property-stay",
+    "problem": "We found a loaded gun in the nightstand drawer. We have young children here!",
+    "solution": "Unsecured firearms with children present is EXTREMELY dangerous! Immediate action required: 1) Secure the weapon immediately - put it somewhere children cannot access, 2) Document where you found it with photos, 3) Report to Acme support immediately - this is critical safety violation, 4) Contact host about the unacceptable danger, 5) Consider if you feel safe staying. Leaving unsecured weapons violates safety standards. You're entitled to immediate relocation if desired, full refund for safety violation, and the host faces serious consequences. Children's safety is paramount."
+  },
+  {
+    "id": "ps-071",
+    "category": "property-stay",
+    "problem": "The water is shut off by the county for non-payment. Host isn't answering calls.",
+    "solution": "Utility shutoff for non-payment is the host's failure and makes property uninhabitable! Take action: 1) Document the shutoff notice and lack of water, 2) Keep trying to contact host through app (documented), 3) Contact Acme support immediately - this is emergency, 4) You cannot stay without water - basic habitability requirement. You're entitled to: immediate relocation to functioning property, full refund for uninhabitable conditions, reimbursement for any expenses (water, hotels), and the host faces serious consequences. This is complete failure of host obligations."
+  },
+  {
+    "id": "ps-072",
+    "category": "property-stay",
+    "problem": "Half the windows won't lock. We're on ground floor and worried about security.",
+    "solution": "Non-locking windows on ground floor are serious security risks! Address immediately: 1) Document all windows that won't lock with photos, 2) Use furniture to block/secure windows temporarily, 3) Contact host for immediate repair or temporary locks, 4) Report security concern to Acme support. Ground floor security is essential. Host must: send locksmith/handyman immediately, provide temporary security devices, offer relocation if you feel unsafe, or give partial refund for security risk. Your safety and peace of mind matter. Don't stay anywhere you feel vulnerable."
+  },
+  {
+    "id": "ps-073",
+    "category": "property-stay",
+    "problem": "The pipes froze and burst. Water is everywhere and it's 10 degrees outside.",
+    "solution": "Burst pipes in winter are property emergencies! Take immediate action: 1) Shut off main water valve immediately (usually in basement/utility room), 2) Document all water damage with photos/video, 3) Move your belongings to dry areas, 4) Contact host and Acme emergency support, 5) You need immediate relocation - no water/heat in freezing temps. This is uninhabitable in winter conditions. You're entitled to: emergency relocation to heated property with water, full refund for uninhabitable conditions, and reimbursement for any damaged belongings. This is a habitability crisis."
+  },
+  {
+    "id": "ps-074",
+    "category": "property-stay",
+    "problem": "The host's aggressive dog got into the property and cornered us. We're terrified!",
+    "solution": "Aggressive animals are serious safety threats! If still in danger: 1) Get to safety - lock yourselves in a room or car, 2) Call local animal control or police if dog is still threatening, 3) Document any injuries or property damage, 4) Report to Acme support immediately - this is unacceptable. Once safe: demand host removes animal permanently, consider relocation if you feel unsafe, get medical attention for any bites/scratches. You're entitled to medical coverage, relocation, and compensation. Hosts must control their animals - this is major liability."
+  },
+  {
+    "id": "ps-075",
+    "category": "property-stay",
+    "problem": "Kitchen is infested with cockroaches. They're everywhere and in our food!",
+    "solution": "Cockroach infestation is a severe health and cleanliness violation! Take immediate action: 1) Document the infestation with photos/video, 2) Seal all food in containers or refrigerator, 3) Contact host and Acme support immediately, 4) This level of infestation makes property uninhabitable. You cannot stay with this health hazard. You're entitled to: immediate relocation to clean property, full refund for uninhabitable conditions, reimbursement for any contaminated food, and the property needs professional treatment. This is unacceptable for guest accommodation."
+  },
+  {
+    "id": "ps-076",
+    "category": "property-stay",
+    "problem": "The floors are so rotten that my foot went through. This place is falling apart!",
+    "solution": "Rotten floors are extreme safety hazards and structural failures! Immediate action needed: 1) Check if anyone is injured - seek medical care if needed, 2) Do NOT walk on any soft/rotten areas, 3) Document the dangerous conditions extensively, 4) Contact Acme emergency support - property is unsafe, 5) You must relocate immediately - this is dangerous. Structural failures mean uninhabitable property. You're entitled to: immediate relocation for safety, full refund plus any medical expenses, and the property must be condemned until repairs. Your safety is at serious risk."
+  },
+  {
+    "id": "ps-077",
+    "category": "property-stay",
+    "problem": "We just realized there's no smoke detectors or CO detectors anywhere. Is this legal?",
+    "solution": "Missing smoke/CO detectors is illegal and extremely dangerous! This violates fire codes and Acme requirements: 1) Document the missing safety devices with photos, 2) Report to Acme support immediately - serious violation, 3) Contact host demanding immediate installation, 4) You may want to relocate for safety. Property cannot legally operate without these devices. You're entitled to: immediate installation of detectors, partial refund for safety violation, or relocation if you feel unsafe. For immediate safety, buy detectors and deduct from stay cost. This is non-negotiable safety requirement."
+  },
+  {
+    "id": "ps-078",
+    "category": "property-stay",
+    "problem": "The 'heated pool' is ice cold. Pool heater has been broken for months per neighbors.",
+    "solution": "Long-term broken amenities that are still advertised is fraud. Document and act: 1) Test and photograph the cold pool temperature, 2) Get neighbor's statement about duration if possible, 3) Compare to listing advertising 'heated pool', 4) Report false advertising to host and Acme. If neighbors confirm it's been broken for months while still advertised, this is intentional misrepresentation. You're entitled to: significant partial refund for missing amenity, option to relocate if pool was primary reason, and the listing must be corrected. Knowingly false advertising is unacceptable."
+  },
+  {
+    "id": "ps-079",
+    "category": "property-stay",
+    "problem": "The master bedroom window is broken and covered with cardboard. Wind and rain getting in.",
+    "solution": "Broken windows are habitability and security issues! This needs immediate attention: 1) Document the broken window and inadequate covering, 2) Check if rain is causing any water damage, 3) Contact host for emergency glass repair TODAY, 4) Temporary solution: plastic sheeting and duct tape. Windows must be intact for weather protection and security. Host must arrange same-day repair or provide alternative sleeping arrangements. If not fixed immediately, you're entitled to partial refund or relocation. Cardboard is not acceptable window repair!"
+  },
+  {
+    "id": "ps-080",
+    "category": "property-stay",
+    "problem": "Found mouse droppings in kitchen drawers and pantry. This is disgusting and unsanitary.",
+    "solution": "Mouse droppings in food areas are serious health hazards! Protect your health: 1) Photo all droppings and contaminated areas, 2) Do NOT use any utensils/dishes without thorough washing, 3) Store all food in sealed containers immediately, 4) Contact host and Acme about the infestation, 5) This requires professional pest control. Kitchen contamination is unacceptable. You're entitled to: immediate pest control service, deep cleaning of all kitchen items, partial refund for health hazard, or relocation if preferred. Mouse droppings can carry disease - this isn't minor issue."
+  },
+  {
+    "id": "ps-081",
+    "category": "property-stay",
+    "problem": "The balcony railing is loose and wobbly. Seems really unsafe, especially with kids.",
+    "solution": "Loose railings are serious fall hazards, especially with children! Safety first: 1) Block all access to the balcony immediately, 2) Document the loose railing with video showing wobble, 3) Keep children away from the area entirely, 4) Contact host for immediate repair, 5) Report safety hazard to Acme support. This must be fixed before any use. Host must send contractor immediately or block balcony access properly. You're entitled to partial refund if balcony was advertised feature. Child safety is non-negotiable - don't risk using unsafe structures."
+  },
+  {
+    "id": "ps-082",
+    "category": "property-stay",
+    "problem": "There's extensive water damage and black mold on walls. Smells musty and awful.",
+    "solution": "Extensive mold and water damage makes property uninhabitable! This is serious health hazard: 1) Document all mold and damage areas with photos, 2) Limit time in affected areas - mold is toxic, 3) Contact Acme support immediately for relocation, 4) If anyone has breathing issues, seek medical attention, 5) Do NOT stay in moldy environment. You're entitled to: immediate relocation to safe property, full refund for health hazard, medical expense coverage if needed, and property inspection before future rentals. Extensive mold exposure is dangerous - prioritize your health!"
+  },
+  {
+    "id": "ps-083",
+    "category": "property-stay",
+    "problem": "Electrical outlets are sparking when we plug things in. Lights flicker constantly too.",
+    "solution": "Sparking outlets are FIRE HAZARDS requiring immediate action! For safety: 1) Stop using ALL sparking outlets immediately, 2) Unplug everything from affected outlets, 3) Document sparking/flickering (video if safe to do so), 4) Contact host about emergency electrician, 5) If any burning smell, evacuate and call 911. This is serious electrical problem requiring professional repair. Do NOT use suspicious outlets. Host must get licensed electrician TODAY. You may need relocation if electrical system is dangerous. Fire risk is too serious to ignore."
+  },
+  {
+    "id": "ps-084",
+    "category": "property-stay",
+    "problem": "The dishwasher flooded the kitchen. Water damage to cabinets and our groceries ruined.",
+    "solution": "Appliance flooding requires quick action to minimize damage! Here's what to do: 1) Turn off dishwasher and water supply to it if possible, 2) Document all water damage and ruined items, 3) Use towels to prevent further water spread, 4) Contact host immediately about the malfunction, 5) Save receipts for ruined groceries. This is equipment failure, not your fault. Host must: arrange immediate repair/replacement, reimburse for damaged groceries, address any water damage to property, and provide partial refund for inconvenience. You're not liable for appliance malfunctions."
+  },
+  {
+    "id": "ps-085",
+    "category": "property-stay",
+    "problem": "We suspect hidden cameras in private areas. Found weird devices in bedroom and bathroom.",
+    "solution": "Hidden cameras in private areas are ILLEGAL and severe privacy violations! Take immediate action: 1) Do NOT touch suspected devices - photograph them in place, 2) Cover devices with tape/clothing for privacy, 3) Report to Acme support IMMEDIATELY - criminal matter, 4) Consider contacting local police, 5) You should relocate immediately. If confirmed as cameras: full refund and relocation, host faces criminal charges and permanent ban, you may have legal case. Your privacy has been seriously violated. We have zero tolerance for hidden cameras in private spaces."
+  },
+  {
+    "id": "ps-086",
+    "category": "property-stay",
+    "problem": "AC is blowing hot air only. It's 98 degrees and we have a baby. This is dangerous!",
+    "solution": "No AC with a baby in extreme heat is a medical emergency! Act immediately: 1) Check thermostat is set correctly and batteries are good, 2) Look for circuit breakers marked HVAC, 3) Contact host AND Acme emergency line NOW, 4) Emphasize baby's health risk in heat, 5) Get to cooler location if baby shows heat distress. Babies can't regulate temperature - this is critical. You need: immediate AC repair or portable units, relocation to cooled property TODAY, or reimbursement for hotel until fixed. Baby's health is absolute priority!"
+  },
+  {
+    "id": "ps-087",
+    "category": "property-stay",
+    "problem": "The sofa bed has blood stains and other gross stains. Absolutely disgusting.",
+    "solution": "Blood-stained furniture is completely unacceptable and health hazard! Don't use it: 1) Document all stains with clear photos, 2) Do NOT use this furniture at all, 3) Contact host and Acme support immediately, 4) This is serious cleanliness failure, 5) Request immediate replacement or professional cleaning. Blood poses disease risk. You're entitled to: immediate furniture replacement, professional cleaning service, partial refund for disgusting conditions, or relocation if this indicates overall cleanliness issues. This violates basic hospitality standards."
+  },
+  {
+    "id": "ps-088",
+    "category": "property-stay",
+    "problem": "The jacuzzi jets are shooting out black chunks. Water is disgusting and green.",
+    "solution": "Contaminated jacuzzi is health hazard - do NOT use! This indicates serious maintenance failure: 1) Document the disgusting water and black debris, 2) Do not use jacuzzi at all - infection risk, 3) Check if jacuzzi was main booking reason, 4) Contact host about the maintenance failure, 5) Report to Acme for documentation. This amenity is unusable and hazardous. You're entitled to: significant partial refund for unusable amenity, professional jacuzzi cleaning (takes days), or consideration if this was primary booking reason. Black chunks indicate biofilm - serious health risk."
+  },
+  {
+    "id": "ps-089",
+    "category": "property-stay",
+    "problem": "Sewage is backing up through shower drain. Bathroom is unusable and smells horrible.",
+    "solution": "Sewage backup is extreme health hazard and makes property uninhabitable! Act immediately: 1) Stop using ALL plumbing fixtures, 2) Close bathroom door and seal with towels, 3) Document the sewage backup with photos, 4) Contact host and Acme emergency support NOW, 5) This requires professional remediation. You cannot stay with sewage exposure - serious disease risk. You need: immediate relocation to sanitary property, full refund for uninhabitable conditions, and property must be professionally sanitized. Sewage exposure is dangerous to your health!"
+  },
+  {
+    "id": "ps-090",
+    "category": "property-stay",
+    "problem": "Wind blew the front door open and it won't stay closed. Lock is completely broken now.",
+    "solution": "A door that won't close or lock is an emergency security issue! Immediate action required: 1) Try to secure door with furniture/wedge temporarily, 2) Document the broken door/lock with photos, 3) Contact host for emergency locksmith NOW, 4) Don't leave property unattended until fixed, 5) Call Acme if host doesn't respond quickly. You need functioning, locking door for basic security. Host must: send locksmith within 2 hours maximum, provide temporary security solution, or relocate you if can't be fixed immediately. Security is non-negotiable requirement."
+  },
+  {
+    "id": "ps-091",
+    "category": "property-stay",
+    "problem": "There's a gas grill but no propane tank. Host says we need to buy our own.",
+    "solution": "If the grill was advertised as an amenity, propane should be included for use. Here's your recourse: 1) Check listing to confirm grill was advertised amenity, 2) Look for propane in typical storage areas first, 3) Confirm with host that propane isn't provided, 4) If advertised but not supplied, request reimbursement. Standard practice is hosts provide first tank, guests refill if they empty it. If grill was highlighted amenity, host should provide propane or reimburse your purchase. Keep receipt if you buy propane. This impacts the advertised amenity value."
+  },
+  {
+    "id": "ps-092",
+    "category": "property-stay",
+    "problem": "The 'mountain view' is completely blocked by overgrown trees. Can't see anything.",
+    "solution": "Blocked views are listing accuracy issues, especially if views were a booking factor. Document the situation: 1) Take photos showing actual view vs. listing photos, 2) Check if this appears to be recent growth or long-term, 3) Report to host with comparison photos, 4) Request partial compensation for misrepresentation. While nature changes, hosts must update listings when major features like views are lost. You may receive: partial refund for the misrepresentation, host may offer tree trimming (unlikely immediate fix), or future stay credit. Views significantly impact property value."
+  },
+  {
+    "id": "ps-093",
+    "category": "property-stay",
+    "problem": "The keypad entry code doesn't work and there's no lockbox. Can't get in!",
+    "solution": "Failed entry systems are access emergencies! Get inside quickly: 1) Try code again slowly - sometimes keypads are finicky, 2) Check if you need to press * or # after code, 3) Look for backup entry method (lockbox, hidden key), 4) Contact host immediately for correct code or reset, 5) If no response in 30 minutes, call Acme emergency support. You need immediate access. Host must: provide working code immediately, come let you in personally, arrange locksmith if system failed, or provide alternative accommodation. Access delays are unacceptable."
+  },
+  {
+    "id": "ps-094",
+    "category": "property-stay",
+    "problem": "There's a terrible chemical smell giving us headaches. Might be from recent renovations.",
+    "solution": "Chemical odors causing health symptoms require immediate action! Protect your health: 1) Open all windows for maximum ventilation, 2) Document the smell and any health symptoms, 3) Contact host about recent work/chemicals used, 4) If headaches persist, consider leaving for fresh air, 5) Report to Acme support with health concerns. Strong chemical odors shouldn't be present during guest stays. You may need: relocation if smell is unbearable, time for property to air out, or partial refund for the discomfort. Your health symptoms are concerning - don't ignore them."
+  },
+  {
+    "id": "ps-095",
+    "category": "property-stay",
+    "problem": "The trash hasn't been picked up in weeks. Garbage is overflowing and attracting animals.",
+    "solution": "Overflowing garbage is a health hazard and attracts pests! This needs immediate resolution: 1) Document the garbage situation with photos, 2) Secure any additional trash to prevent more animal attraction, 3) Contact host about immediate trash removal, 4) Keep windows/doors closed to prevent animal entry. Host must arrange emergency trash pickup or provide alternative disposal. This is basic property maintenance failure. You're entitled to: immediate trash removal, partial refund for unsanitary conditions, and protection from pest attraction. Garbage management is host's responsibility."
+  },
+  {
+    "id": "ps-096",
+    "category": "property-stay",
+    "problem": "The internet speed is 1 Mbps but listing said 'high-speed for remote work'. Can't work!",
+    "solution": "Internet misrepresentation impacts remote work capability significantly. Test and document: 1) Run speed tests at different times - screenshot results, 2) Confirm you're testing WiFi, not cellular data, 3) Try router reset and optimal positioning, 4) Document how this prevents your work needs. 'High-speed for remote work' implies at least 25+ Mbps. You're entitled to: partial refund for the misrepresentation, host providing hotspot or upgrade, or relocation if work impossible. If remote work was stated booking reason, this is material misrepresentation."
+  },
+  {
+    "id": "ps-097",
+    "category": "property-stay",
+    "problem": "Check-out is at 11 AM but cleaners arrived at 9 AM demanding we leave. Very rude!",
+    "solution": "Early cleaner arrival violating checkout time is completely unacceptable! Stand your ground: 1) Firmly tell cleaners your checkout is 11 AM - they must wait, 2) Document their early arrival and demands, 3) Contact host immediately about this violation, 4) Do NOT leave before your scheduled checkout, 5) Report to Acme support. You have every right to stay until 11 AM. This is harassment and violation of your booking. Host must: apologize and ensure cleaners wait, provide compensation for harassment, and ensure this never happens to future guests."
+  },
+  {
+    "id": "ps-098",
+    "category": "property-stay",
+    "problem": "We found the septic tank lid is broken and open. Huge danger for our kids!",
+    "solution": "Open septic tank is EXTREME danger, potentially fatal for children! Emergency action required: 1) Keep ALL children and pets away from area immediately, 2) Block/barricade access to the hazard area, 3) Document the dangerous condition with photos, 4) Contact host and Acme support URGENTLY, 5) This must be secured immediately. Open septic tanks can kill - this is critical safety emergency. Host must: secure the hazard within hours, provide appropriate barriers/covers, offer relocation if you feel unsafe. This is massive liability and unacceptable danger."
+  },
+  {
+    "id": "ps-099",
+    "category": "property-stay",
+    "problem": "The owner showed up drunk at midnight pounding on door. We're terrified!",
+    "solution": "This is harassment and completely unacceptable behavior! Ensure your safety: 1) Do NOT open the door - keep it locked, 2) Call local police if you feel threatened, 3) Record the incident (video/audio) for evidence, 4) Contact Acme emergency support immediately, 5) Document everything for your safety. You should not tolerate this behavior. You're entitled to: immediate intervention to stop harassment, relocation if you feel unsafe, full refund for this terrifying experience, and host faces serious consequences. Your safety and peace are paramount."
+  },
+  {
+    "id": "ps-100",
+    "category": "property-stay",
+    "problem": "The property flooded during rain. Our luggage and belongings are soaked!",
+    "solution": "Property flooding is a major failure requiring immediate action! Protect belongings and document: 1) Move all belongings to dry areas immediately, 2) Document all water damage and affected items, 3) Take photos of where water entered property, 4) List all damaged belongings with values, 5) Contact host and Acme support urgently. Properties must be weatherproof. You're entitled to: reimbursement for damaged belongings, immediate relocation to dry property, full or partial refund for uninhabitable conditions, and emergency water extraction. Keep all receipts for damaged items."
+  }
+]
