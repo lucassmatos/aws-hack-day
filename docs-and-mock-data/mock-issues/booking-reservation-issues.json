@@ -1,0 +1,602 @@
+[
+  {
+    "id": "br-001",
+    "category": "booking-reservation",
+    "problem": "I'm trying to book a cabin for next weekend but when I click 'Book Now' nothing happens. I've tried refreshing the page multiple times.",
+    "solution": "I understand you're having trouble with the booking button. Let's resolve this issue. Please try these steps: 1) Clear your browser cache and cookies, 2) Try using a different browser or device, 3) Ensure your browser is updated to the latest version, 4) Disable any VPN if you're using one, 5) If using our app, update it to the latest version. If the issue persists, I can help you complete the booking over the phone or investigate further."
+  },
+  {
+    "id": "br-002",
+    "category": "booking-reservation",
+    "problem": "What's the difference between Instant Book and Request to Book? I see both options on different properties.",
+    "solution": "Great question! Here's the difference: Instant Book means your reservation is confirmed immediately after payment - you can start packing right away! Request to Book means the host has 24 hours to accept or decline your request. This gives hosts more control over who stays at their property. Both are secure booking methods, just with different confirmation times."
+  },
+  {
+    "id": "br-003",
+    "category": "booking-reservation",
+    "problem": "I need to cancel my booking for next month. What's the cancellation policy and will I get a full refund?",
+    "solution": "I'll help you understand the cancellation policy for your booking. The refund depends on the property's specific policy: Flexible (full refund up to 24 hours before check-in), Moderate (full refund up to 5 days before), Strict (50% refund up to 14 days before), or Super Strict (50% refund up to 30 days before). To cancel: 1) Go to Trips in your account, 2) Select the booking, 3) Click 'Cancel Booking', 4) Select reason, 5) Confirm. Would you like me to check the specific policy for your booking?"
+  },
+  {
+    "id": "br-004",
+    "category": "booking-reservation",
+    "problem": "I haven't received my booking confirmation email and I made the reservation 3 hours ago. I'm worried it didn't go through.",
+    "solution": "I understand your concern about the missing confirmation. Let's check a few things: 1) First, please check your spam/junk folder as confirmations sometimes end up there, 2) Verify your email address is correct in your account settings, 3) Check the Trips section in your account - your booking should appear there even without the email, 4) Check your bank statement for the charge. If you see the charge but no booking, please provide me with your transaction details and I'll trace it immediately."
+  },
+  {
+    "id": "br-005",
+    "category": "booking-reservation",
+    "problem": "I want to add 2 more guests to my existing booking. How do I do this and will there be extra charges?",
+    "solution": "I can help you add guests to your booking! First, check the property's maximum occupancy to ensure it can accommodate the additional guests. Then: 1) Go to Trips in your account, 2) Select your booking, 3) Click 'Modify Booking', 4) Update the guest count. Please note: Additional guest fees may apply (these will be shown before you confirm), and some hosts require approval for guest changes. The system will show any price differences before you confirm the modification."
+  },
+  {
+    "id": "br-006",
+    "category": "booking-reservation",
+    "problem": "I'm planning a family reunion and need to book 5 cabins. Can I book them all at once?",
+    "solution": "Yes, you can book multiple cabins for your family reunion! Here's how: Simply add each cabin to your cart before proceeding to checkout - this feature is perfect for group trips like yours. Search for each property you want, click 'Add to Cart' instead of 'Book Now', and repeat for all 5 cabins. Once all are in your cart, you can complete the booking in one transaction. This makes it easier to manage group reservations!"
+  },
+  {
+    "id": "br-007",
+    "category": "booking-reservation",
+    "problem": "My credit card was charged but I didn't receive a booking confirmation. The money is already taken from my account.",
+    "solution": "I understand this is concerning. When payment is processed but booking isn't confirmed, here's what we'll do: 1) Please check your bank statement to confirm if it's a completed charge or just a pending authorization, 2) Check the Trips section in your account for the booking, 3) Provide me with your transaction details (date, amount, last 4 digits of card). We trace and resolve these issues within 24 hours. If it's a duplicate charge or failed booking, we'll issue an immediate refund."
+  },
+  {
+    "id": "br-008",
+    "category": "booking-reservation",
+    "problem": "I need to change my check-in date by 2 days but keep the same duration. Is this possible?",
+    "solution": "Yes, you can change your booking dates! Here's how: 1) Go to Trips in your account, 2) Select your booking, 3) Click 'Change Dates', 4) Select your new dates (the system will show availability), 5) Review any price difference, 6) Confirm the change. Note: Some bookings may require host approval for date changes. If the new dates cost more, you'll pay the difference; if less, the refund follows the cancellation policy."
+  },
+  {
+    "id": "br-009",
+    "category": "booking-reservation",
+    "problem": "How far in advance can I book a cabin? I want to plan for next year's anniversary.",
+    "solution": "How wonderful that you're planning ahead for your anniversary! Most properties on Acme Rentals can be booked up to 12 months in advance. However, some hosts may have different settings - they might allow bookings further out or restrict to shorter windows. When you search for properties, you can filter by your desired dates, and only available properties will show. For popular destinations, booking early is definitely recommended!"
+  },
+  {
+    "id": "br-010",
+    "category": "booking-reservation",
+    "problem": "The cabin I wanted to book showed as available, but when I tried to complete the booking it said dates unavailable. This is frustrating!",
+    "solution": "I understand how frustrating this must be! This happens when another guest books the same dates simultaneously - our system updates availability in real-time, but there can be a brief window where multiple guests are viewing the same dates. Here's what you can do: 1) Refresh the page to see current availability, 2) Try selecting nearby dates, 3) Enable notifications for this property to get alerts when your dates become available. I'd also be happy to help you find similar properties available for your dates."
+  },
+  {
+    "id": "br-011",
+    "category": "booking-reservation",
+    "problem": "I accidentally booked the wrong dates. Can I fix this without canceling and rebooking?",
+    "solution": "Yes, you can modify your dates without canceling! Here's the process: 1) Go to Trips in your account, 2) Find your booking and click 'Change Dates', 3) Select the correct dates (subject to availability), 4) Review any price adjustments, 5) Submit the change request. If the property requires host approval, they have 24 hours to respond. This is much better than canceling and rebooking as you avoid cancellation fees!"
+  },
+  {
+    "id": "br-012",
+    "category": "booking-reservation",
+    "problem": "What happens if the host cancels my booking? I'm worried about being left without accommodation.",
+    "solution": "If a host cancels your booking, we've got you covered! Here's what happens: 1) You receive a full refund automatically, 2) Our team will immediately help you find alternative accommodation, 3) You'll receive a travel voucher for the inconvenience, 4) The host faces penalties for canceling. We take host cancellations very seriously and work hard to ensure you're not left without accommodation. Would you like me to note your concerns on your current booking?"
+  },
+  {
+    "id": "br-013",
+    "category": "booking-reservation",
+    "problem": "Are there any hidden fees? I want to know the total cost before I book.",
+    "solution": "Great question - transparency is important to us! There are NO hidden fees on Acme Rentals. Before you confirm any booking, you'll see the complete breakdown including: nightly rate, cleaning fee (if applicable), service fee, taxes, and any additional guest fees. Other potential costs that will be clearly shown: security deposits (refundable), pet fees (if applicable), and early check-in/late checkout fees. The price you see at checkout is the total price you'll pay."
+  },
+  {
+    "id": "br-014",
+    "category": "booking-reservation",
+    "problem": "I have a Request to Book pending for 20 hours now. How long do hosts have to respond?",
+    "solution": "Hosts have 24 hours to respond to booking requests, so your host still has 4 hours to accept or decline. Most hosts respond much sooner, but they have the full 24-hour window. If they don't respond within 24 hours, the request automatically expires and no charges are made to your payment method. You'll receive an email notification either way. In the meantime, you might want to save some backup properties just in case!"
+  },
+  {
+    "id": "br-015",
+    "category": "booking-reservation",
+    "problem": "I need to cancel due to a major storm warning in the area. Is there any weather protection?",
+    "solution": "I understand your safety concerns with the storm warning. Here's how we handle weather-related cancellations: 1) Check if your specific booking includes weather protection (shown in your booking details), 2) Contact our support team with official weather alerts/warnings for the area, 3) Many hosts offer credits for future stays in weather emergencies, 4) We strongly recommend travel insurance for comprehensive coverage. Please provide your booking details and the weather warning information so I can check your options."
+  },
+  {
+    "id": "br-016",
+    "category": "booking-reservation",
+    "problem": "My confirmation email shows the wrong check-in date. How do I get this corrected?",
+    "solution": "I'll help you correct this immediately. Confirmation errors need quick attention. Please provide: 1) Your booking confirmation number, 2) The incorrect date showing in your email, 3) The correct date you actually booked, 4) A screenshot of the incorrect details if possible. Contact our support team right away and we'll update your reservation and send a corrected confirmation. Your actual booking in our system is what matters, but we'll ensure all documentation matches."
+  },
+  {
+    "id": "br-017",
+    "category": "booking-reservation",
+    "problem": "Can I switch to a different cabin at the same property? I found one I like better.",
+    "solution": "To switch to a different cabin, you'll need to: 1) Cancel your current booking (check the cancellation policy first to understand any fees), 2) Book the new cabin you prefer. Unfortunately, we can't directly transfer bookings between properties. Before canceling, check: the cancellation policy for your current booking, availability of the preferred cabin for your dates, and any price differences. If the cancellation fees are high, it might be worth keeping your current booking."
+  },
+  {
+    "id": "br-018",
+    "category": "booking-reservation",
+    "problem": "When will I get my refund? I canceled my booking 5 days ago and still don't see it.",
+    "solution": "I understand you're waiting for your refund. Processing times vary by payment method: Credit cards typically take 5-10 business days, Debit cards can take up to 15 business days, Acme Wallet refunds are instant, and PayPal takes 3-5 business days. Since you canceled 5 days ago, credit card refunds should appear soon. If you used a debit card, it may take a bit longer. Please check with your bank as refunds sometimes appear as pending before fully processing."
+  },
+  {
+    "id": "br-019",
+    "category": "booking-reservation",
+    "problem": "I'm trying to book but getting an error message every time I submit payment. What's wrong?",
+    "solution": "Let's troubleshoot this payment error. Please try these steps in order: 1) Clear your browser cache and cookies, 2) Try a different browser or device, 3) Check that your payment method is valid and not expired, 4) Disable any VPN if you're using one, 5) If using the app, update to the latest version. Also verify: sufficient funds/credit available, billing address matches card records, and card is enabled for online purchases. If none of these work, I can help process your booking over the phone."
+  },
+  {
+    "id": "br-020",
+    "category": "booking-reservation",
+    "problem": "What's included in the booking price? I see different fees listed.",
+    "solution": "Your booking price includes everything you need to know upfront: the nightly rate for the cabin, cleaning fee (if the host charges one), Acme Rentals service fee, applicable taxes, and any additional guest fees if you're bringing extra people. All of these are clearly broken down before you confirm your booking. Security deposits (which are refundable) are shown separately. There are no surprises - the total you see at checkout is exactly what you'll pay."
+  },
+  {
+    "id": "br-021",
+    "category": "booking-reservation",
+    "problem": "I booked a cabin but now I need wheelchair accessibility. Can I modify my booking for this requirement?",
+    "solution": "Accessibility is important and I want to ensure you have suitable accommodation. Unfortunately, you can't modify a booking to change the property's accessibility features. You'll need to: 1) Search for properties with wheelchair accessibility filters enabled, 2) Check if your current booking's cancellation policy allows refund, 3) Cancel current booking if needed, 4) Book an accessible property. I can help you search for wheelchair-accessible cabins in your desired area and dates right now."
+  },
+  {
+    "id": "br-022",
+    "category": "booking-reservation",
+    "problem": "My host asked me to cancel and rebook at a different price. Is this allowed?",
+    "solution": "No, hosts should NOT ask you to cancel and rebook - this violates Acme Rentals policies. This could be an attempt to avoid penalties or change agreed-upon prices. Please: 1) Do not cancel your booking, 2) Report this request to our support team immediately, 3) Keep all communication with the host on our platform. Your original booking and price are protected. We'll contact the host about this policy violation and ensure your reservation is honored at the original price."
+  },
+  {
+    "id": "br-023",
+    "category": "booking-reservation",
+    "problem": "I have Acme+ membership. Do I get any booking benefits?",
+    "solution": "Yes! Your Acme+ membership includes great booking benefits. While the FAQ doesn't list specific Acme+ perks, I can see you have access to our priority support line at 1-800-CABINS-2 for faster assistance. Acme+ members typically enjoy benefits like priority booking access, exclusive discounts, and enhanced cancellation protection. Let me check your specific Acme+ benefits for this booking or connect you with our priority support team."
+  },
+  {
+    "id": "br-024",
+    "category": "booking-reservation",
+    "problem": "Can I book now but pay later? I want to secure the dates but get paid next week.",
+    "solution": "Most bookings on Acme Rentals require payment at the time of booking to secure your dates. However, some options might be available: 1) Check if the property offers 'Request to Book' - your card won't be charged until the host approves, 2) Some hosts may offer payment plans for longer stays, 3) Consider using a credit card now and paying it off when you get paid. The standard process requires immediate payment to guarantee your reservation and protect both you and the host."
+  },
+  {
+    "id": "br-025",
+    "category": "booking-reservation",
+    "problem": "I want to extend my stay by 3 nights. The cabin shows available for those dates.",
+    "solution": "Great news that the cabin is available for your extended dates! To extend your stay: 1) Go to Trips in your account, 2) Select your current booking, 3) Click 'Change Dates', 4) Extend your checkout date by 3 nights, 5) Review the additional cost, 6) Submit the modification. The host may need to approve the extension. If approved, you'll only pay for the additional nights. This is easier than making a separate booking and ensures continuity of your stay."
+  },
+  {
+    "id": "br-026",
+    "category": "booking-reservation",
+    "problem": "The cleaning fee seems really high - $200 for a 2-night stay. Is this normal?",
+    "solution": "I understand cleaning fees can seem high for shorter stays. Hosts set their own cleaning fees to cover the cost of professional cleaning between guests, regardless of stay length. The same cleaning is required whether you stay 2 nights or 2 weeks. When comparing properties, consider the total cost per night including all fees. Some tips: 1) Look for properties with lower or no cleaning fees, 2) Consider longer stays to spread the cost, 3) Filter search results by total price. All fees are shown upfront before booking."
+  },
+  {
+    "id": "br-027",
+    "category": "booking-reservation",
+    "problem": "I made a booking 10 minutes ago but realized I selected wrong month - July instead of June. Help!",
+    "solution": "Don't worry - since you just booked 10 minutes ago, we can fix this! Immediately: 1) Go to Trips in your account, 2) Find your booking, 3) Click 'Change Dates', 4) Select the correct dates in June, 5) Submit the change request. Since it's so recent, most hosts are understanding about immediate corrections. If the June dates aren't available or the host doesn't approve, you may need to cancel (check the cancellation policy) and rebook for June."
+  },
+  {
+    "id": "br-028",
+    "category": "booking-reservation",
+    "problem": "My employer is paying for this cabin. Can I get an invoice for reimbursement?",
+    "solution": "Absolutely! We can provide an invoice for your employer reimbursement. After your booking is confirmed: 1) Go to Trips in your account, 2) Select your booking, 3) Look for 'Download Invoice' or 'Receipt' option, 4) This provides a detailed invoice with all charges, taxes, and our business information. If you need a customized invoice with specific details or your company's name, contact our support team with your booking confirmation number and requirements."
+  },
+  {
+    "id": "br-029",
+    "category": "booking-reservation",
+    "problem": "What's a security deposit? Will I get this back?",
+    "solution": "A security deposit is a refundable amount held to cover potential damages during your stay. Here's how it works: 1) It's shown separately from your booking total, 2) It's either a hold on your card or a separate charge, 3) It's fully refunded after checkout if there's no damage, 4) Refund timing follows your payment method (instant for Acme Wallet, 5-15 days for cards). The deposit amount is set by the host and clearly shown before you book. Think of it as insurance for both you and the host."
+  },
+  {
+    "id": "br-030",
+    "category": "booking-reservation",
+    "problem": "I'm booking from Canada but the prices keep showing in USD. How do I change this?",
+    "solution": "Currency display can usually be adjusted in your account settings. Look for currency or region preferences in your profile. The booking process will show the final charge in your local currency at checkout, even if browsing prices appear in USD. Your credit card company will handle the conversion at current exchange rates. Note that some hosts may only list in USD, but your card statement will show the CAD equivalent. Need help finding the currency settings?"
+  },
+  {
+    "id": "br-031",
+    "category": "booking-reservation",
+    "problem": "I have multiple bookings coming up. How can I see them all in one place?",
+    "solution": "Easy! All your bookings are organized in one convenient location. Simply: 1) Log into your account, 2) Go to the 'Trips' section, 3) You'll see all upcoming bookings listed chronologically, 4) Each shows key details like dates, property, and confirmation number. You can click on any booking to see full details, get directions, message the host, or make modifications. The Trips section is your central hub for managing all reservations!"
+  },
+  {
+    "id": "br-032",
+    "category": "booking-reservation",
+    "problem": "Do I need to print my confirmation or is showing it on my phone okay?",
+    "solution": "Showing your confirmation on your phone is perfectly fine! Most hosts accept digital confirmations. You can: 1) Access your booking in the Trips section of the app, 2) Screenshot the confirmation for offline access, 3) Save the confirmation email. Having it on your phone is actually convenient for easy access to host contact info, directions, and check-in instructions. Some remote cabins with limited internet might benefit from a screenshot saved offline."
+  },
+  {
+    "id": "br-033",
+    "category": "booking-reservation",
+    "problem": "The host hasn't responded to my booking request and it's been 23 hours. What happens next?",
+    "solution": "Your host has just 1 hour left to respond! Hosts have exactly 24 hours to accept or decline booking requests. If they don't respond by the deadline: 1) The request automatically expires, 2) Your payment method won't be charged, 3) You'll receive an email notification about the expiration, 4) You're free to book other properties. Since time is running out, I'd recommend starting to look at backup options now just in case. Many great properties offer Instant Book for immediate confirmation!"
+  },
+  {
+    "id": "br-034",
+    "category": "booking-reservation",
+    "problem": "Can I book a cabin for someone else? It's a surprise gift for my parents.",
+    "solution": "What a thoughtful gift! Yes, you can book for others. When booking: 1) Use your payment method and account, 2) In the guest information section, enter your parents' names, 3) Add a note to the host explaining it's a gift booking, 4) Make sure to share the confirmation details with your parents. Some hosts may want to verify with the actual guests, so good communication is key. You'll manage the booking through your account, but your parents will be the ones checking in."
+  },
+  {
+    "id": "br-035",
+    "category": "booking-reservation",
+    "problem": "I see the same cabin listed at different prices for different dates. Why the variation?",
+    "solution": "Cabin prices vary based on several factors, similar to hotels: 1) Seasonal demand (summer and holidays cost more), 2) Weekend vs. weekday rates, 3) Local events or festivals, 4) Last-minute discounts or early bird specials, 5) Length of stay discounts. Hosts use dynamic pricing to match demand. For the best deals, consider: traveling off-season, booking weekdays, staying longer for weekly discounts, or being flexible with your dates. The search filters can help you find the best rates!"
+  },
+  {
+    "id": "br-036",
+    "category": "booking-reservation",
+    "problem": "My credit card was declined but I have sufficient funds. Why can't I complete the booking?",
+    "solution": "Credit card declines happen for various reasons beyond insufficient funds. Common causes: 1) Bank flagging as unusual activity (travel purchase), 2) Daily spending limit reached, 3) Card not enabled for online/international transactions, 4) Incorrect billing address or CVV, 5) Expired card. Try: calling your bank to authorize the transaction, using a different card, checking all card details are correct, or disabling VPN if using one. Your bank can usually resolve this quickly with a phone call."
+  },
+  {
+    "id": "br-037",
+    "category": "booking-reservation",
+    "problem": "How do I know if a host is trustworthy? This is my first time booking.",
+    "solution": "Great question for a first-time user! Here's how to identify trustworthy hosts: 1) Check their reviews and ratings from previous guests, 2) Look for 'Superhost' badges indicating exceptional service, 3) Read their response rate and time, 4) Review their cancellation history, 5) Look for detailed property descriptions and photos. Acme Rentals also verifies host identities and handles secure payments. Start with highly-rated properties and hosts with many positive reviews for your first booking!"
+  },
+  {
+    "id": "br-038",
+    "category": "booking-reservation",
+    "problem": "I'm trying to use a promo code but it says invalid. I just received it in an email today.",
+    "solution": "Let's troubleshoot your promo code issue: 1) Check for typos - codes are case-sensitive, 2) Verify the expiration date and terms, 3) Ensure it applies to your selected property/dates, 4) Some codes have minimum stay requirements, 5) Try copying/pasting instead of typing. If it still doesn't work, please provide: the promo code (I'll verify it's active), the email you received it in, and your selected booking details. I can manually apply valid codes if there's a technical issue."
+  },
+  {
+    "id": "br-039",
+    "category": "booking-reservation",
+    "problem": "Can I pay with multiple credit cards? I want to split the cost with my friend.",
+    "solution": "Currently, Acme Rentals requires payment from a single payment method per booking. To split costs with your friend: 1) One person books and pays the full amount, 2) Use payment apps like Venmo or PayPal to settle between yourselves, 3) Keep records of the split for both parties. Alternatively, if booking multiple cabins, each person can book their own. The single payment method helps prevent booking complications and makes refunds simpler if needed."
+  },
+  {
+    "id": "br-040",
+    "category": "booking-reservation",
+    "problem": "What if I need to check in earlier than the listed time? I have an early flight arrival.",
+    "solution": "Early check-in depends on the host's availability and schedule. Here's what to do: 1) After booking, message the host through the platform about your early arrival, 2) Many hosts accommodate early check-in when possible, 3) Some may charge an early check-in fee, 4) If the cabin isn't ready, hosts might offer luggage storage. Always communicate through the Acme platform for your protection. Don't assume early check-in without confirming - the host needs time to clean and prepare after previous guests."
+  },
+  {
+    "id": "br-041",
+    "category": "booking-reservation",
+    "problem": "The booking shows pending payment but my card was already charged. Is this double charging?",
+    "solution": "This sounds like a processing delay, not a double charge. Here's what's likely happening: 1) Your bank shows the charge immediately, 2) Our system may take a few minutes to confirm and update the status, 3) Check if it's a pending authorization vs. actual charge. Please: refresh your Trips page after 10 minutes, check if it's just a temporary hold, contact support with transaction details if status doesn't update within an hour. We'll ensure you're only charged once for your booking."
+  },
+  {
+    "id": "br-042",
+    "category": "booking-reservation",
+    "problem": "I want to book a cabin for 6 months. Are long-term stays allowed?",
+    "solution": "Yes, many hosts welcome long-term stays! For 6-month bookings: 1) Use the search filters to find properties allowing extended stays, 2) Many hosts offer monthly discounts for long-term rentals, 3) You may be able to negotiate rates directly with hosts, 4) Consider messaging hosts before booking to discuss long-term arrangements. Some hosts prefer long-term guests as it provides stable income. The booking process is the same, just select your 6-month date range when searching."
+  },
+  {
+    "id": "br-043",
+    "category": "booking-reservation",
+    "problem": "My booking confirmation number isn't working to look up my reservation. I need to check my details.",
+    "solution": "Let's locate your booking another way. Try these methods: 1) Log into your account and check the Trips section - all bookings appear there, 2) Search your email for the confirmation (check spam folder too), 3) Check your credit card statement for the charge reference. If you still can't find it, contact support with: the email used for booking, approximate booking date, property name or location, and payment method last 4 digits. We'll locate your reservation quickly."
+  },
+  {
+    "id": "br-044",
+    "category": "booking-reservation",
+    "problem": "Is travel insurance recommended? What does it cover for cabin rentals?",
+    "solution": "Yes, travel insurance is recommended, especially for non-refundable bookings! While our FAQ mentions it's recommended for weather-related issues, comprehensive travel insurance typically covers: 1) Trip cancellation for covered reasons (illness, emergencies), 2) Trip interruption or delays, 3) Lost luggage, 4) Medical emergencies during travel, 5) Some weather-related cancellations. Insurance is particularly valuable if you've booked a property with a strict cancellation policy. Check with insurance providers for specific cabin rental coverage."
+  },
+  {
+    "id": "br-045",
+    "category": "booking-reservation",
+    "problem": "The host is asking me to pay outside of Acme Rentals. Is this safe?",
+    "solution": "NO - never pay outside of Acme Rentals! This is against our policies and removes your protection. Paying off-platform means: 1) No payment protection or refund ability, 2) No booking guarantee, 3) No customer support help, 4) Possible scam risk. Please: keep all payments on our platform, report this host to us immediately, do not share financial information directly with hosts. We'll investigate this policy violation. Only pay through Acme Rentals for your safety and security."
+  },
+  {
+    "id": "br-046",
+    "category": "booking-reservation",
+    "problem": "Can I book a cabin that allows parties? Planning a bachelor party weekend.",
+    "solution": "While many properties have restrictions on parties and events, some hosts do allow them! When searching: 1) Check property rules carefully before booking, 2) Use filters for 'events allowed' if available, 3) Be upfront with hosts about your plans, 4) Understand you're responsible for any damages, 5) Respect neighbor relations and noise ordinances. Many hosts who allow events may require additional deposits or have specific terms. Always communicate your intentions honestly to avoid booking cancellations."
+  },
+  {
+    "id": "br-047",
+    "category": "booking-reservation",
+    "problem": "I need a receipt showing my company's name and tax ID for expense reporting.",
+    "solution": "I can help you get a customized receipt for your company! While standard receipts are available in your Trips section, for customized business receipts: 1) Contact our support team after booking, 2) Provide your booking confirmation number, 3) Share your company name and tax ID requirements, 4) Specify any other needed details. Our support team can generate official receipts with your company information for expense reporting. We understand business travel requirements!"
+  },
+  {
+    "id": "br-048",
+    "category": "booking-reservation",
+    "problem": "Why do some cabins require a 3-night minimum stay? I only need 2 nights.",
+    "solution": "Hosts set minimum stay requirements for several reasons: 1) To cover cleaning/turnover costs, 2) Reduce wear and tear from frequent turnovers, 3) Seasonal or weekend policies, 4) Make hosting economically viable. For 2-night stays, try: searching for properties without minimum requirements, checking if weekday bookings have lower minimums, looking at instant book properties (often more flexible), or considering extending your trip to meet the minimum. Filter your search by length of stay to see only compatible properties."
+  },
+  {
+    "id": "br-049",
+    "category": "booking-reservation",
+    "problem": "My friend wants to join our cabin trip. Can I transfer one of my bookings to their name?",
+    "solution": "Bookings can't be directly transferred between accounts, but here are your options: 1) Add your friend as an additional guest to your existing booking (if under max occupancy), 2) They can book another cabin at the same property for the same dates, 3) Contact the host about adding them to your reservation. If you need to change the primary guest name, contact support with your booking details. Remember to check if additional guest fees apply when adding people to your reservation."
+  },
+  {
+    "id": "br-050",
+    "category": "booking-reservation",
+    "problem": "The total price at checkout is higher than what was shown in search results. Why the difference?",
+    "solution": "The search results typically show the nightly rate, while checkout shows the complete total. Here's the breakdown: search shows base nightly rate, but checkout includes: nightly rate × number of nights, cleaning fee (one-time), service fee, taxes, and any additional guest fees. All fees are itemized before you confirm payment - there are no hidden charges. To see full prices while searching, look for 'total price' display options in search filters. This gives you the complete cost upfront."
+  },
+  {
+    "id": "br-051",
+    "category": "booking-reservation",
+    "problem": "I'm nervous about booking without seeing the property first. Do you offer tours?",
+    "solution": "While physical tours aren't typically offered (most cabins are occupied or in remote locations), we provide several ways to feel confident: 1) View detailed photos and virtual tours when available, 2) Read reviews from previous guests who've stayed there, 3) Check the host's response rate and ratings, 4) Use our messaging system to ask hosts specific questions, 5) Look for properties with many photos from different angles. Our platform protects your booking - if the property significantly misrepresents itself, contact support immediately."
+  },
+  {
+    "id": "br-052",
+    "category": "booking-reservation",
+    "problem": "What's the difference between the service fee and cleaning fee? Both seem like extra charges.",
+    "solution": "These fees serve different purposes: The Service Fee goes to Acme Rentals for providing the platform, secure payments, customer support, and host/guest protection. The Cleaning Fee (set by individual hosts) covers professional cleaning between guests - this ensures the property is sanitized and prepared for your arrival. While they may seem like extras, they're part of running a secure booking platform and maintaining clean, safe properties. All fees are shown transparently before you book."
+  },
+  {
+    "id": "br-053",
+    "category": "booking-reservation",
+    "problem": "I have mobility issues. How can I find cabins that are wheelchair accessible?",
+    "solution": "Finding accessible cabins is important for your comfort and safety! Here's how: 1) Use the accessibility filters in your search to find wheelchair-accessible properties, 2) Look for specific features like ramp access, wide doorways, accessible bathrooms, 3) Read property descriptions carefully for accessibility details, 4) Message hosts directly to confirm specific accessibility needs are met, 5) Check photos for visual confirmation of accessible features. Don't hesitate to ask hosts detailed questions about accessibility - good hosts want to ensure their property meets your needs!"
+  },
+  {
+    "id": "br-054",
+    "category": "booking-reservation",
+    "problem": "Can I book a cabin now for dates that aren't firmly decided yet and change later?",
+    "solution": "While you can modify bookings later, it's best to book when you're reasonably sure of your dates. Here's why: 1) Date changes are subject to availability - your new dates might not be available, 2) Price differences may apply if new dates cost more, 3) Some hosts require approval for date changes, 4) Flexible cancellation policies offer more freedom to cancel and rebook if needed. Consider booking properties with flexible cancellation policies if your dates are uncertain. This gives you more options!"
+  },
+  {
+    "id": "br-055",
+    "category": "booking-reservation",
+    "problem": "The app keeps crashing when I try to complete my booking. I've tried 5 times.",
+    "solution": "I apologize for the app crashes - let's get your booking completed! Try these solutions: 1) Update the app to the latest version in your app store, 2) Clear the app cache in your phone settings, 3) Restart your phone and try again, 4) Try booking through our website on a mobile browser or computer instead, 5) If still failing, call support at 1-800-CABINS-1 and we'll complete the booking for you over the phone. Don't worry - we'll ensure you get your cabin booked!"
+  },
+  {
+    "id": "br-056",
+    "category": "booking-reservation",
+    "problem": "How do I know my payment information is secure on your platform?",
+    "solution": "Your payment security is our top priority! Acme Rentals uses: 1) Bank-level encryption for all transactions, 2) Secure payment processing that never shares your full card details with hosts, 3) PCI compliance standards, 4) Fraud monitoring on all transactions, 5) Secure authentication protocols. We never store your complete credit card information, and hosts never see your payment details. Our secure payment system is one reason to always book through the platform rather than paying hosts directly."
+  },
+  {
+    "id": "br-057",
+    "category": "booking-reservation",
+    "problem": "My dates are flexible. Is there a calendar view showing the cheapest dates?",
+    "solution": "Flexible dates can save you money! Here's how to find the best deals: 1) Use the flexible dates search option if available, 2) Compare weekday vs weekend prices (weekdays often cheaper), 3) Avoid peak seasons and holidays for better rates, 4) Look for properties offering weekly or monthly discounts, 5) Set up price alerts for your desired properties. Some properties show calendar views with pricing, and you can always adjust your search dates to compare prices across different weeks."
+  },
+  {
+    "id": "br-058",
+    "category": "booking-reservation",
+    "problem": "I accidentally booked 2 cabins for the same dates. How do I cancel one?",
+    "solution": "Let's fix this duplicate booking quickly! To cancel the extra reservation: 1) Go to Trips in your account, 2) You'll see both bookings listed, 3) Click on the one you want to cancel, 4) Select 'Cancel Booking', 5) Choose 'Booked by mistake' as the reason, 6) Confirm the cancellation. Check the cancellation policy to understand any fees, though many hosts are understanding about immediate cancellations for accidental duplicate bookings. Contact support if you need help identifying which to cancel."
+  },
+  {
+    "id": "br-059",
+    "category": "booking-reservation",
+    "problem": "Do prices include utilities like electricity and water, or are those extra?",
+    "solution": "Good question! For most Acme Rentals properties, utilities are included in the listed price - this covers normal use of electricity, water, heating/cooling, and basic amenities. The total price shown at booking includes the nightly rate, cleaning fee, service fee, and taxes. Any additional costs would be clearly listed before you book. Some unique situations (like excessive electricity use or special amenity fees) would be noted in the property's rules section. Always check the full listing details for any property-specific terms."
+  },
+  {
+    "id": "br-060",
+    "category": "booking-reservation",
+    "problem": "The host wants me to sign a separate rental agreement. Is this normal?",
+    "solution": "Some hosts do require additional rental agreements, which is allowed as long as: 1) It doesn't contradict Acme Rentals' terms, 2) Payment stays on our platform, 3) It covers property-specific rules or liability waivers. Before signing, ensure: it doesn't ask for off-platform payments, terms seem reasonable and legal, you understand all conditions. If anything seems concerning, contact our support team to review. Many hosts use agreements for local compliance or to clarify house rules. Keep all documentation for your records."
+  },
+  {
+    "id": "br-061",
+    "category": "booking-reservation",
+    "problem": "I need to book 20 cabins for a corporate retreat. Is there a group booking service?",
+    "solution": "For large group bookings like your 20-cabin corporate retreat, we can provide specialized assistance! While you can add multiple properties to your cart, for 20 cabins I recommend: 1) Contact our support team directly for group booking help, 2) We can assist with coordinating availability across multiple properties, 3) Some hosts offer multiple properties and group discounts, 4) We may be able to help negotiate group rates. Call our business support line for personalized assistance with your corporate retreat planning. We love helping with large group events!"
+  },
+  {
+    "id": "br-062",
+    "category": "booking-reservation",
+    "problem": "My booking was confirmed but now the listing has disappeared. Should I be worried?",
+    "solution": "Don't worry - your confirmed booking is still valid! Listings can disappear because: 1) The host temporarily deactivated it while booked, 2) It's fully booked for a period, 3) The host is updating the listing. Your confirmed booking remains secure regardless. You can always: view your booking details in your Trips section, contact the host through your booking messages, reach out to support if you have concerns. The booking confirmation is your guarantee, not the active listing status."
+  },
+  {
+    "id": "br-063",
+    "category": "booking-reservation",
+    "problem": "What happens to my booking if there's a natural disaster or emergency in the area?",
+    "solution": "In cases of natural disasters or emergencies, guest safety is the priority. Here's our approach: 1) Monitor official emergency declarations for the area, 2) We may override standard cancellation policies for documented emergencies, 3) Work with hosts to offer full refunds or future stay credits, 4) Our support team provides special assistance during emergencies. We strongly recommend travel insurance for comprehensive coverage. If you're concerned about a current emergency situation, contact support immediately with your booking details and relevant emergency information."
+  },
+  {
+    "id": "br-064",
+    "category": "booking-reservation",
+    "problem": "Can I use PayPal to pay for my booking? I don't want to use my credit card.",
+    "solution": "PayPal is mentioned in our refund timeframes (3-5 business days), which suggests it may be an available payment option! When you reach the payment screen during booking, you'll see all available payment methods which may include: credit cards, debit cards, PayPal, and Acme Wallet. Payment options can vary by region. If PayPal is available, simply select it as your payment method during checkout. This gives you the payment security you're looking for without using your credit card directly."
+  },
+  {
+    "id": "br-065",
+    "category": "booking-reservation",
+    "problem": "I'm booking international (from UK to US cabin). Will I be charged foreign transaction fees?",
+    "solution": "Foreign transaction fees depend on your payment method, not Acme Rentals: 1) Check if your card charges foreign transaction fees (usually 1-3%), 2) The booking will process in the listing's currency (USD for US cabins), 3) Your bank handles the currency conversion, 4) Consider using a card with no foreign transaction fees. The price you see at checkout is what Acme charges - any additional fees come from your bank. Contact your card issuer to understand their international transaction policies before booking."
+  },
+  {
+    "id": "br-066",
+    "category": "booking-reservation",
+    "problem": "The calendar shows available dates but won't let me select them. Technical glitch?",
+    "solution": "This sounds like a technical issue. Let's troubleshoot: 1) Check if there's a minimum stay requirement (e.g., 3 nights minimum), 2) Ensure you're selecting check-in and check-out dates in order, 3) Some dates might be blocked for cleaning between bookings, 4) Clear your browser cache and cookies, 5) Try a different browser or device. If the issue persists, note the property ID and exact dates you're trying to book, then contact support. We'll investigate the technical issue and help complete your booking."
+  },
+  {
+    "id": "br-067",
+    "category": "booking-reservation",
+    "problem": "How soon before check-in will I receive the door code and arrival instructions?",
+    "solution": "Check-in details timing varies by host, but typically: 1) Basic information is available immediately after booking in your confirmation, 2) Specific access codes and detailed instructions usually arrive 24-48 hours before check-in, 3) Find all details in your Trips section under your booking. If you haven't received check-in details 24 hours before arrival, message the host through the platform or contact support. Hosts want smooth check-ins too, so they're usually prompt with this information!"
+  },
+  {
+    "id": "br-068",
+    "category": "booking-reservation",
+    "problem": "I want to book monthly but pay weekly. Is a payment plan available?",
+    "solution": "Standard Acme Rentals bookings require full payment at booking time. However, for extended stays: 1) Some hosts may offer payment arrangements for long-term bookings, 2) You can message hosts before booking to discuss payment options, 3) Consider booking week-by-week if the host allows shorter stays, 4) Some credit cards offer payment plan features you could use. The platform's standard process requires full payment to secure your dates and protect both parties. Contact hosts directly about flexible payment arrangements for monthly stays."
+  },
+  {
+    "id": "br-069",
+    "category": "booking-reservation",
+    "problem": "My group has 12 people but the cabin max occupancy is 10. Can we still book?",
+    "solution": "No, you must respect the maximum occupancy limits. These limits exist for: 1) Safety and fire codes, 2) Septic system capacity, 3) Insurance requirements, 4) Comfort and amenities availability. Exceeding occupancy can result in immediate eviction and loss of payment. Instead: search for properties that accommodate 12 guests, book an additional smaller cabin nearby, split your group between two properties, or reduce your group size. Use the guest count filter to find properties that legally accommodate your full group."
+  },
+  {
+    "id": "br-070",
+    "category": "booking-reservation",
+    "problem": "What's your policy on age requirements? My daughter is 18 and wants to book.",
+    "solution": "Age requirements for booking on Acme Rentals typically require guests to be at least 18 years old to create an account and make bookings. However: 1) Some hosts may have higher age requirements (like 21 or 25), 2) These are usually listed in the property rules, 3) The person booking must be present during the stay, 4) Valid ID may be required at check-in. Your 18-year-old daughter can create an account and book properties that don't have higher age restrictions. Always check individual property rules for specific requirements."
+  },
+  {
+    "id": "br-071",
+    "category": "booking-reservation",
+    "problem": "I'm trying to use my Acme Wallet balance but it's not applying to my booking. Why?",
+    "solution": "Let's troubleshoot your Acme Wallet issue. The FAQ mentions Acme Wallet provides instant refunds, so it's definitely a payment option. Check: 1) Your wallet balance is sufficient for the booking, 2) You're logged into the correct account, 3) Select Acme Wallet as payment method at checkout, 4) Some restrictions may apply to wallet usage. If your balance should cover the booking but isn't working, contact support with your wallet balance details and booking information. We'll ensure your wallet funds are properly applied."
+  },
+  {
+    "id": "br-072",
+    "category": "booking-reservation",
+    "problem": "The host has multiple cabins. Can I request a specific unit number?",
+    "solution": "Yes, you can often request specific units! Here's how: 1) After booking, message the host through the platform with your preference, 2) Explain why you prefer that specific unit (accessibility, view, proximity to amenities), 3) Most hosts accommodate reasonable requests when possible, 4) Make requests early as specific units book up. Note that hosts typically can't guarantee specific units until closer to check-in, but they usually try to honor requests. Include your preference in your first message to the host after booking."
+  },
+  {
+    "id": "br-073",
+    "category": "booking-reservation",
+    "problem": "I need to leave 2 days early due to a family emergency. Can I get a partial refund?",
+    "solution": "I'm sorry about your family emergency. Refunds for early departure depend on: 1) The property's cancellation policy, 2) How much notice you give the host, 3) The host's discretion for emergency situations. Contact the host immediately to explain your situation - many are understanding about genuine emergencies. While standard policies may not guarantee refunds for unused nights, hosts can choose to offer partial refunds. Also document your emergency for potential travel insurance claims if you have coverage."
+  },
+  {
+    "id": "br-074",
+    "category": "booking-reservation",
+    "problem": "How do I filter for pet-friendly cabins? Traveling with 2 dogs.",
+    "solution": "Finding pet-friendly cabins for your dogs is easy with the right filters! When searching: 1) Look for 'Pet-friendly' filter in search options, 2) Check property descriptions for specific pet policies, 3) Note any pet fees (clearly shown before booking), 4) Some hosts limit number, size, or type of pets, 5) Message hosts if you have questions about their pet policy. Be transparent about having 2 dogs when booking. Pet fees vary by property but are always disclosed upfront. Many wonderful cabins welcome pets!"
+  },
+  {
+    "id": "br-075",
+    "category": "booking-reservation",
+    "problem": "My Instant Book was confirmed but the host messaged saying it's not available. What now?",
+    "solution": "This is unacceptable - Instant Book means instant confirmation! Here's what happens: 1) Your booking is valid and confirmed, 2) The host cannot cancel without penalties, 3) Report this to support immediately, 4) We'll contact the host about honoring the booking. If the host insists on canceling: you get a full refund, we'll help find alternative accommodation, you receive a travel voucher for the inconvenience, the host faces penalties. Do not cancel the booking yourself - let support handle this to protect your rights."
+  },
+  {
+    "id": "br-076",
+    "category": "booking-reservation",
+    "problem": "Can I book a cabin as a gift and have Acme send a gift notification to the recipient?",
+    "solution": "While Acme doesn't have a specific gift notification service, you can definitely book as a gift! Here's how to make it special: 1) Book using your account and payment method, 2) Enter the recipient's name as the guest, 3) Message the host explaining it's a gift booking, 4) You can download/print the confirmation as a gift certificate, 5) Create your own gift announcement with the booking details. Some hosts may help make the stay special if they know it's a gift. You manage the booking but your recipient enjoys the stay!"
+  },
+  {
+    "id": "br-077",
+    "category": "booking-reservation",
+    "problem": "I have severe allergies. How can I ensure the cabin is allergen-free?",
+    "solution": "Your health and safety are important! For allergy concerns: 1) Message hosts before booking about specific allergens, 2) Ask about cleaning products used, previous pets, bedding materials, 3) Look for properties with hypoallergenic amenities mentioned, 4) Consider bringing your own bedding for severe allergies, 5) Check if the property has air purifiers or HEPA filters. Be specific about your allergies when communicating with hosts - most are happy to accommodate or honestly tell you if their property isn't suitable. Your health comes first!"
+  },
+  {
+    "id": "br-078",
+    "category": "booking-reservation",
+    "problem": "The property says 'Usually booked' for my dates. Any way to get notified if it opens up?",
+    "solution": "Yes! While the FAQ mentions enabling notifications for availability alerts, here's how to maximize your chances: 1) Save the property to your favorites, 2) Set up alerts for that specific property if available, 3) Check back regularly as cancellations happen, 4) Message the host expressing interest - they might have unlisted availability, 5) Look for similar properties in the area as backups. Cancellations often happen closer to dates, so don't give up hope. Persistence and flexibility often pay off for popular properties!"
+  },
+  {
+    "id": "br-079",
+    "category": "booking-reservation",
+    "problem": "I want to book for a photo shoot. Are commercial activities allowed?",
+    "solution": "Commercial use like photo shoots requires special permission. Here's the process: 1) Check property rules - many prohibit commercial activities, 2) Use filters for 'events allowed' or 'commercial use' if available, 3) Message hosts before booking to explain your photo shoot plans, 4) Be prepared for higher rates or additional fees for commercial use, 5) You may need special insurance or permits. Never book without disclosing commercial intent - this could result in eviction. Many hosts are open to photo shoots with proper communication and compensation."
+  },
+  {
+    "id": "br-080",
+    "category": "booking-reservation",
+    "problem": "My debit card refund is taking forever. It's been 12 days since cancellation.",
+    "solution": "Debit card refunds can be frustratingly slow. According to our policy, debit cards can take up to 15 business days for refunds. Since you're at day 12: 1) Check if those were business days (excluding weekends/holidays), 2) Contact your bank - refunds sometimes appear as pending, 3) Get a transaction reference number from your bank, 4) If it exceeds 15 business days, contact support with your cancellation confirmation. Banks process debit refunds slower than credit cards. We can trace the refund with your details if needed."
+  },
+  {
+    "id": "br-081",
+    "category": "booking-reservation",
+    "problem": "I booked a 'lakefront' cabin but the lake is dried up. This isn't what I expected.",
+    "solution": "I understand this is disappointing - property descriptions should be accurate. Immediately: 1) Document the issue with photos, 2) Contact the host through the platform about the discrepancy, 3) If not resolved, contact support right away. Seasonal changes to natural features should be disclosed. We take misrepresentation seriously. Depending on the situation, options may include: partial refund, full refund if you leave, or relocating to another property. Keep all communication on-platform and document everything for the best resolution."
+  },
+  {
+    "id": "br-082",
+    "category": "booking-reservation",
+    "problem": "System says I have an upcoming trip but I don't remember booking anything. Concerned about fraud.",
+    "solution": "Let's investigate this immediately for security! First steps: 1) Check the Trips section for booking details, 2) Look for a confirmation email (check date/location), 3) Check your credit card statement for charges, 4) See if family members might have used your account. If you didn't make this booking: contact support immediately with the booking details, we'll investigate for unauthorized access, change your password right away, check for other unauthorized activity. We take account security very seriously and will resolve this quickly."
+  },
+  {
+    "id": "br-083",
+    "category": "booking-reservation",
+    "problem": "Can I apply my cancellation refund credit toward a new booking instead of getting money back?",
+    "solution": "This is a great idea that many guests prefer! While standard refunds go back to your original payment method (timing varies by method), contact support about converting your refund to Acme travel credit instead. Benefits of travel credit: 1) Available immediately for new bookings, 2) Sometimes includes bonus credit for future stays, 3) Easier than waiting for bank processing. Support can help set this up if you haven't received your refund yet. Travel credits typically have expiration dates, so plan your next trip!"
+  },
+  {
+    "id": "br-084",
+    "category": "booking-reservation",
+    "problem": "I selected 4 guests but the total shows charges for 6 guests. Why the discrepancy?",
+    "solution": "This pricing error needs immediate attention. Let's check: 1) Review the price breakdown carefully - is there a base occupancy with per-person fees?, 2) Did you accidentally adjust guest count during booking?, 3) Take a screenshot of the incorrect charge breakdown. This appears to be either a display error or misunderstanding of the pricing structure. Contact support with: your intended guest count (4), screenshot of the 6-guest charge, property details. We'll correct any pricing errors before you complete the booking."
+  },
+  {
+    "id": "br-085",
+    "category": "booking-reservation",
+    "problem": "The host approved my request to book 3 hours ago but I haven't been charged yet. Is it confirmed?",
+    "solution": "Yes, if the host approved your request, your booking is confirmed! The charge process works like this: 1) Host approval confirms your reservation, 2) Payment processing can take a few hours to appear, 3) Check your Trips section - if the booking appears there, it's confirmed, 4) Email confirmation may arrive before the charge appears. Your reservation is secure once approved. The payment will process soon. If you don't see a charge within 24 hours of approval, contact support, but your dates are reserved!"
+  },
+  {
+    "id": "br-086",
+    "category": "booking-reservation",
+    "problem": "My company requires specific tax documentation for international bookings. Can you provide this?",
+    "solution": "Absolutely, we can provide tax documentation for your international business booking. Here's the process: 1) Complete your booking first, 2) Contact support with your confirmation number, 3) Specify exactly what tax information your company requires, 4) We can provide: detailed invoices with tax breakdowns, W-9 forms if needed, any specific international tax documentation. Our support team handles these business requests regularly. Email bookings@acmerentals.com with 'Tax Documentation Request' in the subject line for fastest processing."
+  },
+  {
+    "id": "br-087",
+    "category": "booking-reservation",
+    "problem": "I see Acme+ members get priority support. How do I contact the priority line?",
+    "solution": "As an Acme+ member, you have access to exclusive priority support! Your dedicated line is 1-800-CABINS-2. This gets you: 1) Faster connection to support agents, 2) Specialized agents familiar with Acme+ benefits, 3) Priority handling of issues and requests. Regular support is at 1-800-CABINS-1, but always use your priority line for the VIP service you deserve. Have your Acme+ membership details ready when calling. You can also mention your Acme+ status in chat for priority handling."
+  },
+  {
+    "id": "br-088",
+    "category": "booking-reservation",
+    "problem": "I want to extend my current stay. I'm already at the cabin and loving it!",
+    "solution": "Wonderful that you're enjoying your stay! To extend: 1) Check the calendar in your app for the cabin's availability, 2) In Trips, select your current booking, 3) Look for 'Extend Stay' or 'Change Dates' option, 4) Select your new checkout date, 5) Pay any additional amount. If the option isn't available or dates show booked, message your host directly - they might have flexibility not shown online. Hosts often appreciate good guests staying longer! Do this ASAP to secure the additional nights."
+  },
+  {
+    "id": "br-089",
+    "category": "booking-reservation",
+    "problem": "Can I save my payment information for faster booking next time?",
+    "solution": "Yes, Acme Rentals offers secure payment storage for convenience! During checkout, look for options like: 'Save this payment method' or 'Remember card for future use'. Your payment information is encrypted and stored securely - we never store full card numbers. Benefits include: 1) Faster checkout for future bookings, 2) Easy booking on mobile devices, 3) Quick reservation of high-demand properties. You can manage saved payment methods in your account settings and remove them anytime for security."
+  },
+  {
+    "id": "br-090",
+    "category": "booking-reservation",
+    "problem": "Weather forecast shows storms during my booking. What are my options?",
+    "solution": "Weather concerns are valid for cabin stays. Your options depend on timing and severity: 1) Check if your booking includes weather protection coverage, 2) Monitor official weather alerts/warnings for the area, 3) Contact support if authorities issue evacuation orders or travel warnings, 4) Consider travel insurance if you haven't departed yet. For safety concerns: hosts may offer date changes or credits for future stays. We recommend making weather-related decisions based on official sources, not just forecasts. Your safety is the top priority!"
+  },
+  {
+    "id": "br-091",
+    "category": "booking-reservation",
+    "problem": "I'm getting married at the cabin. Does this count as an event that needs approval?",
+    "solution": "Congratulations on your wedding! Yes, weddings definitely count as events requiring host approval. Here's what to do: 1) Do NOT book without disclosing the wedding plans, 2) Filter searches for 'events allowed' properties, 3) Message hosts before booking to discuss: guest count, ceremony details, parking needs, vendor access, music/noise considerations, 4) Expect additional fees or deposits for events. Many cabins make beautiful wedding venues, but hosts need to prepare properly. Be upfront for the best experience and to avoid cancellation!"
+  },
+  {
+    "id": "br-092",
+    "category": "booking-reservation",
+    "problem": "The booking page timed out after I entered payment info. Did it go through?",
+    "solution": "Let's quickly check if your booking processed before trying again. Check these in order: 1) Your email for a confirmation (including spam folder), 2) Trips section in your account for new bookings, 3) Your credit card app/website for pending charges, 4) Text messages if you have notifications enabled. If you see a charge but no booking, don't attempt again - contact support immediately with the charge details. If nothing processed, you can safely try booking again. Timeout errors are frustrating but we'll sort it out!"
+  },
+  {
+    "id": "br-093",
+    "category": "booking-reservation",
+    "problem": "I have a service dog. Do pet fees apply for service animals?",
+    "solution": "Service dogs are NOT pets and should not incur pet fees. Under disability accommodation laws: 1) Service animals must be allowed even in 'no pet' properties, 2) No extra fees or deposits for service animals, 3) You're not required to provide documentation, 4) Inform hosts about your service animal for smooth check-in. If any host tries to charge pet fees or deny your service dog, report this immediately to support. We ensure compliance with accessibility laws. Your service dog is medical equipment, not a pet!"
+  },
+  {
+    "id": "br-094",
+    "category": "booking-reservation",
+    "problem": "How do I book if I don't have a credit card? Can I use a prepaid card?",
+    "solution": "You have several payment options beyond traditional credit cards! Accepted methods typically include: 1) Debit cards (though refunds take longer), 2) Some prepaid cards if they're registered with your address, 3) PayPal (mentioned in our refund policy), 4) Acme Wallet for returning guests. For prepaid cards: ensure it has enough balance for the total plus potential holds, register it with your billing address online, check it's enabled for online purchases. Different payment methods may have different refund timelines, but all are secure!"
+  },
+  {
+    "id": "br-095",
+    "category": "booking-reservation",
+    "problem": "I need connecting cabins for two families. How do I ensure they're next to each other?",
+    "solution": "Booking connecting or adjacent cabins requires coordination! Here's the best approach: 1) Look for properties where the same host has multiple cabins, 2) Message hosts before booking to request adjacent units, 3) Book both cabins in the same transaction if possible, 4) Add notes to both bookings about needing them together, 5) Get written confirmation from the host about cabin placement. Some properties specifically advertise multiple cabins perfect for groups. The key is communicating with hosts before booking to ensure they can accommodate your needs!"
+  },
+  {
+    "id": "br-096",
+    "category": "booking-reservation",
+    "problem": "My travel dates are during peak season. Any tips for finding available cabins?",
+    "solution": "Peak season booking requires strategy! Here are proven tips: 1) Book as far in advance as possible (up to 12 months), 2) Be flexible with specific dates if possible, 3) Consider locations slightly outside main tourist areas, 4) Set up alerts for your desired properties, 5) Check early morning for new listings or cancellations, 6) Consider midweek stays instead of weekends, 7) Look for new listings with less competition. Also contact hosts directly - they might have availability not yet posted online. Persistence pays off!"
+  },
+  {
+    "id": "br-097",
+    "category": "booking-reservation",
+    "problem": "The host sent check-in instructions to the wrong email. I leave tomorrow and need the info!",
+    "solution": "Let's get those check-in instructions immediately! Multiple ways to access them: 1) Check your Trips section in the app - instructions are usually there too, 2) Message the host directly through the platform for immediate resend, 3) Call support at 1-800-CABINS-1 for urgent assistance, 4) Check if instructions were sent to any alternate email on your account. Since you leave tomorrow, this is urgent - if you can't reach the host within 2 hours, call support directly. We'll ensure you have everything needed for check-in!"
+  },
+  {
+    "id": "br-098",
+    "category": "booking-reservation",
+    "problem": "Can I negotiate the price with hosts, especially for longer stays?",
+    "solution": "While Acme prices are generally set, there's room for discussion on longer stays! Here's the appropriate approach: 1) For monthly stays, many hosts offer built-in discounts, 2) Message hosts before booking to inquire about long-term rates, 3) Be professional and explain your situation, 4) Mention if you're flexible on dates or amenities, 5) Never pressure hosts or make unreasonable offers. Hosts appreciate respectful inquiries about extended stay discounts. The worst they can say is no, but many offer unpublished monthly rates!"
+  },
+  {
+    "id": "br-099",
+    "category": "booking-reservation",
+    "problem": "I'm a first-time user and nervous about the booking process. Can someone walk me through it?",
+    "solution": "Welcome to Acme Rentals! I'll gladly walk you through the booking process: 1) Search for your destination and dates, 2) Browse properties, reading reviews and checking photos, 3) Click 'Book Now' for instant confirmation or 'Request to Book' for host approval, 4) Enter guest information and payment details, 5) Review all fees in the transparent breakdown, 6) Confirm your booking! After booking, you'll receive confirmation emails and can message your host. For extra confidence, start with highly-rated properties and Superhosts. You've got this!"
+  },
+  {
+    "id": "br-100",
+    "category": "booking-reservation",
+    "problem": "My guest count changed from 4 to 6. Will the host be notified automatically when I modify?",
+    "solution": "The host will be notified of your modification request, but it's not always automatic approval. Here's the process: 1) Go to Trips and select 'Modify Booking', 2) Update guest count from 4 to 6, 3) System checks if the property allows 6 guests, 4) Shows any additional guest fees, 5) Submits request to host for approval. The host is notified and typically has 24 hours to approve. I recommend also sending a message explaining the change. Some hosts auto-approve if within their maximum occupancy."
+  }
+]

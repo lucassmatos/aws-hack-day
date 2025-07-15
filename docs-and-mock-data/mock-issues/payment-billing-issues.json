@@ -1,0 +1,602 @@
+[
+  {
+    "id": "pb-001",
+    "category": "payment-billing",
+    "problem": "My credit card was declined even though I have enough money. I checked my balance and there's plenty of funds available.",
+    "solution": "I understand how frustrating declined payments can be when you have sufficient funds. This happens for several reasons beyond balance: 1) Your bank may be flagging this as unusual activity (travel purchases often trigger this), 2) You may have hit your daily spending limit, 3) The card might not be enabled for online/international transactions, 4) There could be an issue with the billing address or CVV entered. Please try: calling your bank to authorize the transaction, checking all card details are entered correctly, or trying a different payment method. Most banks can resolve this quickly with a phone call."
+  },
+  {
+    "id": "pb-002",
+    "category": "payment-billing",
+    "problem": "I see 3 charges on my credit card for the same booking! Was I charged three times?",
+    "solution": "Don't worry - you likely haven't been charged three times. Here's what's probably happening: Multiple payment attempts often show as 'pending' charges on your statement, but only one will actually process. Pending charges typically drop off within 3-5 days. Please check if these are marked as 'pending' vs 'posted' in your banking app. If all three charges have actually posted (not pending), please contact our support immediately with your booking confirmation and we'll resolve any duplicate charges right away."
+  },
+  {
+    "id": "pb-003",
+    "category": "payment-billing",
+    "problem": "What exactly is Acme+ and is it worth the $99 annual fee?",
+    "solution": "Acme+ is our premium membership that can pay for itself quickly! For $99/year you get: 10% off ALL bookings, free cancellation up to 24 hours before check-in, early access to new properties, priority customer support, exclusive member-only cabins, and no service fees on your first 5 bookings each year. If you book just 2-3 cabins annually, the 10% discount alone covers the membership fee. Plus, the free cancellation benefit provides flexibility and peace of mind. Most members save hundreds of dollars per year!"
+  },
+  {
+    "id": "pb-004",
+    "category": "payment-billing",
+    "problem": "My refund is taking forever. I cancelled 12 days ago and still nothing in my bank account.",
+    "solution": "I understand waiting for refunds is frustrating. Refund timing depends on your payment method: Credit cards take 5-10 business days, Debit cards take 10-15 business days (the longest), PayPal takes 3-5 business days, Acme Wallet is instant, and Bank transfers take 5-7 business days. Since you cancelled 12 days ago, if you used a debit card, you're still within the normal timeframe. Please also check with your bank as refunds sometimes show as pending before posting. If it's been longer than these timeframes, contact support with your cancellation confirmation and we'll trace the refund."
+  },
+  {
+    "id": "pb-005",
+    "category": "payment-billing",
+    "problem": "I'm trying to pay with PayPal but don't see the option at checkout. Is PayPal accepted?",
+    "solution": "Yes, PayPal is definitely accepted as a payment method on Acme Rentals! If you're not seeing it at checkout, try these steps: 1) Make sure you're on the payment page (not just viewing prices), 2) Look for alternative payment options or a 'More payment methods' link, 3) Check if you're using the latest version of our app, 4) Try using a web browser instead of the app. PayPal should appear alongside credit cards and other payment options. If you still don't see it, your region might have different payment options, or there could be a technical issue we need to investigate."
+  },
+  {
+    "id": "pb-006",
+    "category": "payment-billing",
+    "problem": "Can I pay in Canadian dollars? Everything shows in USD but I'm booking from Canada.",
+    "solution": "Yes, we support 35+ currencies including Canadian dollars! We offer automatic currency conversion at checkout with real-time exchange rates and no hidden conversion fees. To pay in CAD: 1) Look for a currency selector in your account settings or at checkout, 2) The final charge will be in CAD even if browsing shows USD, 3) Your receipt will show both the original price and the converted amount. The currency is clearly displayed before you confirm payment. Your Canadian credit card will be charged in CAD, avoiding foreign transaction fees from your bank."
+  },
+  {
+    "id": "pb-007",
+    "category": "payment-billing",
+    "problem": "What's the 12% service fee for? It seems high on top of the cabin price.",
+    "solution": "The 12% service fee covers the comprehensive services Acme Rentals provides to ensure a safe and smooth booking experience. This includes: our 24/7 customer support team, secure payment processing and fraud protection, the technology platform that connects you with hosts, insurance and guest protections, dispute resolution services, and maintaining quality standards across properties. This fee enables us to provide these valuable services that protect both guests and hosts. Think of it as the cost of booking with confidence through a trusted platform rather than arranging directly."
+  },
+  {
+    "id": "pb-008",
+    "category": "payment-billing",
+    "problem": "I cancelled within the free cancellation period but my refund is less than what I paid. Why?",
+    "solution": "Let me help clarify why your refund might be less than expected. Several factors could apply: 1) Service fees are often non-refundable even with free cancellation, 2) If you had a split stay, you may have used a portion already, 3) The specific cancellation policy penalties might apply partially, 4) Currency conversion differences if booking internationally, 5) Some host-specific fees may be non-refundable. Please check your cancellation email for a detailed breakdown of the refund calculation. If something seems incorrect, contact support with your booking details for a full explanation."
+  },
+  {
+    "id": "pb-009",
+    "category": "payment-billing",
+    "problem": "My Acme+ discount isn't applying to my booking. I just signed up yesterday.",
+    "solution": "Let's get your Acme+ discount working! Here's how to troubleshoot: 1) First, ensure your subscription is active in Account > Subscriptions, 2) Try logging out and back in to refresh your account status, 3) Check if the specific property is Acme+ eligible (some exclusions may apply), 4) Remember the 10% discount applies to the base rate before taxes and fees, 5) The discount should show in the price breakdown at checkout. If you've tried these steps and the discount still isn't appearing, contact our support team for manual adjustment. We'll make sure you get your member benefits!"
+  },
+  {
+    "id": "pb-010",
+    "category": "payment-billing",
+    "problem": "I need to cancel my Acme+ subscription. Will I get a refund for the unused months?",
+    "solution": "You can cancel Acme+ anytime, and yes, pro-rated refunds are available! Here's how to cancel: 1) Go to Account > Subscriptions, 2) Click 'Manage Acme+', 3) Select 'Cancel Subscription', 4) Choose your reason (optional), 5) Confirm cancellation. Your benefits continue until the expiration date, and you'll receive a pro-rated refund for unused months. For example, if you cancel 6 months into your annual subscription, you'll get a refund for the remaining 6 months. The refund processes according to your original payment method's timeline."
+  },
+  {
+    "id": "pb-011",
+    "category": "payment-billing",
+    "problem": "My company needs monthly invoicing for our corporate bookings. Do you offer this?",
+    "solution": "Yes, we offer comprehensive corporate billing solutions! Our corporate accounts include: centralized billing options, monthly invoicing, expense report integration, and dedicated account management. To set up corporate billing: Contact our business team at sales@acmerentals.com with your company details and anticipated booking volume. We'll set up your company account with customized billing arrangements, including NET 30 terms if qualified. This streamlines expense management and provides consolidated reporting for your finance team."
+  },
+  {
+    "id": "pb-012",
+    "category": "payment-billing",
+    "problem": "The security deposit is still being held on my card 3 weeks after checkout. When will it be released?",
+    "solution": "Security deposits should be released within 7-14 days after checkout, so 3 weeks is longer than normal. Here's what to do: 1) First, confirm with your bank if it's still showing as a 'hold' or if it was actually charged, 2) Check your messages for any damage claims from the host, 3) If no damage was reported, the hold should have been automatically released. Contact our support team with your booking confirmation and we'll investigate immediately. Sometimes banks delay releasing holds, but we can provide documentation to expedite the release with your bank."
+  },
+  {
+    "id": "pb-013",
+    "category": "payment-billing",
+    "problem": "I want to split the payment with my friends for our group booking. Is this possible?",
+    "solution": "Yes! We offer split payment options for group bookings. At checkout, you'll see a 'Split Payment' option where: 1) Each person can enter their own card details, 2) You can divide the total equally or set custom amounts, 3) The primary guest (you) still manages the overall booking, 4) Everyone receives individual receipts for their portion. This makes group travel much easier - no more IOUs or payment apps needed! The split payment feature also provides individual expense receipts perfect for reimbursement."
+  },
+  {
+    "id": "pb-014",
+    "category": "payment-billing",
+    "problem": "I'm seeing a charge from Acme but I didn't make any bookings. Is this fraud?",
+    "solution": "Let's investigate this immediately for your security! The charge could be: 1) An Acme+ subscription renewal (annual $99 charge), 2) A booking made by someone else using your account, 3) A forgotten booking or pre-authorization. Please check: your email for any booking confirmations or Acme+ renewal notices, your Trips section for any bookings, and whether family members have access to your account. If you don't recognize the charge after checking these, contact support immediately at billing@acmerentals.com with the charge details. We take fraud seriously and will help resolve this quickly."
+  },
+  {
+    "id": "pb-015",
+    "category": "payment-billing",
+    "problem": "Can I use Apple Pay? I don't want to enter my credit card information.",
+    "solution": "Yes, Apple Pay is accepted for quick and secure payments! Apple Pay and Google Pay are both available as payment methods, offering the convenience and security you're looking for. When you reach the payment screen, look for the Apple Pay button. Simply authenticate with Face ID, Touch ID, or your passcode to complete the transaction. This way, your card details are never entered or stored on our platform - Apple Pay uses tokenization for maximum security. It's one of our fastest checkout methods!"
+  },
+  {
+    "id": "pb-016",
+    "category": "payment-billing",
+    "problem": "The price jumped by $200 between when I first looked and when I went to book. Is this a glitch?",
+    "solution": "This price change is likely due to our dynamic pricing system, not a glitch. Prices can change based on: 1) Increased demand for those specific dates, 2) Seasonal rate adjustments kicking in, 3) Length of stay discounts no longer applying, 4) Last-minute booking premiums, 5) Special events in the area affecting rates, 6) Currency fluctuations for international bookings. Cabin prices update in real-time based on these factors. To avoid surprises, consider booking as soon as you find a good rate, or setting up price alerts for your desired properties."
+  },
+  {
+    "id": "pb-017",
+    "category": "payment-billing",
+    "problem": "I need a receipt for my expense report but can't find where to download it.",
+    "solution": "Getting your receipt is easy! Follow these steps: 1) Go to Trips > Past Bookings in your account, 2) Select the specific booking you need a receipt for, 3) Click 'Download Receipt', 4) Choose your format preference (PDF is best for expense reports or Email), 5) The receipt includes all tax details and payment information. The receipt will show itemized charges, taxes, and our business information - everything your accounting department needs. If you need a customized receipt with additional details, contact support with your requirements."
+  },
+  {
+    "id": "pb-018",
+    "category": "payment-billing",
+    "problem": "Why do I have to pay the full amount now? Can I pay half now and half later?",
+    "solution": "Standard Acme Rentals bookings require full payment at the time of booking to secure your reservation and protect both you and the host. However, we do offer Klarna as a pay-later option at checkout, which allows you to split your payment into installments. With Klarna, you can often pay in 4 interest-free payments over time. Look for the Klarna option at checkout if you'd prefer to spread out the cost. This gives you payment flexibility while still guaranteeing your booking."
+  },
+  {
+    "id": "pb-019",
+    "category": "payment-billing",
+    "problem": "I was charged in USD but I'm from the UK. Why wasn't I charged in pounds?",
+    "solution": "We support GBP and automatic currency conversion! If you were charged in USD, here's what might have happened: 1) Check if you have a currency preference set to USD in your account settings, 2) Some properties may only list in USD, but conversion happens at payment, 3) Your bank may display the original currency before converting. To ensure GBP charges: look for the currency selector at checkout, update your account settings to GBP preference, and note that your bank will handle the conversion if charged in USD (though this may incur foreign transaction fees)."
+  },
+  {
+    "id": "pb-020",
+    "category": "payment-billing",
+    "problem": "I think I was overcharged. The final amount is higher than what was shown.",
+    "solution": "I'll help investigate this overcharge concern! To resolve this quickly, please provide: 1) Your booking confirmation number, 2) A screenshot of the original price you saw, 3) The current charge amount from your bank statement, 4) The date you saw the different price. Common reasons for discrepancies include: taxes being added at final checkout, additional guest or pet fees, currency conversion differences, or dynamic pricing changes between browsing and booking. Once we have your information, we can review the charges and make any necessary adjustments."
+  },
+  {
+    "id": "pb-021",
+    "category": "payment-billing",
+    "problem": "My bank is showing this as an international transaction with fees. I thought there were no foreign transaction fees?",
+    "solution": "You're correct - Acme Rentals doesn't charge foreign transaction fees, but your bank might. Here's the distinction: We process payments without adding any conversion fees on our end, using real-time exchange rates. However, your bank may charge their own foreign transaction fees (typically 1-3%) when the property's currency differs from your card's currency. To avoid these bank fees: use a credit card with no foreign transaction fees, pay in your local currency when given the option, or check if the property lists prices in your currency."
+  },
+  {
+    "id": "pb-022",
+    "category": "payment-billing",
+    "problem": "What's Acme Wallet? I see it mentioned as a payment option.",
+    "solution": "Acme Wallet is our convenient stored credit system! It works like this: When you receive refunds, you can choose to keep them in your Acme Wallet for instant use on future bookings. Benefits include: instant refunds (no waiting for bank processing), quick checkout on future bookings, sometimes bonus credits are added for choosing wallet refunds, and perfect for frequent travelers. You can view your wallet balance in your account settings and use it alone or combined with other payment methods at checkout."
+  },
+  {
+    "id": "pb-023",
+    "category": "payment-billing",
+    "problem": "The cleaning fee is $150 for just 2 nights. Why is it so expensive?",
+    "solution": "I understand cleaning fees can seem high for short stays. Here's why: Hosts set cleaning fees to cover professional cleaning between every guest, regardless of stay length. The same thorough cleaning, sanitization, and preparation happens whether you stay 2 nights or 2 weeks. This includes laundry, deep cleaning, restocking supplies, and inspection. When comparing properties, consider the total cost per night (including cleaning fee) rather than just the base rate. For short stays, properties with lower or no cleaning fees might be more economical."
+  },
+  {
+    "id": "pb-024",
+    "category": "payment-billing",
+    "problem": "I want to update my credit card on file but keep getting an error when trying to add a new card.",
+    "solution": "Let's fix this card update issue. Here's how to successfully update your payment method: 1) Go to Account > Payment Methods, 2) Click 'Add New Card', 3) Enter all card details carefully, 4) Set as default if desired, 5) Then remove old cards. If you're getting errors, try: clearing your browser cache, using a different browser or the app, disabling browser autofill and typing manually, checking that the billing address matches exactly what your bank has on file. If errors persist, contact support and we can update it for you."
+  },
+  {
+    "id": "pb-025",
+    "category": "payment-billing",
+    "problem": "My Acme+ membership auto-renewed but I wanted to cancel. Can I get a refund?",
+    "solution": "Yes, we can help with your auto-renewal concern! Acme+ sends reminder emails 30 days before renewal, but if you missed it, don't worry. Since the renewal just happened, you're eligible for a pro-rated refund. Contact our support team with your Acme+ membership details and we'll process the cancellation and refund. You'll receive a refund for the unused portion of your membership. Your benefits will continue until the cancellation is processed, so you can still enjoy any final bookings with member perks!"
+  },
+  {
+    "id": "pb-026",
+    "category": "payment-billing",
+    "problem": "Transaction has been pending on my card for 5 days. When will it actually charge?",
+    "solution": "Most pending charges clear within 3-5 days, so yours should finalize soon. Here's what's happening: When you book, we authorize the amount with your bank (shows as pending), then the actual charge processes separately. If it's still pending after 5 days: 1) Contact your bank to expedite the clearing, 2) Check if your booking was actually confirmed in your Trips section, 3) Sometimes banks hold authorizations longer than necessary. We can provide transaction details to your bank if needed. Note: 'Pending' doesn't mean double-charged - only one charge will finalize."
+  },
+  {
+    "id": "pb-027",
+    "category": "payment-billing",
+    "problem": "Can I pay with Klarna? I want to split my payment into installments.",
+    "solution": "Yes! Klarna is available as a pay-later option at checkout. With Klarna, you can: split your booking into 4 interest-free payments, pay over 6 weeks with no additional fees (if paid on time), get approved instantly at checkout, and manage payments through the Klarna app. To use Klarna, select it as your payment method during checkout. You'll be redirected to complete a quick approval process. It's perfect for spreading out the cost of your vacation without interest charges!"
+  },
+  {
+    "id": "pb-028",
+    "category": "payment-billing",
+    "problem": "I'm being charged taxes but I have tax-exempt status. How do I get these removed?",
+    "solution": "We can accommodate tax-exempt bookings for qualified organizations! To process tax exemption: 1) Complete your booking as normal (taxes included), 2) Contact billing@acmerentals.com immediately after booking, 3) Provide your tax-exempt certificate and documentation, 4) Include your booking confirmation number. Our billing team will verify your tax-exempt status and process a refund for the tax portion. For future bookings, we can note your account for faster tax exemption processing. Corporate accounts can have tax exemption pre-configured."
+  },
+  {
+    "id": "pb-029",
+    "category": "payment-billing",
+    "problem": "The host is claiming damage and wants to charge my security deposit. I disagree with the claim.",
+    "solution": "You have the right to dispute damage claims! Here's the process: 1) Document everything - take photos if you have them from checkout, 2) Respond to the claim through our platform within 72 hours, 3) Provide your side of the story with any evidence, 4) Our team reviews both sides impartially. Damage claims require documentation from hosts including photos, receipts for repairs, and detailed descriptions. We mediate fairly between guests and hosts. The security deposit won't be charged without proper verification. Contact support if you need help with your dispute."
+  },
+  {
+    "id": "pb-030",
+    "category": "payment-billing",
+    "problem": "I have multiple bookings coming up. Can I pay for all of them with one transaction?",
+    "solution": "While each booking typically requires separate payment at the time of reservation, you have some options for streamlining multiple bookings: 1) Add all properties to your cart before checkout (when booking at the same time), 2) Use saved payment methods for quicker checkout, 3) Consider loading Acme Wallet credit to use across bookings, 4) For corporate accounts, monthly consolidated billing is available. If you're booking multiple properties for the same trip, using the cart feature lets you complete everything in one session, though payments still process individually for protection."
+  },
+  {
+    "id": "pb-031",
+    "category": "payment-billing",
+    "problem": "Exchange rate seems wrong. I'm getting charged more than current conversion rates.",
+    "solution": "Let me explain our exchange rate process. We use real-time exchange rates at the moment of transaction, but several factors can affect the final amount: 1) Exchange rates fluctuate constantly - the rate at booking may differ from when browsing, 2) Banks may add their own margin to international transactions, 3) The rate shown on Google may differ from interbank rates we access. We guarantee no hidden conversion fees on our end. To see the exact rate used, check your booking receipt which shows both currencies. If the discrepancy seems significant, contact support for rate verification."
+  },
+  {
+    "id": "pb-032",
+    "category": "payment-billing",
+    "problem": "I'm trying to use a prepaid debit card but it keeps getting declined.",
+    "solution": "Prepaid cards can be tricky for travel bookings. For successful use: 1) Ensure the card is registered with your billing address online (most important step), 2) Verify sufficient balance for the total PLUS potential holds (add 20% buffer), 3) Check the card is enabled for online/international purchases, 4) Some prepaid cards aren't accepted for travel bookings due to fraud prevention. If your prepaid card still doesn't work after these steps, consider using PayPal (which can be linked to prepaid cards) or another payment method."
+  },
+  {
+    "id": "pb-033",
+    "category": "payment-billing",
+    "problem": "Why am I being charged local taxes? I thought the price included everything.",
+    "solution": "Local occupancy taxes are required by law and included in your total price - there are no hidden fees! Here's how it works: The price breakdown at checkout shows: nightly rate, cleaning fee, service fee (12%), and local taxes. These taxes go directly to local governments and vary by location (typically 6-15%). All taxes are clearly shown before you book - the final total you see is exactly what you pay. Think of it like hotel taxes - they're mandatory but always disclosed upfront in your booking total."
+  },
+  {
+    "id": "pb-034",
+    "category": "payment-billing",
+    "problem": "I want to book now for a trip in 8 months. Will the price stay the same?",
+    "solution": "When you book with Acme Rentals, you lock in the current price - it won't change! Once you complete your booking and payment, that price is guaranteed regardless of future rate increases. The price you pay today is final. However, note that if you need to modify dates later, the new dates may have different pricing. Also, if you cancel and rebook, you'll get current prices which could be higher or lower. Booking early is smart for popular destinations to lock in rates!"
+  },
+  {
+    "id": "pb-035",
+    "category": "payment-billing",
+    "problem": "My credit card expires before my trip. Will this affect my booking?",
+    "solution": "Your booking is secure even if your card expires before the trip! The initial payment is what confirms your reservation. However, you should update your card information because: 1) Any modifications or additional charges need a valid card, 2) Security deposits may be held closer to check-in, 3) Some hosts verify payment methods before arrival. To update: Go to Account > Payment Methods, add your new card, and set it as default. Your booking remains valid, but updating ensures smooth processing of any trip-related transactions."
+  },
+  {
+    "id": "pb-036",
+    "category": "payment-billing",
+    "problem": "I got charged a 'foreign transaction fee' by my bank. I thought Acme didn't charge these fees?",
+    "solution": "You're correct - Acme Rentals doesn't charge foreign transaction fees, but your bank might. Here's the difference: We process international payments without adding any fees, using fair real-time exchange rates. However, many banks charge their own foreign transaction fees (usually 1-3%) when you purchase in a currency different from your card's currency. To avoid these bank fees in the future: use a credit card specifically advertised as having no foreign transaction fees, or look for properties that price in your local currency."
+  },
+  {
+    "id": "pb-037",
+    "category": "payment-billing",
+    "problem": "The service fee wasn't mentioned until checkout. Why is it hidden until the end?",
+    "solution": "I understand the frustration, but the service fee isn't hidden - it's part of our transparent pricing structure. The 12% service fee is: mentioned in our fee structure, calculated on the base rate, and displayed in the full price breakdown before you enter any payment information. Search results show nightly rates for easy comparison, while checkout shows all components. To see total prices earlier, look for 'total price' display options in search filters. The service fee funds our 24/7 support, secure platform, and guest protections."
+  },
+  {
+    "id": "pb-038",
+    "category": "payment-billing",
+    "problem": "Group wants to split evenly but one person wants to pay less. Can we do custom amounts?",
+    "solution": "Yes! Our split payment feature supports custom amounts, not just even splits. During checkout when you select 'Split Payment': 1) Choose 'Custom split' instead of 'Split evenly', 2) Enter each person's email and their specific amount, 3) Amounts must total the full booking cost, 4) Each person completes their own payment, 5) Everyone gets individual receipts for their exact portion. This flexibility is perfect for groups where someone might be paying less due to shorter stays or different room arrangements."
+  },
+  {
+    "id": "pb-039",
+    "category": "payment-billing",
+    "problem": "I have an FSA/HSA card. Can I use this for cabin rentals?",
+    "solution": "FSA/HSA cards are designed for medical expenses, so they typically won't work for standard vacation rentals. However, they might be accepted if: 1) The stay is for medical treatment purposes (like recovery), 2) You have documentation from a healthcare provider, 3) Your FSA/HSA plan specifically allows lodging for medical care. Most cabin bookings don't qualify as medical expenses. The card will likely be declined at checkout. Consider using a regular payment method and checking with your FSA/HSA administrator about reimbursement if the trip has medical necessity."
+  },
+  {
+    "id": "pb-040",
+    "category": "payment-billing",
+    "problem": "Bank transfer option isn't showing for me. The FAQ says it's available for select countries.",
+    "solution": "Bank transfers are available in select countries, primarily in Europe and some Asian markets. If you're not seeing this option, it means: 1) Your country isn't currently supported for bank transfers, 2) The specific property may not accept this payment method, 3) Bank transfers might only be available for longer stays or higher amounts. Alternative payment methods available globally include credit/debit cards, PayPal, and digital wallets. If bank transfer is essential for your booking, contact support to check if we can accommodate your specific situation."
+  },
+  {
+    "id": "pb-041",
+    "category": "payment-billing",
+    "problem": "I need to book for my employees. How do I set up a corporate account?",
+    "solution": "Setting up a corporate account provides great benefits for business travel! Here's how: 1) Email sales@acmerentals.com with your company details, 2) Include anticipated booking volume and needs, 3) Our business team will set up your account with centralized billing, monthly invoicing, expense report integration, and potentially NET 30 payment terms. Corporate accounts also get dedicated support and can set travel policies for employees. We'll provide a full demo and help configure everything for your company's needs. Many businesses save significantly with our corporate rates!"
+  },
+  {
+    "id": "pb-042",
+    "category": "payment-billing",
+    "problem": "My debit card has a daily spending limit. The booking exceeds this. What can I do?",
+    "solution": "Daily spending limits are common with debit cards. Here are your options: 1) Contact your bank to temporarily increase your daily limit for this purchase, 2) Split the booking across two days (book just before midnight), 3) Use a credit card which typically has higher limits, 4) Try PayPal linked to your debit card as it may bypass the limit, 5) Use multiple payment methods if available. Most banks can increase limits immediately over the phone for verified travel purchases. Call them before attempting to book again."
+  },
+  {
+    "id": "pb-043",
+    "category": "payment-billing",
+    "problem": "I see 3D Secure authentication mentioned. What is this and do I need to do anything?",
+    "solution": "3D Secure is an extra security layer that protects your payments - think of it as two-factor authentication for credit cards! When you book, you might be redirected to your bank's page to verify the transaction through: a text message code, your banking app notification, or password entry. This happens automatically during checkout and takes just seconds. It's required by many banks for online purchases and significantly reduces fraud. You don't need to set up anything in advance - just have your phone handy for verification codes."
+  },
+  {
+    "id": "pb-044",
+    "category": "payment-billing",
+    "problem": "Trying to pay but getting 'billing address doesn't match' error. I know it's correct.",
+    "solution": "Billing address matching can be very specific. Here's how to resolve this: 1) Enter the address EXACTLY as it appears on your credit card statement, 2) Common issues: using 'St' vs 'Street', apartment numbers, ZIP+4 codes, 3) Try without apartment/unit numbers first, 4) Check for auto-fill errors adding extra spaces, 5) If you recently moved, the bank may still have your old address. Call your bank to verify the exact billing address format they have on file. Sometimes even small differences like 'Apt' vs '#' can cause mismatches."
+  },
+  {
+    "id": "pb-045",
+    "category": "payment-billing",
+    "problem": "Price increased while I was entering payment details. Is this allowed?",
+    "solution": "Prices can change in real-time due to dynamic pricing, but this timing is frustrating! Here's what happens: Prices aren't locked until payment completes, and high-demand properties can see rapid changes. If the price increased while checking out: 1) The new price will be clearly shown before you confirm, 2) You can choose to accept or abandon the booking, 3) Try booking quickly once you decide, 4) Consider properties with more stable pricing. For popular destinations, prices can change within minutes during peak booking times."
+  },
+  {
+    "id": "pb-046",
+    "category": "payment-billing",
+    "problem": "I want to use multiple credit cards to stay under individual card limits. Possible?",
+    "solution": "Currently, our standard checkout process accepts one payment method per booking (except for group split payments). For multiple cards, consider these alternatives: 1) Use our split payment feature and have a friend/family member pay part, 2) Pay with PayPal which can draw from multiple funding sources, 3) Contact your card issuer to temporarily increase limits, 4) Book with a card that has sufficient limit, 5) For very large bookings, contact support about special payment arrangements. The single payment method helps streamline refunds and security."
+  },
+  {
+    "id": "pb-047",
+    "category": "payment-billing",
+    "problem": "Got an email about Acme+ renewal but I don't remember signing up. Is this spam?",
+    "solution": "Let's verify if this is legitimate. Real Acme+ renewal emails: come from official @acmerentals.com addresses, reference your actual account details, and show your subscription start date. To check: 1) Log into your account (don't click email links), 2) Go to Account > Subscriptions, 3) See if Acme+ is active. If you have an active subscription you don't remember, you may have signed up during a booking with a promotional offer. If there's no subscription in your account, forward the suspicious email to security@acmerentals.com and don't click any links."
+  },
+  {
+    "id": "pb-048",
+    "category": "payment-billing",
+    "problem": "Currency conversion made my booking cost $50 more than expected. Why such a big difference?",
+    "solution": "A $50 difference suggests multiple factors affected your final cost: 1) Exchange rates fluctuated between browsing and booking (can vary 2-3%), 2) Your bank may have added foreign transaction fees (typically 1-3%), 3) The total might include taxes not shown in the initial price, 4) Rounding differences in currency conversion. To see exactly what happened, check your booking receipt which shows the original price, exchange rate used, and final charge. For future bookings, use cards without foreign transaction fees and be aware that displayed prices are estimates until checkout."
+  },
+  {
+    "id": "pb-049",
+    "category": "payment-billing",
+    "problem": "Security deposit was charged instead of just held. My account shows the money gone.",
+    "solution": "Let me clarify the security deposit process. Deposits should appear as 'holds' not charges, but they can look like charges because: 1) The funds become unavailable in your account, 2) Some banks display holds as pending charges, 3) The money isn't actually transferred to us. True holds release automatically after 7-14 days post-checkout if no damage. If it posted as an actual charge (not just pending), that's incorrect. Contact support immediately with your booking details and bank statement. We'll ensure it's properly processed as a hold, not a charge."
+  },
+  {
+    "id": "pb-050",
+    "category": "payment-billing",
+    "problem": "Need invoices with specific formatting for tax purposes in Germany. Can you accommodate?",
+    "solution": "Yes, we provide tax-compliant invoices for international requirements! For German tax invoices (Rechnung), we can include: 1) VAT/tax identification numbers, 2) Specific formatting required by German tax authorities, 3) Detailed breakdown of all charges and taxes, 4) Currency in EUR with conversion details. After booking, email billing@acmerentals.com with your booking confirmation and specific German tax requirements. Our team regularly handles international tax documentation and will ensure your invoice meets Finanzamt requirements. We typically deliver customized invoices within 24-48 hours."
+  },
+  {
+    "id": "pb-051",
+    "category": "payment-billing",
+    "problem": "Acme+ says I save on service fees but I still see them charged. What gives?",
+    "solution": "Let me clarify the Acme+ service fee benefit! As an Acme+ member, you get no service fees on your first 5 bookings each year - that's up to 60% savings on fees. Here's how it works: 1) The first 5 bookings have zero service fees, 2) After that, the standard 12% applies but you still get 10% off the base rate, 3) The fee waiver resets annually on your renewal date. Check how many fee-free bookings you've used this year in your Acme+ dashboard. If you should have fee-free bookings remaining but see charges, contact support for adjustment."
+  },
+  {
+    "id": "pb-052",
+    "category": "payment-billing",
+    "problem": "The property shows payment required at check-in. I thought I paid everything already?",
+    "solution": "You likely paid for the reservation, but some properties collect certain fees at check-in. These might include: 1) Security deposits (if not held on card), 2) Resort or amenity fees, 3) Local tourism taxes in some jurisdictions, 4) Optional services like early check-in. These additional fees should be disclosed in the property listing under 'Additional Fees' or 'House Rules'. Check your booking confirmation for details about check-in payments. If something seems incorrect or wasn't disclosed, contact support for clarification."
+  },
+  {
+    "id": "pb-053",
+    "category": "payment-billing",
+    "problem": "My payment went through but I never received a booking confirmation. Money is gone from account.",
+    "solution": "This is urgent - let's locate your booking immediately! When payment completes but confirmation is missing: 1) Check all email folders including spam for confirmation, 2) Log into your account and check the Trips section, 3) Look for any error messages after payment. Your booking likely processed but had a communication glitch. Contact support right away with: the charge amount and date, last 4 digits of card used, property and dates you tried to book. We'll trace your payment and ensure your booking is confirmed. Don't attempt to book again!"
+  },
+  {
+    "id": "pb-054",
+    "category": "payment-billing",
+    "problem": "I want to pay extra for early check-in. How do I add this to my booking?",
+    "solution": "Early check-in fees are typically arranged with hosts and paid at the property. Here's the process: 1) After booking, message your host about early check-in availability, 2) They'll confirm if possible and any associated fees, 3) Payment is usually collected at check-in, 4) Some hosts offer free early check-in if the cabin is ready. The platform booking covers the reservation itself, while add-on services like early/late check-in are handled directly with hosts. Always arrange through our messaging system for documentation and support coverage."
+  },
+  {
+    "id": "pb-055",
+    "category": "payment-billing",
+    "problem": "Trying to use Google Pay but the option disappeared at checkout. It was there initially.",
+    "solution": "Google Pay availability can depend on several factors. If it disappeared: 1) Check if your Google Pay is set up with a compatible card, 2) Some properties or booking amounts may not support digital wallets, 3) Browser settings might be blocking the payment option, 4) Try using Chrome browser where Google Pay works best, 5) Mobile app often has better digital wallet integration than web. If Google Pay is important for your booking, try the mobile app or contact support to understand why it's not appearing for this specific transaction."
+  },
+  {
+    "id": "pb-056",
+    "category": "payment-billing",
+    "problem": "I have booking credits from a previous cancellation. How do I apply them?",
+    "solution": "Booking credits are typically stored in your Acme Wallet! To use them: 1) Check your Acme Wallet balance in account settings, 2) During checkout, you'll see the option to apply wallet credits, 3) You can use credits alone or combine with another payment method, 4) Credits are automatically applied to reduce your total. If you don't see credits you expect to have, check: the email about your cancellation refund, if you chose wallet credit vs. refund to payment method, and credit expiration dates. Contact support if credits are missing."
+  },
+  {
+    "id": "pb-057",
+    "category": "payment-billing",
+    "problem": "The total at checkout is in EUR but my card will be charged in USD. What's the final amount?",
+    "solution": "When booking internationally, here's how currency works: 1) The checkout shows prices in the listing's currency (EUR), 2) Your receipt will show both EUR amount and USD conversion, 3) The exact USD amount depends on the exchange rate at time of processing, 4) Your bank statement will show the final USD charge. We use real-time exchange rates with no markup. To see an estimate, checkout will often show approximate amounts in your card's currency. For exact amounts, check your email receipt after booking completes."
+  },
+  {
+    "id": "pb-058",
+    "category": "payment-billing",
+    "problem": "Why does the app require me to save payment details? I don't want them stored.",
+    "solution": "Your payment security is important! Here's how we protect your information: 1) We use tokenized storage - your actual card number is never stored, 2) All payment data is encrypted with 256-bit SSL encryption, 3) We're PCI DSS compliant for maximum security, 4) You can remove saved payment methods anytime in settings. Saving payment methods is optional but enables: faster future bookings, one-click booking for high-demand properties, and easier booking management. If you prefer not to save, look for 'Don't save this card' option at checkout."
+  },
+  {
+    "id": "pb-059",
+    "category": "payment-billing",
+    "problem": "My business requires specific PO numbers on invoices. Can these be added?",
+    "solution": "Absolutely! We can customize invoices with PO numbers and other business requirements. Here's how: 1) Complete your booking as normal, 2) Email billing@acmerentals.com with your booking confirmation, 3) Include the PO number and any other required fields, 4) We'll generate a customized invoice within 24-48 hours. For frequent business travel, consider setting up a corporate account where PO numbers and other requirements can be configured as defaults. This streamlines the process for all future bookings."
+  },
+  {
+    "id": "pb-060",
+    "category": "payment-billing",
+    "problem": "I was told Acme+ members get 10% off but I'm only seeing 8% discount applied.",
+    "solution": "The 10% Acme+ discount applies to the base nightly rate before taxes and fees. Here's why you might see 8%: 1) The discount is calculated on the accommodation cost only, 2) Cleaning fees, service fees, and taxes aren't discounted, 3) When averaged across the total, it appears less than 10%. To verify: check the price breakdown where it should show 'Acme+ Discount: -10%' on the nightly rate line. If the discount truly is only 8% on the base rate, contact support for correction. Some special promotions might have different discount structures."
+  },
+  {
+    "id": "pb-061",
+    "category": "payment-billing",
+    "problem": "Received fraud alert from bank after booking. They want to verify the charge. What info do I give them?",
+    "solution": "Fraud alerts are common for travel bookings! Here's what to tell your bank: 1) Confirm this is a legitimate travel purchase you made, 2) Merchant name appears as 'Acme Rentals' or similar, 3) Provide the booking amount and date, 4) Mention it's for accommodation/vacation rental. Your bank wants to protect you from fraud. Once verified, they'll unblock the transaction. If the charge was reversed, you may need to rebook. Having your bank pre-authorize Acme Rentals for future bookings can prevent this hassle."
+  },
+  {
+    "id": "pb-062",
+    "category": "payment-billing",
+    "problem": "What happens to my payment if the host cancels after I've already paid?",
+    "solution": "If a host cancels, you're fully protected! Here's what happens: 1) Full automatic refund of all payments including taxes and fees, 2) Refund processes immediately to your original payment method, 3) Timeline follows standard refund speeds (5-10 days for credit cards), 4) You also receive a travel voucher for the inconvenience. Additionally, we help find alternative accommodations and the host faces penalties. You never lose money from host cancellations - our platform ensures you're either accommodated or fully refunded."
+  },
+  {
+    "id": "pb-063",
+    "category": "payment-billing",
+    "problem": "Property has a damage waiver fee option. Is this instead of or in addition to security deposit?",
+    "solution": "Damage waiver fees are an alternative to traditional security deposits! Here's the difference: Security deposits are refundable holds on your card (returned if no damage), while damage waivers are non-refundable fees that cover minor accidental damage. Benefits of damage waivers: 1) No large hold on your credit card, 2) Coverage for accidental minor damage, 3) Peace of mind for families with children. The waiver typically costs much less than a deposit but isn't refunded. Choose based on your preference for lower upfront cost vs. refundable deposit."
+  },
+  {
+    "id": "pb-064",
+    "category": "payment-billing",
+    "problem": "How do I get reimbursed if I had to leave early due to property issues?",
+    "solution": "If property issues forced early departure, you may be entitled to partial refund. Document everything: 1) Photos/videos of the issues, 2) Communication with host about problems, 3) Attempts to resolve before leaving, 4) Check-out date/time. Contact support immediately with this documentation. We investigate these situations case-by-case. Valid issues (safety hazards, major cleanliness problems, missing amenities) can result in prorated refunds for unused nights. Keep all communication on our platform for best support coverage."
+  },
+  {
+    "id": "pb-065",
+    "category": "payment-billing",
+    "problem": "My card was compromised and the bank issued a new one. Will this affect my upcoming booking?",
+    "solution": "Your existing booking is safe! The original payment already processed, so a new card number won't affect it. However, update your payment method for: 1) Any future modifications to the booking, 2) Security deposit holds (if closer to check-in), 3) Potential add-on services. To update: Go to Account > Payment Methods, add your new card, remove the compromised one. Also update any active subscriptions like Acme+. Your confirmed bookings remain valid regardless of card changes."
+  },
+  {
+    "id": "pb-066",
+    "category": "payment-billing",
+    "problem": "Can I get detailed tax breakdown? My accountant needs to separate various tax types.",
+    "solution": "Yes, we provide detailed tax breakdowns for accounting purposes! Your receipt includes: 1) State occupancy taxes, 2) Local city/county taxes, 3) Tourism/resort fees (if applicable), 4) Our service fee (not a tax), 5) Any VAT/GST for international bookings. For even more detail, email billing@acmerentals.com with your booking confirmation and specific tax breakdown needs. We can provide documentation showing exact tax types, rates, and jurisdictions for your accountant's requirements."
+  },
+  {
+    "id": "pb-067",
+    "category": "payment-billing",
+    "problem": "The weekly discount isn't applying even though I'm booking for 8 nights.",
+    "solution": "Weekly discounts typically apply to stays of 7+ nights, so your 8-night stay should qualify! If it's not showing: 1) Check if the specific property offers weekly discounts (not all do), 2) Ensure all nights are consecutive at the same property, 3) Some hosts set their weekly discount to start at 14 or 28 days. The discount should appear automatically in the price breakdown. If the property advertises weekly discounts but they're not applying to your 8-night stay, message the host or contact support for manual adjustment."
+  },
+  {
+    "id": "pb-068",
+    "category": "payment-billing",
+    "problem": "I run a travel blog. Do you offer affiliate or partner billing arrangements?",
+    "solution": "Acme Rentals welcomes partnerships with travel content creators! While specific affiliate programs aren't detailed in our standard billing FAQ, here's how to explore opportunities: 1) Contact our partnerships team at partnerships@acmerentals.com, 2) Include your blog details and audience metrics, 3) Describe your content focus and travel frequency. Many travel bloggers enjoy special arrangements including commission structures, exclusive discounts for readers, or complimentary stays for reviews. Our partnerships team can discuss options tailored to your platform."
+  },
+  {
+    "id": "pb-069",
+    "category": "payment-billing",
+    "problem": "Paid with cryptocurrency last year. Don't see that option anymore. Was it removed?",
+    "solution": "Payment methods can vary by region and time. While cryptocurrency isn't listed in our current standard payment methods (credit cards, debit cards, PayPal, Acme Wallet, Apple/Google Pay, bank transfers, and Klarna), payment options do evolve. If crypto payments were previously available, they may have been: 1) A limited trial program, 2) Region-specific, 3) Temporarily suspended for updates. For the latest on alternative payment methods, contact billing@acmerentals.com. We're always exploring new payment technologies to serve our global community."
+  },
+  {
+    "id": "pb-070",
+    "category": "payment-billing",
+    "problem": "My Acme+ benefits show expired but I paid for the year 3 months ago. Please help!",
+    "solution": "This sounds like a subscription glitch that needs immediate fixing! Your Acme+ benefits should last the full year from payment. Let's resolve this: 1) Check your email for the original Acme+ confirmation with dates, 2) Look at your payment method statement for the $99 charge date, 3) Contact support immediately with this information. This is likely a system error. Our team will restore your benefits immediately and ensure you receive any discounts you missed. As an Acme+ member, use the priority line at 1-800-CABINS-2 for fastest resolution!"
+  },
+  {
+    "id": "pb-071",
+    "category": "payment-billing",
+    "problem": "Property is listed in Bitcoin pricing. How does payment actually work?",
+    "solution": "If you're seeing Bitcoin pricing, this might be: 1) A display option showing equivalent values, 2) The host's preference for transparency on rates. However, our standard payment processing uses traditional methods: credit/debit cards, PayPal, bank transfers, etc. The actual payment at checkout will be in standard currency using our accepted payment methods. If you're specifically interested in crypto payments, contact billing@acmerentals.com about current options, as payment methods can vary by region and continue evolving."
+  },
+  {
+    "id": "pb-072",
+    "category": "payment-billing",
+    "problem": "Getting 'high risk transaction' error. I'm just trying to book a cabin for vacation!",
+    "solution": "High risk flags are frustrating but designed to protect you. This can trigger due to: 1) Large booking amount, 2) International transaction, 3) First-time booking with new account, 4) VPN usage, 5) Multiple failed attempts. To resolve: Contact your bank to pre-authorize the transaction, try without VPN if using one, ensure billing address matches exactly, use a well-established credit card, or call our support to process manually. These flags are temporary - once you complete a successful booking, future ones are easier."
+  },
+  {
+    "id": "pb-073",
+    "category": "payment-billing",
+    "problem": "How do gift cards work? Want to buy one for my daughter's honeymoon.",
+    "solution": "What a thoughtful wedding gift! While gift cards aren't specifically mentioned in our billing FAQ, Acme Wallet credits work similarly. Here's an alternative: 1) Book a specific property as a gift (pay with your card, list them as guests), 2) Create a cash gift with a printable 'Acme Rentals gift certificate' you design, 3) They can then book their choice and you reimburse. For official gift card options, contact billing@acmerentals.com. Many customers request this feature, so formal gift cards may be available or coming soon!"
+  },
+  {
+    "id": "pb-074",
+    "category": "payment-billing",
+    "problem": "Do you accept AMEX? Some places don't and I want to earn my points.",
+    "solution": "Yes! American Express is specifically listed as one of our accepted credit cards, along with Visa, Mastercard, and Discover. You can definitely earn your AMEX points on cabin bookings. At checkout, simply select credit card as your payment method and enter your AMEX details. The full booking amount counts toward your rewards program. AMEX's additional purchase protections and travel benefits also apply to your Acme Rentals bookings, giving you extra peace of mind."
+  },
+  {
+    "id": "pb-075",
+    "category": "payment-billing",
+    "problem": "Group payment failed because one person's card declined. Do we all have to start over?",
+    "solution": "Group payment hiccups are frustrating but fixable! When one person's payment fails in a split payment: 1) The system holds the booking temporarily, 2) That person gets a limited time to fix their payment, 3) They can try a different card or payment method, 4) Other successful payments remain pending. The person with the declined payment should: check with their bank, try a different card, or have another group member cover their portion. Contact support if the time limit is approaching - we can often extend it to preserve everyone's successful payments."
+  },
+  {
+    "id": "pb-076",
+    "category": "payment-billing",
+    "problem": "Monthly invoice shows bookings I don't recognize. Worried about account compromise.",
+    "solution": "Let's investigate this immediately for security! Monthly invoices for corporate accounts should only show authorized bookings. Check if: 1) Other employees have access to your corporate account, 2) Bookings match company travel records, 3) Dates/locations align with known business trips. If bookings are truly unrecognized: Change your password immediately, review account access permissions, contact support to investigate unauthorized use, and request detailed booking logs. We'll help identify any security issues and can reverse unauthorized charges. Your account security is our priority!"
+  },
+  {
+    "id": "pb-077",
+    "category": "payment-billing",
+    "problem": "Want to switch from credit card to bank transfer for lower fees. Can I change after booking?",
+    "solution": "Once a booking is paid and confirmed, the payment method cannot be changed - the transaction is complete. Bank transfers are available in select countries but must be chosen at initial checkout. For future bookings: 1) Check if bank transfer appears as an option for your region, 2) Note that bank transfers may have longer processing times, 3) Consider the trade-off between potential lower fees and convenience. For your current booking, the original payment method stands, but you can use bank transfer for future reservations where available."
+  },
+  {
+    "id": "pb-078",
+    "category": "payment-billing",
+    "problem": "Service fee seems to be charged on the total including taxes. That's a fee on a fee!",
+    "solution": "I understand your concern! Let me clarify how service fees are calculated: The 12% service fee is applied to the accommodation costs (nightly rate + cleaning fee) but NOT on taxes. It may appear higher when viewed as a percentage of just the nightly rate. The breakdown should show: nightly rate + cleaning fee = subtotal, then service fee (12% of subtotal), then taxes calculated separately. If your service fee truly is being calculated on taxes, that's an error. Contact support with your booking details for correction."
+  },
+  {
+    "id": "pb-079",
+    "category": "payment-billing",
+    "problem": "Refund was processed to an old card I've closed. Will I still get my money?",
+    "solution": "Yes, you'll still get your refund! When refunds go to closed cards: 1) The bank receiving the refund credits your account even if the card is closed, 2) It may take extra days for the bank to process, 3) The funds typically appear in the account linked to that old card, 4) If you closed the entire bank account, the bank will contact you. Contact your old card's bank with the refund transaction details. They can trace it and ensure it reaches you. This is a common situation banks handle regularly."
+  },
+  {
+    "id": "pb-080",
+    "category": "payment-billing",
+    "problem": "Why isn't there a 'pay at property' option like hotels? I prefer paying when I arrive.",
+    "solution": "Unlike traditional hotels, Acme Rentals requires payment at booking to protect both guests and hosts. Here's why: 1) Guarantees your reservation is secured, 2) Protects hosts from no-shows and last-minute cancellations, 3) Enables our secure payment system and fraud protection, 4) Allows hosts to prepare for your specific stay. While pay-at-property isn't available, remember that refund policies provide flexibility if plans change. This prepayment model is standard across vacation rental platforms for everyone's protection."
+  },
+  {
+    "id": "pb-081",
+    "category": "payment-billing",
+    "problem": "I see fraud detection mentioned. What triggers reviews and will it delay my booking?",
+    "solution": "Our fraud detection system works behind the scenes to protect everyone! It may flag transactions based on: unusual booking patterns, high-value reservations, new accounts with large bookings, international cards, or multiple failed attempts. Most bookings process instantly despite these checks. If flagged: 1) You might need to verify your identity, 2) We may contact you for confirmation, 3) Processing could take a few extra minutes. These measures protect you from unauthorized bookings and hosts from fraudulent reservations. Legitimate bookings are rarely delayed more than briefly."
+  },
+  {
+    "id": "pb-082",
+    "category": "payment-billing",
+    "problem": "Trying to add a debit card but system says 'credit cards only'. FAQ says debit is accepted.",
+    "solution": "Debit cards are definitely accepted! If the system shows 'credit cards only', try these fixes: 1) Make sure your debit card has a Visa/Mastercard logo (required for online use), 2) Select 'credit card' as the type even though it's debit - they process the same way, 3) Ensure the card is enabled for online purchases with your bank, 4) Try entering it without choosing a card type if that option exists. Most debit cards with major network logos work exactly like credit cards in our system."
+  },
+  {
+    "id": "pb-083",
+    "category": "payment-billing",
+    "problem": "Can I pay extra to guarantee late checkout? Worth it for my flight schedule.",
+    "solution": "Late checkout is arranged directly with hosts and isn't typically pre-payable through the platform. Here's the process: 1) After booking, message your host about late checkout needs, 2) Explain your flight schedule for context, 3) Many hosts accommodate when possible, sometimes free or for a small fee, 4) Payment for late checkout is usually handled at the property. Include this request in your first message to the host. They appreciate advance notice and are often flexible, especially if they don't have same-day arrivals."
+  },
+  {
+    "id": "pb-084",
+    "category": "payment-billing",
+    "problem": "Booking was $500 last week, now it's $650. Can you honor the original price I saw?",
+    "solution": "I understand price increases are frustrating! Our dynamic pricing adjusts based on: real-time demand, seasonal changes, special events, last-minute premiums, and remaining availability. Unfortunately, we can't honor previous prices because: rates aren't locked until booking completes, other guests may have booked similar properties increasing demand, and dynamic pricing ensures fair market rates. For best prices: book immediately when you see good rates, set price alerts for drops, or consider slightly different dates for better rates."
+  },
+  {
+    "id": "pb-085",
+    "category": "payment-billing",
+    "problem": "Do you offer military discounts? I'm active duty looking to book a cabin.",
+    "solution": "Thank you for your service! While military discounts aren't mentioned in our standard billing structure, many hosts appreciate military guests and may offer special rates. Here's what to do: 1) Some hosts indicate military-friendly properties in descriptions, 2) Message hosts before booking to inquire about military discounts, 3) Consider Acme+ membership which provides 10% off all bookings, 4) Contact support about any special military programs. Individual hosts have flexibility to offer discounts, and many are happy to support service members."
+  },
+  {
+    "id": "pb-086",
+    "category": "payment-billing",
+    "problem": "Is the 256-bit SSL encryption really secure? I'm paranoid about online payments.",
+    "solution": "Your caution is understandable and smart! Yes, 256-bit SSL encryption is bank-grade security - it's the same protection major financial institutions use. Additionally, we employ: PCI DSS compliance (highest payment security standards), tokenized payment storage (your real card number is never stored), 3D Secure authentication for extra verification, and continuous fraud detection monitoring. This multi-layered approach means your payment information is extremely secure. It would take billions of years for computers to crack 256-bit encryption. You're safer booking online with us than handing your card to someone in person!"
+  },
+  {
+    "id": "pb-087",
+    "category": "payment-billing",
+    "problem": "Got double-charged - one pending, one posted. Bank says contact merchant.",
+    "solution": "Double charges where one is pending and one is posted need immediate attention. This typically happens when: 1) A payment retry occurred after the first seemed to fail, 2) The authorization converted to a charge while another was processing. Please contact our billing support immediately at billing@acmerentals.com or call 1-800-CABINS-1 with: both transaction amounts and dates, your booking confirmation number, and screenshots from your bank. We'll reverse the duplicate charge immediately. The pending charge won't complete, and we'll provide documentation for your bank."
+  },
+  {
+    "id": "pb-088",
+    "category": "payment-billing",
+    "problem": "Klarna was declined but my credit is excellent. Why would pay-later be rejected?",
+    "solution": "Klarna makes independent approval decisions beyond just credit scores. Factors include: 1) The booking amount (very high amounts may be declined), 2) Your history with Klarna specifically, 3) The booking timing (far-future bookings might be restricted), 4) Klarna's current lending criteria. Klarna approval isn't guaranteed even with excellent credit. Alternatives include: trying a smaller booking amount first to establish history, using a credit card that offers its own payment plans, or booking with standard payment and using your card's pay-over-time features."
+  },
+  {
+    "id": "pb-089",
+    "category": "payment-billing",
+    "problem": "I want to upgrade to Acme+ but only have 2 months before my big trip. Worth it?",
+    "solution": "Absolutely worth it for your big trip! Let's do the math: Acme+ costs $99/year but immediately gives you 10% off bookings. If your trip costs $1000+, you've already saved $100+ (more than the membership fee!). Plus you get: free cancellation up to 24 hours before, priority support for trip planning, waived service fees on your first 5 bookings, and the membership continues for a full year for future trips. Even for just one significant booking, Acme+ typically pays for itself immediately."
+  },
+  {
+    "id": "pb-090",
+    "category": "payment-billing",
+    "problem": "Does tokenized payment storage mean you keep my card on file? I don't want that.",
+    "solution": "Tokenization actually means we DON'T keep your real card details! Here's how it works: 1) When you enter card details, they're instantly converted to a random token, 2) Only this meaningless token is stored - never your actual card number, 3) The token only works on our platform and is useless if intercepted, 4) You control whether to save payment methods or not. Tokenization is more secure than not storing anything because it enables fraud protection while keeping your real card data completely private. You can always choose not to save payment methods at checkout."
+  },
+  {
+    "id": "pb-091",
+    "category": "payment-billing",
+    "problem": "Can I pay a deposit to hold dates then pay the rest later? Wedding planning is expensive!",
+    "solution": "I understand wedding expenses add up quickly! Unfortunately, Acme Rentals requires full payment at booking to guarantee reservations. However, here are some options to help: 1) Use Klarna at checkout to split into 4 interest-free payments, 2) Book with a rewards credit card to earn points/cash back, 3) Look for properties with flexible cancellation if you need to adjust, 4) Consider booking closer to your date when you have funds ready. Some hosts might work with you directly for wedding groups - try messaging before booking to discuss options."
+  },
+  {
+    "id": "pb-092",
+    "category": "payment-billing",
+    "problem": "My receipt shows different tax rates for state and local. Is this correct?",
+    "solution": "Yes, multiple tax rates are normal and legally required! Your detailed receipt correctly shows: 1) State occupancy tax (varies by state, typically 4-8%), 2) Local city/county taxes (additional 2-5%), 3) Tourism or resort fees for some areas, 4) Each jurisdiction's specific rate. These aren't Acme fees - they go directly to government authorities. Total taxes can range from 6-15% depending on location. The detailed breakdown helps with expense reports and ensures compliance with tax laws. All taxes are included in your total shown at booking."
+  },
+  {
+    "id": "pb-093",
+    "category": "payment-billing",
+    "problem": "Payment page timed out. How long do I have to complete booking?",
+    "solution": "Payment pages typically timeout after 10-15 minutes of inactivity for security. If yours timed out: 1) Your payment information wasn't processed, 2) The booking wasn't completed, 3) You'll need to start the checkout again, 4) The property should still be available. To avoid timeouts: have your payment information ready, complete booking in one session, don't switch between too many tabs, and check your internet connection is stable. Popular properties can book quickly, so complete checkout promptly once you start."
+  },
+  {
+    "id": "pb-094",
+    "category": "payment-billing",
+    "problem": "Are group organizer tools available for managing multiple bookings and payments?",
+    "solution": "Yes! Our group booking features include several organizer tools: 1) Split payment options for dividing costs among group members, 2) Ability to manage multiple bookings from your account, 3) Group messaging with hosts for coordinated arrangements, 4) Individual receipts for each payer. As the organizer, you can: book multiple properties in one session, coordinate with hosts about group needs, track all reservations in your Trips section, and help group members with their portions. For very large groups (10+ bookings), contact our group sales team for additional support."
+  },
+  {
+    "id": "pb-095",
+    "category": "payment-billing",
+    "problem": "Charge shows as 'recurring' on my bank statement but it's just one cabin rental. Why?",
+    "solution": "This is a bank categorization issue, not actual recurring charges! Some banks automatically label certain merchant types as 'recurring' even for one-time purchases. This happens because: 1) Acme Rentals is categorized as a travel/accommodation merchant, 2) Your bank's system may auto-flag these categories, 3) It's just a label - you won't be charged again. Check your booking confirmation for peace of mind - it shows this is a one-time charge. If concerned, you can ask your bank to correct the merchant description."
+  },
+  {
+    "id": "pb-096",
+    "category": "payment-billing",
+    "problem": "I have a large balance in Acme Wallet from refunds. Is there a limit or expiration?",
+    "solution": "Acme Wallet is great for frequent travelers! While specific limits and expiration policies aren't detailed in the FAQ, wallet credits typically work best when: 1) Used within reasonable timeframes (check your account for any dates), 2) Applied to bookings regularly rather than accumulating indefinitely, 3) Combined with other payment methods for large bookings if needed. To check your specific wallet terms: review your account settings, look for expiration notices, and consider using credits on your next booking. Contact support if you have a large balance with questions about limitations."
+  },
+  {
+    "id": "pb-097",
+    "category": "payment-billing",
+    "problem": "Pricing shows 'from $X per night' but everything is more expensive. False advertising?",
+    "solution": "'From' pricing indicates the lowest available rate for that property across all dates, not necessarily your specific dates. This happens because: 1) Properties have different rates for peak/off-seasons, 2) Weekends cost more than weekdays, 3) Minimum stay requirements affect per-night pricing, 4) The 'from' price might be for far-future or off-season dates. To find the advertised low rates: try different date ranges, look at weekday stays, check off-season months, or book further in advance. The 'from' price is real but may require flexibility."
+  },
+  {
+    "id": "pb-098",
+    "category": "payment-billing",
+    "problem": "Can I pay with cash at the property? I don't trust online payments.",
+    "solution": "Cash payments at properties aren't supported for important safety and security reasons: 1) Online payments protect both you and hosts from fraud, 2) Creates verified booking records for your protection, 3) Enables our customer support and dispute resolution, 4) Provides insurance and guarantees. Our online payments use bank-grade 256-bit SSL encryption, PCI compliance, and tokenized storage - actually safer than cash transactions. Without platform payment, you'd lose all Acme Rentals protections and guarantees. Consider using PayPal if you prefer not entering card details directly."
+  },
+  {
+    "id": "pb-099",
+    "category": "payment-billing",
+    "problem": "Chase Sapphire says this codes as travel for 3x points. Can you confirm?",
+    "solution": "Great question for maximizing rewards! While we can't guarantee how specific cards categorize our charges, Acme Rentals is a travel accommodation platform, which typically codes as travel for most credit card rewards programs. Many customers report earning: 3x-5x points on travel rewards cards, travel insurance coverage activation, and annual travel credit eligibility. The merchant category code should trigger travel benefits, but verify with Chase for absolute certainty. Booking cabins through Acme is a smart way to maximize your credit card rewards!"
+  },
+  {
+    "id": "pb-100",
+    "category": "payment-billing",
+    "problem": "Setup says 'no service fees on 5 bookings' for Acme+ but I need clarification on how this resets.",
+    "solution": "Great question about maximizing your Acme+ benefits! The 5 fee-free bookings work like this: 1) You get 5 bookings with zero service fees per membership year, 2) This resets annually on your Acme+ renewal date, not calendar year, 3) After using all 5, standard 12% service fees apply (but you still get 10% off base rates). Track your usage in Account > Acme+ Dashboard. For example: if you joined in March, every March you get 5 new fee-free bookings. Smart members save these for their biggest bookings to maximize savings!"
+  }
+]
