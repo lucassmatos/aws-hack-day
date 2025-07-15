@@ -1,0 +1,66 @@
+[
+  {
+    "id": "TCK-00123",
+    "problem": "The payment for my yearly Acme+ subscription failed and I was charged twice.",
+    "solution": "Issue a refund for the duplicate charge and verify the subscription status is active. Escalate to billing if issues persist.",
+    "category": "Payments",
+    "status": "in review",
+    "priority": "high"
+  },
+  {
+    "id": "TCK-00124",
+    "problem": "I can't log in to the app on my new phone. It keeps saying 'Authentication Error'.",
+    "solution": "",
+    "category": "App Issues",
+    "status": "open",
+    "priority": "medium"
+  },
+  {
+    "id": "TCK-00125",
+    "problem": "A cabin I booked was not as described. The photos showed a lake view but there was none.",
+    "solution": "Verified with property owner. Photos were outdated. Issued a partial refund to the customer as per company policy.",
+    "category": "Booking Problems",
+    "status": "resolved",
+    "priority": "high"
+  },
+  {
+    "id": "TCK-00126",
+    "problem": "My premium Acme+ features are not showing up in my account, even though my payment went through.",
+    "solution": "",
+    "category": "Acme+",
+    "status": "open",
+    "priority": "medium"
+  },
+  {
+    "id": "TCK-00127",
+    "problem": "As a property owner, I'm having trouble updating my listing's availability calendar.",
+    "solution": "",
+    "category": "Seller Issues",
+    "status": "in review",
+    "priority": "low"
+  },
+  {
+    "id": "TCK-00128",
+    "problem": "The 'Book Now' button is greyed out for a cabin that shows as available.",
+    "solution": "This is a known bug related to caching. Advised user to clear cache or try an incognito window as a workaround. Engineering team is on it.",
+    "category": "App Issues",
+    "status": "resolved",
+    "priority": "medium"
+  },
+  {
+    "id": "TCK-00129",
+    "problem": "My credit card was declined but I know it's valid. I tried three times.",
+    "solution": "",
+    "category": "Payments",
+    "status": "open",
+    "priority": "high"
+  },
+  {
+    "id": "TCK-00130",
+    "problem": "The entire website is down and I can't access my bookings.",
+    "solution": "",
+    "category": "App Issues",
+    "status": "open",
+    "priority": "critical"
+  }
+]
