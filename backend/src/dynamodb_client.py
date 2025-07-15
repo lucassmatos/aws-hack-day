@@ -145,7 +145,16 @@ def list_tickets(limit: int = 50, page_token: Optional[Dict] = None) -> Dict[str
         tickets = response.get('Items', [])
         next_page_token = response.get('LastEvaluatedKey')
         
-        print(f"✅ Found {len(tickets)} tickets on this page")
+        # Sort tickets by created_at (most recent first - descending order)
+        try:
+            tickets.sort(
+                key=lambda ticket: ticket.get('created_at', ''), 
+                reverse=True  # Most recent first
+            )
+        except Exception as e:
+            print(f"Warning: Could not sort tickets by created_at: {e}")
+        
+        print(f"✅ Found {len(tickets)} tickets on this page (sorted by most recent)")
         return {
             "tickets": tickets,
             "next_page_token": next_page_token
