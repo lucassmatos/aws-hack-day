@@ -1,0 +1,56 @@
+[
+  {
+    "id": "cat-1",
+    "name": "Payments",
+    "solutions": [
+      "Check payment gateway for transaction status.",
+      "Advise user to contact their bank.",
+      "Issue a refund for duplicate charges."
+    ]
+  },
+  {
+    "id": "cat-2",
+    "name": "App Issues",
+    "solutions": [
+      "Advise user to restart the app.",
+      "Suggest clearing app cache.",
+      "Check for known outages on the status page."
+    ]
+  },
+  {
+    "id": "cat-3",
+    "name": "Booking Problems",
+    "solutions": [
+      "Review booking details and property listing.",
+      "Contact property owner for clarification.",
+      "Consult refund policy for eligibility."
+    ]
+  },
+  {
+    "id": "cat-4",
+    "name": "Acme+",
+    "solutions": [
+      "Verify subscription status in the user's account.",
+      "Manually sync subscription features.",
+      "Check for payment issues related to the subscription."
+    ]
+  },
+  {
+    "id": "cat-5",
+    "name": "Seller Issues",
+    "solutions": [
+      "Guide seller through the listing management tools.",
+      "Check for platform-side issues affecting seller accounts.",
+      "Escalate to the partner support team."
+    ]
+  },
+  {
+    "id": "cat-6",
+    "name": "Buyer Issues",
+    "solutions": [
+      "Help buyer navigate the booking process.",
+      "Answer questions about specific properties.",
+      "Provide information on booking policies."
+    ]
+  }
+]
