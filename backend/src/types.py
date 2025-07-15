@@ -9,3 +9,5 @@ class Ticket(TypedDict):
     problem: str
     solution: Optional[str]
     category: str
+    created_at: Optional[str]  # ISO timestamp
+    updated_at: Optional[str]  # ISO timestamp

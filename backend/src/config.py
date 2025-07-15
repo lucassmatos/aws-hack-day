@@ -29,6 +29,9 @@ class Settings:
         self.aws_access_key_id: str = os.getenv("AWS_ACCESS_KEY_ID", "")
         self.aws_secret_access_key: str = os.getenv("AWS_SECRET_ACCESS_KEY", "")
         
+        # DynamoDB Configuration
+        self.dynamodb_table_name: str = os.getenv("DYNAMODB_TABLE_NAME", "tickets")
+        
         # Database
         self.database_url: str = os.getenv("DATABASE_URL", "")
         
@@ -83,10 +86,28 @@ def get_aws_config() -> Dict[str, str]:
     }
 
 
+def get_dynamodb_config() -> Dict[str, str]:
+    """Get DynamoDB configuration from settings."""
+    settings = get_settings()
+    
+    if not settings.dynamodb_table_name:
+        return {}
+    
+    aws_config = get_aws_config()
+    if not aws_config:
+        return {}
+    
+    return {
+        **aws_config,
+        "table_name": settings.dynamodb_table_name,
+    }
+
+
 # Public API
 config_api = {
     "get_settings": get_settings,
     "get_weaviate_config": get_weaviate_config,
     "get_openai_config": get_openai_config,
     "get_aws_config": get_aws_config,
+    "get_dynamodb_config": get_dynamodb_config,
 } 

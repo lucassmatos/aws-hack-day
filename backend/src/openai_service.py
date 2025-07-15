@@ -13,17 +13,14 @@ from config import get_openai_config, get_weaviate_config
 
 # OpenAI agents imports
 from agents import Agent, Runner, function_tool
+from .dynamodb_client import save_ticket, create_table_if_not_exists
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-
-class Ticket(TypedDict):
-    """Ticket type definition."""
-    id: str
-    problem: str
-    solution: Optional[str]
+# Import types
+from .types import Ticket
 
 
 class OpenAIService:
@@ -336,15 +333,52 @@ Guidelines:
             return "Sorry, I'm unable to generate a solution at this time. Please contact support."
     
     async def create_ticket_with_solution(self, problem: str) -> Ticket:
-        """Create a ticket with generated solution."""
+        """Create a ticket with generated solution and save to DynamoDB."""
+        logger.info(f"🎫 Creating new ticket for problem: {problem}")
+        
         solution = await self.generate_solution(problem)
         ticket_id = f"AUTO-{str(uuid.uuid4())[:8].upper()}"
         
-        return {
+        # Simple category detection based on keywords
+        problem_lower = problem.lower()
+        category = "General Support"
+        
+        if any(word in problem_lower for word in ["payment", "billing", "charge", "refund", "card"]):
+            category = "Payment & Billing Issues"
+        elif any(word in problem_lower for word in ["book", "reservation", "cancel", "availability"]):
+            category = "Booking & Reservation Issues"
+        elif any(word in problem_lower for word in ["app", "login", "password", "technical", "bug", "error"]):
+            category = "Technical & App Issues"
+        elif any(word in problem_lower for word in ["property", "stay", "check", "room", "clean"]):
+            category = "Property & Stay Issues"
+        elif any(word in problem_lower for word in ["host", "seller", "owner", "listing"]):
+            category = "Host/Seller Issues"
+        
+        from datetime import datetime
+        timestamp = datetime.utcnow().isoformat()
+        
+        ticket: Ticket = {
             "id": ticket_id,
             "problem": problem,
-            "solution": solution
+            "solution": solution,
+            "category": category,
+            "created_at": timestamp,
+            "updated_at": timestamp
         }
+        
+        # Save to DynamoDB
+        logger.info(f"💾 Saving ticket {ticket_id} to DynamoDB...")
+        
+        # Ensure table exists first
+        if not create_table_if_not_exists():
+            logger.warning("⚠️ Could not create/verify DynamoDB table")
+        
+        if save_ticket(ticket):
+            logger.info(f"✅ Ticket {ticket_id} saved successfully")
+        else:
+            logger.warning(f"⚠️ Failed to save ticket {ticket_id} to DynamoDB")
+        
+        return ticket
 
 
 def create_openai_service() -> OpenAIService:
