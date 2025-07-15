@@ -3,7 +3,7 @@
 from typing import List, Optional, Dict, Any
 import weaviate
 from weaviate.classes.query import Filter
-from types import Ticket
+from ticket_types import Ticket
 from weaviate_client import create_weaviate_client, close_client
 
 

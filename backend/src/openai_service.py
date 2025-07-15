@@ -20,7 +20,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # Import types
-from .types import Ticket
+from .ticket_types import Ticket
 
 
 class OpenAIService:

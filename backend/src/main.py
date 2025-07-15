@@ -1,9 +1,15 @@
 """Backend main application."""
 
 import os
+import asyncio
 from dotenv import load_dotenv
-from fastapi import FastAPI
-from backend.src.config import get_settings
+from fastapi import FastAPI, HTTPException
+from .config import get_settings
+from .openai_service import create_ticket_agent
+from .dynamodb_client import save_ticket, get_ticket_by_id, list_tickets, query_tickets_by_category
+from .weviate_service import create_weviate_service
+from .ticket_types import Ticket
+from typing import List
 
 # Load environment variables from .env file
 load_dotenv()
@@ -44,8 +50,47 @@ def config_status():
 
 
 @app.post("/tickets/", response_model=Ticket)
-def create_ticket(ticket: dict):
-    return save_ticket(ticket)
+async def create_ticket(request: dict):
+    """Create a new ticket with AI-generated solution and save to both databases."""
+    try:
+        # Extract problem from request
+        problem = request.get("problem")
+        if not problem:
+            raise HTTPException(status_code=400, detail="Problem description is required")
+        
+        # Call ticket agent to generate solution
+        ticket_agent = create_ticket_agent()
+        ticket = await ticket_agent.create_ticket_with_solution(problem)
+        
+        # Save to DynamoDB first (already done in create_ticket_with_solution)
+        print(f"✅ Ticket {ticket['id']} saved to DynamoDB")
+        
+        # Save to Weaviate
+        weaviate_service = create_weviate_service("Tickets")
+        if weaviate_service.connect():
+            # Prepare ticket for Weaviate (using compatible field names)
+            weaviate_doc = {
+                "issue_id": ticket["id"],
+                "problem": ticket["problem"],
+                "solution": ticket["solution"],
+                "category": ticket["category"],
+                "created_at": ticket["created_at"]
+            }
+            
+            if weaviate_service.add_document(weaviate_doc):
+                print(f"✅ Ticket {ticket['id']} saved to Weaviate")
+            else:
+                print(f"⚠️ Failed to save ticket {ticket['id']} to Weaviate")
+            
+            weaviate_service.disconnect()
+        else:
+            print("⚠️ Could not connect to Weaviate")
+        
+        return ticket
+        
+    except Exception as e:
+        print(f"Error creating ticket: {e}")
+        raise HTTPException(status_code=500, detail=f"Error creating ticket: {str(e)}")
 
 
 from fastapi import Query

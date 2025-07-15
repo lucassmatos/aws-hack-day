@@ -10,7 +10,7 @@ from src.dynamodb_client import (
     save_ticket,
     list_tickets
 )
-from src.types import Ticket
+from src.ticket_types import Ticket
 
 # Load environment variables
 load_dotenv()

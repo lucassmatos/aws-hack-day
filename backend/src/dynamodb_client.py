@@ -6,7 +6,7 @@ from typing import Optional, List, Dict, Any
 from botocore.exceptions import ClientError
 from dotenv import load_dotenv
 from .config import get_dynamodb_config, get_aws_config
-from .types import Ticket
+from .ticket_types import Ticket
 
 # Load environment variables
 load_dotenv()
