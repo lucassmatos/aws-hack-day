@@ -2,7 +2,7 @@
 
 from typing import Optional, Dict, Any
 from openai import OpenAI
-from backend.src.config import get_openai_config
+from config import get_openai_config
 
 
 class OpenAIService:

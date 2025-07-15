@@ -3,7 +3,7 @@
 import os
 from dotenv import load_dotenv
 from fastapi import FastAPI
-from backend.src.config import get_settings
+from .config import get_settings
 
 # Load environment variables from .env file
 load_dotenv()
