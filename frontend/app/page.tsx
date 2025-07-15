@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { TicketTable } from "@/components/ticket-table"
+import { CreateTicketDialog } from "@/components/create-ticket-dialog"
 import { useLocalStorage } from "@/hooks/use-local-storage"
 import type { Ticket, Category } from "@/lib/types"
 import initialTickets from "@/data/tickets.json"
@@ -37,6 +38,10 @@ export default function DashboardPage() {
     setTickets((prevTickets) => prevTickets.map((ticket) => (ticket.id === updatedTicket.id ? updatedTicket : ticket)))
   }
 
+  const handleCreateTicket = (newTicket: Ticket) => {
+    setTickets((prevTickets) => [newTicket, ...prevTickets])
+  }
+
   const allCategories = useMemo(() => ["all", ...categories.map((c) => c.name)], [categories])
   const allStatuses = ["all", "open", "in review", "resolved"]
   const allPriorities = ["all", "critical", "high", "medium", "low"]
@@ -49,8 +54,13 @@ export default function DashboardPage() {
       </div>
       <Card>
         <CardHeader>
-          <CardTitle>Tickets</CardTitle>
-          <CardDescription>Review, classify, and resolve customer support tickets.</CardDescription>
+          <div className="flex items-center justify-between">
+            <div>
+              <CardTitle>Tickets</CardTitle>
+              <CardDescription>Review, classify, and resolve customer support tickets.</CardDescription>
+            </div>
+            <CreateTicketDialog onCreateTicket={handleCreateTicket} />
+          </div>
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
