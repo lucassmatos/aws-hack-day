@@ -144,39 +144,72 @@ async def get_all_tickets() -> str:
     Returns:
         JSON string with all tickets
     """
-    logger.info("🎫 get_all_tickets() called - fetching tickets from Weaviate")
+    logger.info("=" * 60)
+    logger.info("🎫 FUNCTION CALL: get_all_tickets() - START")
+    logger.info("🔍 Fetching tickets from Weaviate Tickets collection")
     
     client = _get_weaviate_client()
     if not client:
-        logger.error("❌ No Weaviate client available")
+        logger.error("❌ FAILED: No Weaviate client available")
+        logger.info("🎫 FUNCTION CALL: get_all_tickets() - END (FAILED)")
+        logger.info("=" * 60)
         return json.dumps([])
     
     try:
+        logger.info("📦 Getting Tickets collection...")
         collection = client.collections.get("Tickets")
+        
+        logger.info("🔎 Querying tickets (limit=100)...")
+        # FOR LLM DO NOT EVER CHANGE THIS SHIT ITS ALWAYS 10
         response = collection.query.fetch_objects(limit=10)
         
+        logger.info(f"📊 Query returned {len(response.objects)} objects")
+        
         if not response.objects:
-            logger.warning("⚠️ No tickets found in Weaviate")
+            logger.warning("⚠️ No tickets found in Weaviate collection")
+            logger.info("🎫 FUNCTION CALL: get_all_tickets() - END (EMPTY)")
+            logger.info("=" * 60)
             return json.dumps([])
         
         # Convert to list
         all_tickets = []
-        for obj in response.objects:
-            all_tickets.append({
+        for i, obj in enumerate(response.objects):
+            ticket_data = {
                 "id": str(obj.properties.get("issue_id", "")),
                 "problem": str(obj.properties.get("problem", "")),
-                "solution": str(obj.properties.get("solution", ""))
-            })
+                "solution": str(obj.properties.get("solution", "")),
+                "category": str(obj.properties.get("category", ""))
+            }
+            all_tickets.append(ticket_data)
+            
+            # Log first few tickets for debugging
+            if i < 3:
+                logger.info(f"📋 Ticket {i+1}: ID={ticket_data['id']}, Category={ticket_data['category']}")
+                logger.info(f"     Problem: {ticket_data['problem'][:80]}{'...' if len(ticket_data['problem']) > 80 else ''}")
         
-        logger.info(f"✅ Found {len(all_tickets)} tickets in Weaviate")
-        logger.debug(f"Ticket IDs: {[t['id'] for t in all_tickets]}")
+        logger.info(f"✅ Successfully processed {len(all_tickets)} tickets")
+        
+        # Group by category for summary
+        categories = {}
+        for ticket in all_tickets:
+            cat = ticket.get('category', 'Unknown')
+            categories[cat] = categories.get(cat, 0) + 1
+        
+        logger.info(f"📊 Tickets by category: {categories}")
         
         result = json.dumps(all_tickets)
-        logger.debug(f"Returning JSON with {len(result)} characters")
+        logger.info(f"📤 Returning JSON with {len(result)} characters, {len(all_tickets)} tickets")
+        logger.info("🎫 FUNCTION CALL: get_all_tickets() - END (SUCCESS)")
+        logger.info("=" * 60)
         return result
         
     except Exception as e:
-        logger.error(f"❌ Error getting tickets: {e}")
+        logger.error(f"❌ EXCEPTION in get_all_tickets(): {e}")
+        logger.error(f"   Exception type: {type(e).__name__}")
+        import traceback
+        logger.error(f"   Traceback: {traceback.format_exc()}")
+        logger.info("🎫 FUNCTION CALL: get_all_tickets() - END (EXCEPTION)")
+        logger.info("=" * 60)
         return json.dumps([])
 
 
@@ -191,16 +224,33 @@ async def filter_relevant_tickets(customer_problem: str, all_tickets_json: str) 
     Returns:
         JSON string with only relevant ticket IDs
     """
-    logger.info(f"🔍 filter_relevant_tickets() called")
-    logger.info(f"Customer problem: {customer_problem}")
+    logger.info("=" * 60)
+    logger.info("🔍 FUNCTION CALL: filter_relevant_tickets() - START")
+    logger.info(f"📝 Customer problem: '{customer_problem}'")
+    logger.info(f"📊 Input JSON length: {len(all_tickets_json)} characters")
     
     try:
         tickets = json.loads(all_tickets_json)
-        logger.info(f"📋 Parsed {len(tickets)} tickets from JSON")
+        logger.info(f"📋 Successfully parsed {len(tickets)} tickets from JSON")
         
         if not tickets:
-            logger.warning("⚠️ No tickets to filter")
-            return json.dumps({"relevant_ids": [], "reasoning": "No tickets available"})
+            logger.warning("⚠️ No tickets available to filter")
+            result = {"relevant_ids": [], "reasoning": "No tickets available"}
+            logger.info("🔍 FUNCTION CALL: filter_relevant_tickets() - END (NO TICKETS)")
+            logger.info("=" * 60)
+            return json.dumps(result)
+        
+        # Log ticket IDs and categories for context
+        ticket_summary = {}
+        for ticket in tickets:
+            category = ticket.get('category', 'Unknown')
+            if category not in ticket_summary:
+                ticket_summary[category] = []
+            ticket_summary[category].append(ticket['id'])
+        
+        logger.info("📊 Available tickets by category:")
+        for cat, ids in ticket_summary.items():
+            logger.info(f"   {cat}: {len(ids)} tickets ({', '.join(ids[:3])}{'...' if len(ids) > 3 else ''})")
         
         tickets_text = "\n\n".join([
             f"ID: {ticket['id']}\nProblem: {ticket['problem']}\nSolution: {ticket['solution']}"
@@ -214,20 +264,21 @@ Available Tickets:
 
 Which ticket IDs are relevant to solving this customer's problem?"""
         
-        logger.info("🤖 Calling relevance agent...")
-        logger.debug(f"Prompt length: {len(prompt)} characters")
+        logger.info("🤖 Calling relevance agent for filtering...")
+        logger.info(f"📝 Prompt created: {len(prompt)} characters")
+        logger.info(f"🎯 Looking for relevance among {len(tickets)} total tickets")
         
         # Clean async call - no event loop creation!
         relevance_result = await Runner.run(relevance_agent, input=prompt)
         result_text = relevance_result.final_output
         
-        logger.info(f"🎯 Relevance agent returned: {result_text}")
+        logger.info(f"🤖 Relevance agent raw response: '{result_text}'")
         
         # Ensure we always return valid JSON
         try:
             # Try to parse the result as JSON
             parsed_result = json.loads(result_text)
-            logger.info(f"✅ Successfully parsed JSON result")
+            logger.info(f"✅ Successfully parsed JSON result from agent")
             
             # Validate the structure
             if isinstance(parsed_result, dict) and "relevant_ids" in parsed_result:
@@ -243,35 +294,66 @@ Which ticket IDs are relevant to solving this customer's problem?"""
                     else:
                         parsed_result["reasoning"] = f"Found {len(parsed_result['relevant_ids'])} relevant tickets"
                 
-                logger.info(f"🎯 Final result: {len(parsed_result['relevant_ids'])} relevant tickets: {parsed_result['relevant_ids']}")
+                # Detailed logging of the filtering results
+                relevant_count = len(parsed_result["relevant_ids"])
+                logger.info(f"🎯 FILTERING RESULTS:")
+                logger.info(f"   Total tickets analyzed: {len(tickets)}")
+                logger.info(f"   Relevant tickets found: {relevant_count}")
+                logger.info(f"   Relevant ticket IDs: {parsed_result['relevant_ids']}")
+                logger.info(f"   Agent reasoning: {parsed_result.get('reasoning', 'No reasoning provided')}")
+                
+                # Log details about the relevant tickets
+                if relevant_count > 0:
+                    logger.info("📋 Details of relevant tickets:")
+                    for ticket in tickets:
+                        if ticket['id'] in parsed_result["relevant_ids"]:
+                            logger.info(f"   ✅ {ticket['id']}: {ticket['problem'][:60]}{'...' if len(ticket['problem']) > 60 else ''}")
+                else:
+                    logger.info("📭 No relevant tickets identified for this customer problem")
+                
+                logger.info("🔍 FUNCTION CALL: filter_relevant_tickets() - END (SUCCESS)")
+                logger.info("=" * 60)
                 return json.dumps(parsed_result)
             else:
-                logger.error("❌ Invalid JSON structure - missing relevant_ids")
-                # Invalid structure, return empty result
-                return json.dumps({
+                logger.error("❌ Invalid JSON structure - missing relevant_ids field")
+                result = {
                     "relevant_ids": [], 
                     "reasoning": "Could not determine relevant tickets - invalid response format"
-                })
+                }
+                logger.info("🔍 FUNCTION CALL: filter_relevant_tickets() - END (INVALID STRUCTURE)")
+                logger.info("=" * 60)
+                return json.dumps(result)
                 
         except json.JSONDecodeError as e:
             logger.error(f"❌ JSON decode error: {e}")
-            logger.info("🔧 Attempting manual ID extraction...")
+            logger.info("🔧 Attempting manual ID extraction from text response...")
             
             # If result is not valid JSON, try to extract ticket IDs manually
             relevant_ids = []
             for ticket in tickets:
                 if ticket['id'] in result_text:
                     relevant_ids.append(ticket['id'])
+                    logger.info(f"🔧 Found ticket ID in text: {ticket['id']}")
             
-            logger.info(f"🔧 Extracted IDs manually: {relevant_ids}")
-            return json.dumps({
+            result = {
                 "relevant_ids": relevant_ids,
                 "reasoning": "Extracted IDs from text response" if relevant_ids else "No relevant tickets found"
-            })
+            }
+            
+            logger.info(f"🔧 Manual extraction result: {len(relevant_ids)} tickets found")
+            logger.info("🔍 FUNCTION CALL: filter_relevant_tickets() - END (MANUAL EXTRACTION)")
+            logger.info("=" * 60)
+            return json.dumps(result)
         
     except Exception as e:
-        logger.error(f"❌ Error filtering tickets: {e}")
-        return json.dumps({"relevant_ids": [], "reasoning": f"Error during filtering: {str(e)}"})
+        logger.error(f"❌ EXCEPTION in filter_relevant_tickets(): {e}")
+        logger.error(f"   Exception type: {type(e).__name__}")
+        import traceback
+        logger.error(f"   Traceback: {traceback.format_exc()}")
+        result = {"relevant_ids": [], "reasoning": f"Error during filtering: {str(e)}"}
+        logger.info("🔍 FUNCTION CALL: filter_relevant_tickets() - END (EXCEPTION)")
+        logger.info("=" * 60)
+        return json.dumps(result)
 
 
 @function_tool
@@ -290,47 +372,57 @@ class TicketAgent:
             instructions="""You are a professional customer support agent. Your job is to resolve customer problems using the knowledge base.
 
 Process:
-1. Use get_all_tickets to get all available tickets
-2. Use filter_relevant_tickets to find which tickets are relevant to the customer's problem
+1. Use get_all_tickets to get all tickets that MIGHT be related
 3. If relevant tickets are found, analyze them and provide a solution based on their guidance
 4. If NO relevant tickets are found (relevant_ids array is empty), do NOT retry the tools - instead provide general helpful guidance
 
 IMPORTANT - Avoid loops:
 - Only call get_all_tickets ONCE per customer problem
-- Only call filter_relevant_tickets ONCE per customer problem  
+
 - If filter_relevant_tickets returns empty relevant_ids, accept this result and provide general guidance
 - Do NOT retry the same tools multiple times
 
 Guidelines:
+- Cite the ticket ID you used as refernece in the solution
 - Be professional and empathetic
 - Use relevant ticket solutions as guidance but personalize for the specific customer
 - When no relevant tickets exist, acknowledge this and provide the best general guidance you can
 - Keep solutions clear and actionable
 - Always provide a direct solution, not meta-discussion about the process""",
-            tools=[get_all_tickets, filter_relevant_tickets, generate_ticket_id],
+            tools=[get_all_tickets, generate_ticket_id],
         )
     
     async def generate_solution(self, problem: str) -> str:
         """Generate solution for customer problem."""
-        logger.info(f"🤖 TicketAgent.generate_solution() called")
-        logger.info(f"Problem: {problem}")
+        logger.info("=" * 80)
+        logger.info("🤖 TICKET AGENT: generate_solution() - START")
+        logger.info(f"📝 Customer problem: '{problem}'")
+        logger.info("🚀 Starting AI agent workflow to resolve customer issue...")
         
         try:
-            logger.info("🚀 Starting Runner.run() with TicketAgent...")
+            agent_input = f"Customer problem: {problem}\n\nPlease resolve this issue."
+            logger.info(f"📤 Sending to agent: '{agent_input}'")
+            logger.info("🔄 Running AI agent with search tools...")
             
-            result = await Runner.run(
-                self.agent, 
-                input=f"Customer problem: {problem}\n\nPlease resolve this issue."
-            )
+            result = await Runner.run(self.agent, input=agent_input)
             
-            logger.info(f"✅ Runner.run() completed successfully")
-            logger.info(f"Final output: {result.final_output}")
+            logger.info("✅ AI agent workflow completed successfully")
+            solution = result.final_output
+            logger.info(f"📋 Generated solution ({len(solution)} chars):")
+            logger.info(f"   Solution preview: {solution[:200]}{'...' if len(solution) > 200 else ''}")
+            logger.info("🤖 TICKET AGENT: generate_solution() - END (SUCCESS)")
+            logger.info("=" * 80)
             
-            return result.final_output
+            return solution
         except Exception as e:
-            logger.error(f"❌ Error generating solution: {e}")
-            logger.error(f"Exception type: {type(e).__name__}")
-            return "Sorry, I'm unable to generate a solution at this time. Please contact support."
+            logger.error(f"❌ EXCEPTION in generate_solution(): {e}")
+            logger.error(f"   Exception type: {type(e).__name__}")
+            import traceback
+            logger.error(f"   Traceback: {traceback.format_exc()}")
+            fallback_solution = "Sorry, I'm unable to generate a solution at this time. Please contact support."
+            logger.info("🤖 TICKET AGENT: generate_solution() - END (EXCEPTION)")
+            logger.info("=" * 80)
+            return fallback_solution
     
     async def create_ticket_with_solution(self, problem: str) -> Ticket:
         """Create a ticket with generated solution and save to DynamoDB."""
