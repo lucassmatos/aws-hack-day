@@ -76,6 +76,18 @@ export function AppSidebar() {
           <SidebarGroupContent>
             <SidebarMenu>
               <SidebarMenuItem>
+                <Link href="/docs/submit-ticket" passHref>
+                  <SidebarMenuButton 
+                    isActive={isActive("/docs/submit-ticket")}
+                    variant="outline"
+                    className="bg-primary text-primary-foreground hover:bg-primary/90 border-primary/20"
+                  >
+                    <Plus />
+                    <span>Submit Ticket</span>
+                  </SidebarMenuButton>
+                </Link>
+              </SidebarMenuItem>
+              <SidebarMenuItem>
                 <Link href="/docs/company-policy" passHref>
                   <SidebarMenuButton isActive={isActive("/docs/company-policy")}>
                     <BookOpen />
@@ -100,10 +112,42 @@ export function AppSidebar() {
                 </Link>
               </SidebarMenuItem>
               <SidebarMenuItem>
-                <Link href="/docs/submit-ticket" passHref>
-                  <SidebarMenuButton isActive={isActive("/docs/submit-ticket")}>
-                    <Plus />
-                    <span>Submit Ticket</span>
+                <Link href="/docs/booking-reservations-faq" passHref>
+                  <SidebarMenuButton isActive={isActive("/docs/booking-reservations-faq")}>
+                    <BookOpen />
+                    <span>Booking & Reservations FAQ</span>
+                  </SidebarMenuButton>
+                </Link>
+              </SidebarMenuItem>
+              <SidebarMenuItem>
+                <Link href="/docs/payment-billing-faq" passHref>
+                  <SidebarMenuButton isActive={isActive("/docs/payment-billing-faq")}>
+                    <BookOpen />
+                    <span>Payment & Billing FAQ</span>
+                  </SidebarMenuButton>
+                </Link>
+              </SidebarMenuItem>
+              <SidebarMenuItem>
+                <Link href="/docs/host-seller-faq" passHref>
+                  <SidebarMenuButton isActive={isActive("/docs/host-seller-faq")}>
+                    <BookOpen />
+                    <span>Host/Seller FAQ</span>
+                  </SidebarMenuButton>
+                </Link>
+              </SidebarMenuItem>
+              <SidebarMenuItem>
+                <Link href="/docs/property-stay-faq" passHref>
+                  <SidebarMenuButton isActive={isActive("/docs/property-stay-faq")}>
+                    <BookOpen />
+                    <span>Property & Stay FAQ</span>
+                  </SidebarMenuButton>
+                </Link>
+              </SidebarMenuItem>
+              <SidebarMenuItem>
+                <Link href="/docs/technical-app-faq" passHref>
+                  <SidebarMenuButton isActive={isActive("/docs/technical-app-faq")}>
+                    <BookOpen />
+                    <span>Technical & App FAQ</span>
                   </SidebarMenuButton>
                 </Link>
               </SidebarMenuItem>
