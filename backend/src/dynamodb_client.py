@@ -2,7 +2,7 @@
 
 import boto3
 from boto3.dynamodb.conditions import Key, Attr
-from typing import Optional, List, Dict, Any
+from typing import Optional, List, Dict, Any, Union
 from botocore.exceptions import ClientError
 from dotenv import load_dotenv
 from .config import get_dynamodb_config, get_aws_config
@@ -12,7 +12,7 @@ from .ticket_types import Ticket
 load_dotenv()
 
 
-def create_dynamodb_client() -> Optional[boto3.resource]:
+def create_dynamodb_client() -> Optional[Any]:
     """Create and return DynamoDB client."""
     aws_config = get_aws_config()
     
@@ -35,7 +35,7 @@ def create_dynamodb_client() -> Optional[boto3.resource]:
         return None
 
 
-def get_table(client: boto3.resource, table_name: str) -> Optional[Any]:
+def get_table(client: Any, table_name: str) -> Optional[Any]:
     """Get DynamoDB table reference."""
     if not client:
         return None
@@ -73,11 +73,12 @@ def save_ticket(ticket: Ticket) -> bool:
         return False
     
     try:
-        # Add timestamp for sorting/tracking
+        # Add timestamp and entity_type for GSI
         from datetime import datetime
         ticket_item = {
             **ticket,
-            "created_at": datetime.utcnow().isoformat(),
+            "entity_type": "TICKET",  # Constant value for GSI partition key
+            "created_at": ticket.get("created_at", datetime.utcnow().isoformat()),
             "updated_at": datetime.utcnow().isoformat()
         }
         
@@ -119,8 +120,54 @@ def get_ticket_by_id(ticket_id: str) -> Optional[Ticket]:
         return None
 
 
-def list_tickets(limit: int = 50, page_token: Optional[Dict] = None) -> Dict[str, Any]:
-    """List tickets with pagination support."""
+def list_tickets_sorted_by_created_at(limit: int = 50, page_token: Optional[Dict] = None, ascending: bool = False) -> Dict[str, Any]:
+    """List tickets sorted by created_at using GSI for efficient sorting across entire dataset."""
+    client = create_dynamodb_client()
+    if not client:
+        return {"tickets": [], "next_page_token": None}
+    
+    config = get_dynamodb_config()
+    if not config:
+        print("DynamoDB configuration not found")
+        return {"tickets": [], "next_page_token": None}
+    
+    table = get_table(client, config["table_name"])
+    if not table:
+        return {"tickets": [], "next_page_token": None}
+    
+    try:
+        # Build query parameters for GSI
+        query_params: Dict[str, Any] = {
+            "IndexName": "CreatedAtIndex",
+            "KeyConditionExpression": Key('entity_type').eq('TICKET'),
+            "Limit": limit,
+            "ScanIndexForward": ascending  # False = descending (most recent first)
+        }
+        
+        if page_token:
+            query_params["ExclusiveStartKey"] = page_token
+        
+        response = table.query(**query_params)
+        
+        tickets = response.get('Items', [])
+        next_page_token = response.get('LastEvaluatedKey')
+        
+        sort_order = "oldest first" if ascending else "most recent first"
+        print(f"✅ Found {len(tickets)} tickets on this page (sorted by {sort_order} using GSI)")
+        
+        return {
+            "tickets": tickets,
+            "next_page_token": next_page_token
+        }
+        
+    except Exception as e:
+        print(f"Error querying tickets with GSI: {e}")
+        print("🔄 Falling back to scan method...")
+        return list_tickets_fallback(limit, page_token)
+
+
+def list_tickets_fallback(limit: int = 50, page_token: Optional[Dict] = None) -> Dict[str, Any]:
+    """Fallback method using scan when GSI is not available."""
     client = create_dynamodb_client()
     if not client:
         return {"tickets": [], "next_page_token": None}
@@ -154,7 +201,7 @@ def list_tickets(limit: int = 50, page_token: Optional[Dict] = None) -> Dict[str
         except Exception as e:
             print(f"Warning: Could not sort tickets by created_at: {e}")
         
-        print(f"✅ Found {len(tickets)} tickets on this page (sorted by most recent)")
+        print(f"✅ Found {len(tickets)} tickets on this page (sorted by most recent - fallback method)")
         return {
             "tickets": tickets,
             "next_page_token": next_page_token
@@ -163,6 +210,12 @@ def list_tickets(limit: int = 50, page_token: Optional[Dict] = None) -> Dict[str
     except Exception as e:
         print(f"Error listing tickets: {e}")
         return {"tickets": [], "next_page_token": None}
+
+
+def list_tickets(limit: int = 50, page_token: Optional[Dict] = None) -> Dict[str, Any]:
+    """List tickets with pagination support, sorted by created_at (most recent first)."""
+    # Try GSI method first, fallback to scan if needed
+    return list_tickets_sorted_by_created_at(limit, page_token, ascending=False)
 
 
 def query_tickets_by_category(category: str, limit: int = 20) -> List[Ticket]:
@@ -196,7 +249,7 @@ def query_tickets_by_category(category: str, limit: int = 20) -> List[Ticket]:
 
 
 def create_table_if_not_exists() -> bool:
-    """Create tickets table if it doesn't exist."""
+    """Create tickets table with GSI for sorting by created_at if it doesn't exist."""
     client = create_dynamodb_client()
     if not client:
         return False
@@ -213,13 +266,27 @@ def create_table_if_not_exists() -> bool:
         table = client.Table(table_name)
         table.load()
         print(f"✅ Table {table_name} already exists")
+        
+        # Check if GSI exists
+        gsi_exists = False
+        for gsi in table.global_secondary_indexes or []:
+            if gsi['IndexName'] == 'CreatedAtIndex':
+                gsi_exists = True
+                break
+        
+        if not gsi_exists:
+            print("⚠️ GSI 'CreatedAtIndex' not found on existing table")
+            print("💡 Consider recreating the table or adding GSI manually")
+        else:
+            print("✅ GSI 'CreatedAtIndex' already exists")
+            
         return True
         
     except ClientError as e:
         if e.response['Error']['Code'] == 'ResourceNotFoundException':
             # Table doesn't exist, create it
             try:
-                print(f"📁 Creating table {table_name}...")
+                print(f"📁 Creating table {table_name} with CreatedAtIndex GSI...")
                 
                 table = client.create_table(
                     TableName=table_name,
@@ -233,6 +300,32 @@ def create_table_if_not_exists() -> bool:
                         {
                             'AttributeName': 'id',
                             'AttributeType': 'S'
+                        },
+                        {
+                            'AttributeName': 'entity_type',
+                            'AttributeType': 'S'
+                        },
+                        {
+                            'AttributeName': 'created_at',
+                            'AttributeType': 'S'
+                        }
+                    ],
+                    GlobalSecondaryIndexes=[
+                        {
+                            'IndexName': 'CreatedAtIndex',
+                            'KeySchema': [
+                                {
+                                    'AttributeName': 'entity_type',
+                                    'KeyType': 'HASH'  # Partition key (always "TICKET")
+                                },
+                                {
+                                    'AttributeName': 'created_at',
+                                    'KeyType': 'RANGE'  # Sort key
+                                }
+                            ],
+                            'Projection': {
+                                'ProjectionType': 'ALL'  # Include all attributes
+                            }
                         }
                     ],
                     BillingMode='PAY_PER_REQUEST'  # On-demand pricing
@@ -240,7 +333,7 @@ def create_table_if_not_exists() -> bool:
                 
                 # Wait for table to be created
                 table.wait_until_exists()
-                print(f"✅ Table {table_name} created successfully")
+                print(f"✅ Table {table_name} created successfully with CreatedAtIndex GSI")
                 return True
                 
             except Exception as create_error:
@@ -260,6 +353,8 @@ dynamodb_client_api = {
     "save_ticket": save_ticket,
     "get_ticket_by_id": get_ticket_by_id,
     "list_tickets": list_tickets,
+    "list_tickets_sorted_by_created_at": list_tickets_sorted_by_created_at,
+    "list_tickets_fallback": list_tickets_fallback,
     "query_tickets_by_category": query_tickets_by_category,
     "create_table_if_not_exists": create_table_if_not_exists,
 } 
