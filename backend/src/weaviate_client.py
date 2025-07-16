@@ -1,5 +1,6 @@
 """Weaviate client configuration."""
 
+import os
 import weaviate
 from weaviate.classes.init import Auth
 from typing import Optional
@@ -15,9 +16,14 @@ def create_weaviate_client() -> Optional[weaviate.WeaviateClient]:
         return None
     
     try:
+        # Get OpenAI API key for headers if available
+        openai_key = os.getenv("OPENAI_API_KEY")
+        headers = {"X-Openai-Api-Key": openai_key} if openai_key else {}
+        
         client = weaviate.connect_to_weaviate_cloud(
             cluster_url=config["url"],
             auth_credentials=Auth.api_key(config["api_key"]),
+            headers=headers
         )
         
         if not client.is_ready():

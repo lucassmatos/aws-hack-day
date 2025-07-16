@@ -64,11 +64,23 @@ def load_mock_data():
     issues = all_issues
     print(f"\n✅ Total issues loaded: {len(issues)} from {len(json_files)} files")
 
+    # Get OpenAI API key for vectorizer
+    openai_key = os.getenv("OPENAI_API_KEY")
+    print(f"OpenAI API Key: {'SET' if openai_key else 'NOT SET'}")
+
     try:
         print("\n🔗 Connecting to Weaviate...")
+        # Set environment variables for Weaviate
+        if openai_key:
+            os.environ["OPENAI_APIKEY"] = openai_key
+            os.environ["X-OPENAI-API-KEY"] = openai_key
+        
+        headers = {"X-Openai-Api-Key": openai_key} if openai_key else {}
+        
         client = weaviate.connect_to_weaviate_cloud(
             cluster_url=weaviate_url,
             auth_credentials=Auth.api_key(weaviate_key),
+            headers=headers
         )
         
         if not client.is_ready():
@@ -81,55 +93,65 @@ def load_mock_data():
         collection_name = "Tickets"
         
         try:
-            # Step 1: Create Collection (if not exists)
-            print(f"\n📁 Setting up collection '{collection_name}'...")
+            # Step 1: Use existing collection 
+            print(f"\n📁 Using existing collection '{collection_name}'...")
             
             if client.collections.exists(collection_name):
-                print(f"   Collection already exists")
+                print(f"   ✅ Collection exists, using it")
                 collection = client.collections.get(collection_name)
             else:
-                print(f"   Creating new collection without vectorization...")
-                client.collections.create(
-                    name=collection_name,
-                    description="Customer support issues and solutions dataset",
-                    vectorizer_config=wvc.config.Configure.Vectorizer.none()
-                )
-                collection = client.collections.get(collection_name)
-                print("   ✅ Collection created successfully")
+                print(f"   ❌ Collection '{collection_name}' not found")
+                print("   Please create the collection manually first")
+                return False
             
             # Step 2: Load data in batches
             print(f"\n📚 Loading {len(issues)} issues into Weaviate...")
             
-            # Clear existing data (optional - skipped for now)
-            print("   ℹ️  Adding to existing data (not clearing)")
+            # Fresh collection, so no need to clear data
+            print("   ℹ️  Loading data into fresh collection")
             
             # Batch insert the issues
-            batch_size = 10
+            batch_size = 50
             success_count = 0
+            error_count = 0
             
-            with collection.batch.dynamic() as batch:
-                for i, issue in enumerate(issues):
-                    try:
-                        # Prepare the object
-                        obj = {
-                            "issue_id": issue["id"],
-                            "category": issue["category"],
-                            "problem": issue["problem"],
-                            "solution": issue["solution"]
-                        }
-                        
-                        # Add to batch
-                        batch.add_object(obj)
-                        success_count += 1
-                        
-                        # Progress indicator
-                        if (i + 1) % batch_size == 0:
-                            print(f"   📝 Processed {i + 1}/{len(issues)} issues...")
+            try:
+                with collection.batch.dynamic() as batch:
+                    for i, issue in enumerate(issues):
+                        try:
+                            # Prepare the object
+                            obj = {
+                                "issue_id": issue["id"],
+                                "category": issue["category"],
+                                "problem": issue["problem"],
+                                "solution": issue["solution"]
+                            }
                             
-                    except Exception as e:
-                        print(f"   ⚠️  Error processing issue {issue.get('id', 'unknown')}: {e}")
+                            # Add to batch
+                            batch.add_object(obj)
+                            success_count += 1
+                            
+                            # Progress indicator
+                            if (i + 1) % batch_size == 0:
+                                print(f"   📝 Processed {i + 1}/{len(issues)} issues...")
+                                
+                        except Exception as e:
+                            error_count += 1
+                            print(f"   ⚠️  Error processing issue {issue.get('id', 'unknown')}: {e}")
+                
+                # Check for batch errors
+                if hasattr(collection.batch, 'failed_objects') and collection.batch.failed_objects:
+                    failed_count = len(collection.batch.failed_objects)
+                    error_count += failed_count
+                    print(f"   ⚠️  {failed_count} objects failed during batch insertion")
+                    
+            except Exception as batch_error:
+                print(f"   ❌ Batch operation failed: {batch_error}")
+                error_count += 1
             
             print(f"   ✅ Successfully loaded {success_count}/{len(issues)} issues")
+            if error_count > 0:
+                print(f"   ⚠️  {error_count} errors occurred during loading")
             
             # Step 3: Verify the data
             print(f"\n🔍 Verifying loaded data...")
