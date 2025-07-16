@@ -14,7 +14,9 @@ import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
 import type { Ticket, Category } from "@/lib/types"
+import { updateTicket } from "@/lib/api"
 import { useToast } from "@/hooks/use-toast"
+import { Loader2 } from "lucide-react"
 
 interface TicketDetailDialogProps {
   ticket: Ticket
@@ -25,18 +27,43 @@ interface TicketDetailDialogProps {
 
 export function TicketDetailDialog({ ticket, categories, onOpenChange, onUpdateTicket }: TicketDetailDialogProps) {
   const [currentTicket, setCurrentTicket] = useState<Ticket>(ticket)
+  const [saving, setSaving] = useState(false)
   const { toast } = useToast()
 
   useEffect(() => {
     setCurrentTicket(ticket)
   }, [ticket])
 
-  const handleSave = () => {
-    onUpdateTicket(currentTicket)
-    toast({
-      title: "Ticket Updated",
-      description: `Ticket ${currentTicket.id} has been successfully updated.`,
-    })
+  const handleSave = async () => {
+    try {
+      setSaving(true)
+      
+      // Create the updates object with only the fields that can be updated
+      const updates = {
+        category: currentTicket.category,
+        priority: currentTicket.priority,
+        status: currentTicket.status,
+        solution: currentTicket.solution,
+      }
+      
+      const updatedTicket = await updateTicket(ticket.id, updates)
+      
+      onUpdateTicket(updatedTicket)
+      onOpenChange(false)
+      
+      toast({
+        title: "Ticket Updated",
+        description: `Ticket ${updatedTicket.id} has been successfully updated.`,
+      })
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: error instanceof Error ? error.message : "Failed to update ticket",
+        variant: "destructive",
+      })
+    } finally {
+      setSaving(false)
+    }
   }
 
   return (
@@ -60,7 +87,8 @@ export function TicketDetailDialog({ ticket, categories, onOpenChange, onUpdateT
               <Label htmlFor="category">Category</Label>
               <Select
                 value={currentTicket.category}
-                onValueChange={(value) => setCurrentTicket({ ...currentTicket, category: value })}
+                onValueChange={(value: string) => setCurrentTicket({ ...currentTicket, category: value })}
+                disabled={saving}
               >
                 <SelectTrigger id="category">
                   <SelectValue placeholder="Select a category" />
@@ -78,7 +106,8 @@ export function TicketDetailDialog({ ticket, categories, onOpenChange, onUpdateT
               <Label htmlFor="priority">Priority</Label>
               <Select
                 value={currentTicket.priority}
-                onValueChange={(value) => setCurrentTicket({ ...currentTicket, priority: value as Ticket["priority"] })}
+                onValueChange={(value: string) => setCurrentTicket({ ...currentTicket, priority: value as Ticket["priority"] })}
+                disabled={saving}
               >
                 <SelectTrigger id="priority">
                   <SelectValue placeholder="Select a priority" />
@@ -95,7 +124,8 @@ export function TicketDetailDialog({ ticket, categories, onOpenChange, onUpdateT
               <Label htmlFor="status">Status</Label>
               <Select
                 value={currentTicket.status}
-                onValueChange={(value) => setCurrentTicket({ ...currentTicket, status: value as Ticket["status"] })}
+                onValueChange={(value: string) => setCurrentTicket({ ...currentTicket, status: value as Ticket["status"] })}
+                disabled={saving}
               >
                 <SelectTrigger id="status">
                   <SelectValue placeholder="Select a status" />
@@ -114,16 +144,26 @@ export function TicketDetailDialog({ ticket, categories, onOpenChange, onUpdateT
               id="solution"
               placeholder="Enter notes or a suggested solution..."
               value={currentTicket.solution || ""}
-              onChange={(e) => setCurrentTicket({ ...currentTicket, solution: e.target.value })}
+              onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setCurrentTicket({ ...currentTicket, solution: e.target.value })}
               rows={4}
+              disabled={saving}
             />
           </div>
         </div>
         <DialogFooter>
-          <Button variant="outline" onClick={() => onOpenChange(false)}>
+          <Button variant="outline" onClick={() => onOpenChange(false)} disabled={saving}>
             Cancel
           </Button>
-          <Button onClick={handleSave}>Save Changes</Button>
+          <Button onClick={handleSave} disabled={saving}>
+            {saving ? (
+              <>
+                <Loader2 className="h-4 w-4 animate-spin mr-2" />
+                Saving...
+              </>
+            ) : (
+              'Save Changes'
+            )}
+          </Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>
