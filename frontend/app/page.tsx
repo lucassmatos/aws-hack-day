@@ -27,6 +27,7 @@ export default function DashboardPage() {
   const [categoryFilter, setCategoryFilter] = useState("all")
   const [priorityFilter, setPriorityFilter] = useState("all")
 
+
   const { toast } = useToast()
 
   // Load initial tickets
@@ -90,6 +91,8 @@ export default function DashboardPage() {
     setTickets((prevTickets) => prevTickets.map((ticket) => (ticket.id === updatedTicket.id ? updatedTicket : ticket)))
   }
 
+
+
   // Create category options based on actual ticket data
   const ticketCategories = useMemo(() => {
     const uniqueCategories = [...new Set(tickets.map(t => t.category))]
@@ -115,6 +118,11 @@ export default function DashboardPage() {
             </Button>
           </CardContent>
         </Card>
+        <AddTicketDialog
+          open={showAddTicketDialog}
+          onOpenChange={setShowAddTicketDialog}
+          onTicketCreated={handleTicketCreated}
+        />
       </div>
     )
   }

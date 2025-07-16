@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { BookOpen, Settings, ChevronDown, LayoutGrid, Building2 } from "lucide-react"
+import { BookOpen, Settings, ChevronDown, LayoutGrid, Building2, Plus } from "lucide-react"
 import {
   Sidebar,
   SidebarContent,
@@ -96,6 +96,14 @@ export function AppSidebar() {
                   <SidebarMenuButton isActive={isActive("/docs/refund-policy")}>
                     <BookOpen />
                     <span>Refund Policy</span>
+                  </SidebarMenuButton>
+                </Link>
+              </SidebarMenuItem>
+              <SidebarMenuItem>
+                <Link href="/docs/submit-ticket" passHref>
+                  <SidebarMenuButton isActive={isActive("/docs/submit-ticket")}>
+                    <Plus />
+                    <span>Submit Ticket</span>
                   </SidebarMenuButton>
                 </Link>
               </SidebarMenuItem>
