@@ -4,6 +4,7 @@ import os
 import asyncio
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from .config import get_settings
 from .openai_service import create_ticket_agent
 from .dynamodb_client import save_ticket, get_ticket_by_id, list_tickets, query_tickets_by_category
@@ -22,6 +23,15 @@ app = FastAPI(
     description="Backend service with Weaviate and OpenAI integration",
     version="0.1.0",
     debug=settings.debug
+)
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000", "http://localhost:3001", "http://127.0.0.1:3000", "http://127.0.0.1:3001"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
@@ -100,22 +110,22 @@ import json
 @app.get("/tickets/")
 def get_tickets(
     limit: int = Query(50, description="Number of tickets per page"),
-    page_token: Optional[str] = Query(None, description="Ticket ID to start pagination from")
+    next_page_token: Optional[str] = Query(None, description="Ticket ID to start pagination from")
 ):
     # Convert simple ID token to DynamoDB key format
     token = None
-    if page_token:
+    if next_page_token:
         try:
             # If it's a simple string ID, convert to DynamoDB key format
-            if not page_token.startswith('{'):
-                token = {"id": page_token}
+            if not next_page_token.startswith('{'):
+                token = {"id": next_page_token}
             else:
                 # Backward compatibility - if it's JSON, parse it
-                token = json.loads(page_token)
+                token = json.loads(next_page_token)
         except json.JSONDecodeError:
-            raise HTTPException(status_code=400, detail="Invalid page_token format.")
+            raise HTTPException(status_code=400, detail="Invalid next_page_token format.")
         except Exception as e:
-            raise HTTPException(status_code=400, detail=f"Error parsing page_token: {str(e)}")
+            raise HTTPException(status_code=400, detail=f"Error parsing next_page_token: {str(e)}")
     
     try:
         result = list_tickets(limit=limit, page_token=token)
@@ -138,6 +148,35 @@ def get_ticket(ticket_id: str):
     if not ticket:
         raise HTTPException(status_code=404, detail="Ticket not found")
     return ticket
+
+
+@app.put("/tickets/{ticket_id}", response_model=Ticket)
+def update_ticket(ticket_id: str, updates: dict):
+    """Update a ticket with new values."""
+    try:
+        # Get existing ticket
+        existing_ticket = get_ticket_by_id(ticket_id)
+        if not existing_ticket:
+            raise HTTPException(status_code=404, detail="Ticket not found")
+        
+        # Update only provided fields
+        updated_ticket = existing_ticket.copy()
+        for key, value in updates.items():
+            if key in ["category", "priority", "status", "solution"]:
+                updated_ticket[key] = value
+        
+        # Add updated timestamp
+        from datetime import datetime
+        updated_ticket["updated_at"] = datetime.utcnow().isoformat()
+        
+        # Save updated ticket back to DynamoDB
+        save_ticket(updated_ticket)
+        
+        return updated_ticket
+        
+    except Exception as e:
+        print(f"Error updating ticket {ticket_id}: {e}")
+        raise HTTPException(status_code=500, detail=f"Error updating ticket: {str(e)}")
 
 
 @app.get("/tickets/category/{category}", response_model=List[Ticket])
